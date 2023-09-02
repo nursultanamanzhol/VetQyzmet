@@ -3,10 +3,10 @@ package kz.cifron.vetqyzmet_doctor
 data class Data(
     val id: Int,
     val controler_id: Long,
-    val ID_RAYON: Int,
+    val ID_LOC: Int,
     val TIP: String?,
     val TAB_NUM: String?,
-    val RAYON_NAME: String,
+    val LOC_NAME: String,
     val name: String,
     val fizYur: Int
 )

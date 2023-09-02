@@ -9,8 +9,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="180dp"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginTop="176dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
 
         <TextView
             android:id="@+id/appName"
@@ -53,78 +54,110 @@
 
             app:layout_constraintTop_toBottomOf="@+id/appName" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="28dp"
+            android:text="Логин"
+            android:textColor="@color/gray02"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/day"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailEt"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="30dp"
-            app:layout_constraintTop_toBottomOf="@+id/day">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email">
 
-            <TextView
-                android:id="@+id/email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Логин"
-                android:textColor="@color/gray02"
-                android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints" />
-
-            <EditText
-                android:id="@+id/emailEt"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEt1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:background="@drawable/shape_edittext01"
+                android:drawableStart="@drawable/ic_email_gray"
                 android:drawablePadding="10dp"
-                android:hint="Email"
                 android:inputType="textEmailAddress"
-                android:minHeight="48dp"
                 android:padding="10dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
-                app:layout_constraintTop_toBottomOf="@+id/email" />
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray01" />
 
-            <TextView
-                android:id="@+id/password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Пароль"
-                android:textColor="@color/gray02"
-                android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/emailEt"
-                tools:ignore="MissingConstraints" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-            <EditText
-                android:id="@+id/passwordEt"
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Пароль"
+            android:textColor="@color/gray02"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailEt"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordEt"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEt1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shape_edittext01"
+                android:drawableStart="@drawable/ic_lock_gray"
                 android:drawablePadding="10dp"
-                android:hint="Password"
                 android:inputType="textPassword"
-                android:minHeight="48dp"
                 android:padding="10dp"
-                android:shadowColor="@color/white"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
-                app:layout_constraintTop_toBottomOf="@+id/password" />
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray01" />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/shape_button01"
+            android:text="Войти"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/passwordEt"
+            tools:layout_editor_absoluteX="0dp" />
 
-            <Button
-                android:id="@+id/loginBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/shape_button01"
-                android:text="Войти"
-                android:textColor="@color/white"
-                app:layout_constraintTop_toBottomOf="@+id/passwordEt" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="40dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

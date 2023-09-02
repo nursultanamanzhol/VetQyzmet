@@ -5,13 +5,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -34,7 +36,10 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView email;
 
   @NonNull
-  public final EditText emailEt;
+  public final TextInputLayout emailEt;
+
+  @NonNull
+  public final TextInputEditText emailEt1;
 
   @NonNull
   public final Button loginBtn;
@@ -43,21 +48,31 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView password;
 
   @NonNull
-  public final EditText passwordEt;
+  public final TextInputLayout passwordEt;
+
+  @NonNull
+  public final TextInputEditText passwordEt1;
+
+  @NonNull
+  public final ProgressBar progressBar;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull TextView appName,
       @NonNull TextView dateFormat, @NonNull TextView day, @NonNull TextView email,
-      @NonNull EditText emailEt, @NonNull Button loginBtn, @NonNull TextView password,
-      @NonNull EditText passwordEt) {
+      @NonNull TextInputLayout emailEt, @NonNull TextInputEditText emailEt1,
+      @NonNull Button loginBtn, @NonNull TextView password, @NonNull TextInputLayout passwordEt,
+      @NonNull TextInputEditText passwordEt1, @NonNull ProgressBar progressBar) {
     this.rootView = rootView;
     this.appName = appName;
     this.dateFormat = dateFormat;
     this.day = day;
     this.email = email;
     this.emailEt = emailEt;
+    this.emailEt1 = emailEt1;
     this.loginBtn = loginBtn;
     this.password = password;
     this.passwordEt = passwordEt;
+    this.passwordEt1 = passwordEt1;
+    this.progressBar = progressBar;
   }
 
   @Override
@@ -112,8 +127,14 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       id = R.id.emailEt;
-      EditText emailEt = ViewBindings.findChildViewById(rootView, id);
+      TextInputLayout emailEt = ViewBindings.findChildViewById(rootView, id);
       if (emailEt == null) {
+        break missingId;
+      }
+
+      id = R.id.emailEt1;
+      TextInputEditText emailEt1 = ViewBindings.findChildViewById(rootView, id);
+      if (emailEt1 == null) {
         break missingId;
       }
 
@@ -130,13 +151,25 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       id = R.id.passwordEt;
-      EditText passwordEt = ViewBindings.findChildViewById(rootView, id);
+      TextInputLayout passwordEt = ViewBindings.findChildViewById(rootView, id);
       if (passwordEt == null) {
         break missingId;
       }
 
+      id = R.id.passwordEt1;
+      TextInputEditText passwordEt1 = ViewBindings.findChildViewById(rootView, id);
+      if (passwordEt1 == null) {
+        break missingId;
+      }
+
+      id = R.id.progressBar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
       return new ActivityMainBinding((ConstraintLayout) rootView, appName, dateFormat, day, email,
-          emailEt, loginBtn, password, passwordEt);
+          emailEt, emailEt1, loginBtn, password, passwordEt, passwordEt1, progressBar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

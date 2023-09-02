@@ -24,9 +24,12 @@ id dateFormat
 id day
 id email
 id emailEt
+id emailEt1
 id loginBtn
 id password
 id passwordEt
+id passwordEt1
+id progressBar
 layout activity_main
 mipmap ic_launcher
 mipmap ic_launcher_round

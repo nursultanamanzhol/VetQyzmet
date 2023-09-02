@@ -3005,6 +3005,7 @@ int id edit_query 0x7f0800ad
 int id elastic 0x7f0800ae
 int id email 0x7f0800af
 int id emailEt 0x7f0800b0
+int id emailEt1 0x7f0801f5
 int id embed 0x7f0800b1
 int id end 0x7f0800b2
 int id endToStart 0x7f0800b3
@@ -3163,6 +3164,7 @@ int id parentRelative 0x7f08014b
 int id parent_matrix 0x7f08014c
 int id password 0x7f08014d
 int id passwordEt 0x7f08014e
+int id passwordEt1 0x7f0801f6
 int id password_toggle 0x7f08014f
 int id path 0x7f080150
 int id pathRelative 0x7f080151
@@ -3172,6 +3174,7 @@ int id pin 0x7f080154
 int id position 0x7f080155
 int id postLayout 0x7f080156
 int id pressed 0x7f080157
+int id progressBar 0x7f0801f7
 int id progress_circular 0x7f080158
 int id progress_horizontal 0x7f080159
 int id radio 0x7f08015a
