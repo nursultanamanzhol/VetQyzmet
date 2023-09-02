@@ -44,9 +44,9 @@ dependencies {
     //splashscreen
     implementation("androidx.core:core-splashscreen:1.0.0-beta02")
     //retrofit
-    implementation("com.squareup.retrofit2:retrofit:2.7.1")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
     //gson
-    implementation("com.squareup.retrofit2:converter-gson:2.1.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
 
     implementation("androidx.core:core-ktx:1.9.0")
