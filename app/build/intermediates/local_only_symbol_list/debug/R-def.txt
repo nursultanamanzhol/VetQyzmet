@@ -20,6 +20,7 @@ drawable shape_button02
 drawable shape_edittext01
 drawable vet_background
 id appName
+id coordinatorLayout
 id dateFormat
 id day
 id email
@@ -30,7 +31,9 @@ id password
 id passwordEt
 id passwordEt1
 id progressBar
+id textView
 layout activity_main
+layout activity_page_vet_qyzmet
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap vet
@@ -40,5 +43,6 @@ string app_name
 style Base.Theme.VetQyzmet
 style Theme.App.Starting
 style Theme.VetQyzmet
+style Theme.VetQyzmetNum2
 xml backup_rules
 xml data_extraction_rules

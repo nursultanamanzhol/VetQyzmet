@@ -27,6 +27,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView appName;
 
   @NonNull
+  public final ConstraintLayout coordinatorLayout;
+
+  @NonNull
   public final TextView dateFormat;
 
   @NonNull
@@ -57,12 +60,14 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ProgressBar progressBar;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull TextView appName,
-      @NonNull TextView dateFormat, @NonNull TextView day, @NonNull TextView email,
-      @NonNull TextInputLayout emailEt, @NonNull TextInputEditText emailEt1,
-      @NonNull Button loginBtn, @NonNull TextView password, @NonNull TextInputLayout passwordEt,
-      @NonNull TextInputEditText passwordEt1, @NonNull ProgressBar progressBar) {
+      @NonNull ConstraintLayout coordinatorLayout, @NonNull TextView dateFormat,
+      @NonNull TextView day, @NonNull TextView email, @NonNull TextInputLayout emailEt,
+      @NonNull TextInputEditText emailEt1, @NonNull Button loginBtn, @NonNull TextView password,
+      @NonNull TextInputLayout passwordEt, @NonNull TextInputEditText passwordEt1,
+      @NonNull ProgressBar progressBar) {
     this.rootView = rootView;
     this.appName = appName;
+    this.coordinatorLayout = coordinatorLayout;
     this.dateFormat = dateFormat;
     this.day = day;
     this.email = email;
@@ -107,6 +112,8 @@ public final class ActivityMainBinding implements ViewBinding {
       if (appName == null) {
         break missingId;
       }
+
+      ConstraintLayout coordinatorLayout = (ConstraintLayout) rootView;
 
       id = R.id.dateFormat;
       TextView dateFormat = ViewBindings.findChildViewById(rootView, id);
@@ -168,8 +175,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, appName, dateFormat, day, email,
-          emailEt, emailEt1, loginBtn, password, passwordEt, passwordEt1, progressBar);
+      return new ActivityMainBinding((ConstraintLayout) rootView, appName, coordinatorLayout,
+          dateFormat, day, email, emailEt, emailEt1, loginBtn, password, passwordEt, passwordEt1,
+          progressBar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

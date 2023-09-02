@@ -1,174 +1,178 @@
 [
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-hdpi_vet_round.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-hdpi\\vet_round.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-anydpi-v26_vet.xml.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-anydpi-v26\\vet.xml"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-anydpi-v26_vet.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-anydpi-v26\\vet.xml"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-mdpi_vet.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-mdpi\\vet.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\drawable_shape_edittext01.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\drawable\\shape_edittext01.xml"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-hdpi_vet_foreground.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-hdpi\\vet_foreground.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-xxxhdpi_vet_foreground.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-xxxhdpi\\vet_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-anydpi-v26_vet_round.xml.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-anydpi-v26\\vet_round.xml"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\drawable_ic_logout_white.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\drawable\\ic_logout_white.xml"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\drawable_shape_button01.xml.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\drawable\\shape_button01.xml"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-xxxhdpi_vet.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-xxxhdpi\\vet.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-xxxhdpi_vet.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-xxxhdpi\\vet.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-xxxhdpi_vet_round.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-xxxhdpi\\vet_round.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-pngs-47:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-mdpi_vet_foreground.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-mdpi\\vet_foreground.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-xxhdpi_vet_foreground.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-xxhdpi\\vet_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-hdpi_vet.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-hdpi\\vet.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-anydpi-v26_vet_round.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-anydpi-v26\\vet_round.xml"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-xhdpi_vet_round.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-xhdpi\\vet_round.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\drawable_ic_email_gray.xml.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\drawable\\ic_email_gray.xml"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\drawable_ic_email_gray.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\drawable\\ic_email_gray.xml"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-xxhdpi_vet_round.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-xxhdpi\\vet_round.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-xhdpi_vet_round.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-xhdpi\\vet_round.webp"
+        "merged": "kz.cifron.vetqyzmet_doctor.app-merged_res-51:/layout_activity_main.xml.flat",
+        "source": "kz.cifron.vetqyzmet_doctor.app-main-53:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-xhdpi_vet.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-xhdpi\\vet.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\drawable_shape_button02.xml.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\drawable\\shape_button02.xml"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\drawable_shape_button01.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\drawable\\shape_button01.xml"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\drawable_vet_background.xml.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\drawable\\vet_background.xml"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\drawable_ic_logout_white.xml.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\drawable\\ic_logout_white.xml"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "kz.cifron.vetqyzmet_doctor.app-merged_res-29:/layout_activity_main.xml.flat",
-        "source": "kz.cifron.vetqyzmet_doctor.app-main-31:/layout/activity_main.xml"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-hdpi_vet_round.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-hdpi\\vet_round.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-xxhdpi_vet_round.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-xxhdpi\\vet_round.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\layout_activity_page_vet_qyzmet.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\layout\\activity_page_vet_qyzmet.xml"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\drawable_ic_lock_gray.xml.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\drawable\\ic_lock_gray.xml"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-hdpi_vet.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-hdpi\\vet.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-mdpi_vet_round.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-mdpi\\vet_round.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-hdpi_vet_foreground.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-hdpi\\vet_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-xxhdpi_vet.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-xxhdpi\\vet.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-xxxhdpi_vet_foreground.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-xxxhdpi\\vet_foreground.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-mdpi_vet_foreground.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-mdpi\\vet_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\drawable\\logo.png"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-mdpi_vet_round.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-mdpi\\vet_round.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-xxhdpi_vet.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-xxhdpi\\vet.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\drawable_shape_button02.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\drawable\\shape_button02.xml"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\drawable_shape_edittext01.xml.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\drawable\\shape_edittext01.xml"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-xxxhdpi_vet_round.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-xxxhdpi\\vet_round.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-xhdpi_vet_foreground.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-xhdpi\\vet_foreground.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\drawable_vet_background.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\drawable\\vet_background.xml"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\drawable_logo.png.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\drawable\\logo.png"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-xhdpi_vet_foreground.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-xhdpi\\vet_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-pngs-25:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\drawable_ic_lock_gray.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\drawable\\ic_lock_gray.xml"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-xhdpi_vet.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-xhdpi\\vet.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-29:\\mipmap-xxhdpi_vet_foreground.webp.flat",
-        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-31:\\mipmap-xxhdpi\\vet_foreground.webp"
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-51:\\mipmap-mdpi_vet.webp.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-53:\\mipmap-mdpi\\vet.webp"
     }
 ]

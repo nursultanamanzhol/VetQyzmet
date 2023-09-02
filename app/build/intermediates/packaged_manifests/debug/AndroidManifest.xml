@@ -30,8 +30,13 @@
         android:testOnly="true"
         android:theme="@style/Theme.App.Starting" >
         <activity
+            android:name="kz.cifron.vetqyzmet_doctor.PageVetQyzmet"
+            android:exported="false"
+            android:theme="@style/Theme.VetQyzmetNum2" />
+        <activity
             android:name="kz.cifron.vetqyzmet_doctor.MainActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:theme="@style/Theme.App.Starting" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -49,7 +54,37 @@
             <meta-data
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
         </provider>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

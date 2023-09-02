@@ -1,14 +1,25 @@
 package kz.cifron.vetqyzmet_doctor
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.lifecycle.ViewModelProvider
 import kz.cifron.vetqyzmet_doctor.databinding.ActivityMainBinding
+import kz.cifron.vetqyzmet_doctor.mydate.LoginRepository
+import kz.cifron.vetqyzmet_doctor.mydate.LoginState
+import kz.cifron.vetqyzmet_doctor.mydate.LoginViewModel
+import kz.cifron.vetqyzmet_doctor.mydate.LoginViewModelFactory
+import kz.cifron.vetqyzmet_doctor.mydate.RetrofitClient
+import kz.cifron.vetqyzmet_doctor.mydate.User
 import java.text.SimpleDateFormat
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    private lateinit var viewModel : LoginViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -22,5 +33,65 @@ class MainActivity : AppCompatActivity() {
         val dateFormat = SimpleDateFormat("dd MMMM", Locale.getDefault())
 
         binding.dateFormat.text = dateFormat.format(calendar.time)
+
+
+        val apiService = RetrofitClient.instanceApi
+        val repository = LoginRepository(apiService)
+        viewModel = ViewModelProvider(
+            this,
+            LoginViewModelFactory(repository, this)
+        )[LoginViewModel::class.java]
+
+        val savedUserInfo = viewModel.getSavedUserInfo()
+        savedUserInfo?.let { (savedEmail, savedPassword) ->
+            binding.emailEt1.setText(savedEmail)
+            binding.passwordEt1.setText(savedPassword)
+        }
+
+        binding.loginBtn.setOnClickListener {
+            val email = binding.emailEt1.text.toString()
+            val password = binding.passwordEt1.text.toString()
+
+            viewModel.performLogin(email, password)
+
+        }
+
+
+        observeViewModel()
+
+
     }
+
+    private fun observeViewModel() {
+        viewModel.loginStateLiveData.observe(this) { loginState ->
+            when (loginState) {
+                is LoginState.Success -> handleSuccessState(loginState.user, loginState.token)
+                is LoginState.Error -> handleErrorState()
+                LoginState.Loading -> showLoadingState()
+            }
+        }
+    }
+
+    private fun showLoadingState() {
+        binding.progressBar.visibility = View.VISIBLE
+        binding.loginBtn.isEnabled = false
+    }
+
+    private fun handleErrorState() {
+        binding.progressBar.visibility = View.GONE
+        binding.loginBtn.isEnabled = true
+        Toast.makeText(this, "Error This user does not exist", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun handleSuccessState(user: User, token: String) {
+        val intent = Intent(this, PageVetQyzmet::class.java)
+        startActivity(intent)
+        finish()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+    }
+
+
 }
