@@ -3030,6 +3030,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable arrow_ic
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -3131,6 +3132,7 @@ drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigate_ic
+drawable navigate_ic2
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -3155,6 +3157,19 @@ drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable vet_background
+font font_style
+font roboto_black
+font roboto_black_italic
+font roboto_bold
+font roboto_bold_italic
+font roboto_italic
+font roboto_light
+font roboto_light_italic
+font roboto_medium
+font roboto_medium_italic
+font roboto_regular
+font roboto_thin
+font roboto_thin_italic
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3170,6 +3185,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id TopConst
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3239,6 +3255,7 @@ id antiClockwise
 id anticipate
 id appName
 id arc
+id arrow_icon
 id asConfigured
 id async
 id auto
@@ -3484,6 +3501,7 @@ id myNavigationView
 id nav_controller_view_tag
 id nav_host_fragment_container
 id navigate1
+id navigate2
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3502,6 +3520,7 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id numsView
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -3649,6 +3668,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textViewTitle
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3816,8 +3836,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_animal_reg
 layout activity_main
 layout activity_page_vet_qyzmet
+layout autoitem
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -4456,6 +4478,7 @@ style PreferenceSummaryTextStyle
 style PreferenceThemeOverlay
 style PreferenceThemeOverlay_v14
 style PreferenceThemeOverlay_v14_Material
+style RobotoTextViewStyle
 style RtlOverlay_DialogWindowTitle_AppCompat
 style RtlOverlay_Widget_AppCompat_ActionBar_TitleItem
 style RtlOverlay_Widget_AppCompat_DialogTitle_Icon

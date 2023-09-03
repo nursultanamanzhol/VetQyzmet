@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id ("kotlin-parcelize")
 }
 
 android {
@@ -43,13 +44,16 @@ android {
 dependencies {
     //splashscreen
     implementation("androidx.core:core-splashscreen:1.0.0-beta02")
-    //retrofit
+    //retrofit //gson
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    //gson
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.google.code.gson:gson:2.9.0")
     //okhttp
     implementation ("com.squareup.okhttp3:okhttp:4.3.1")
     implementation ("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.6")
+//    implementation ("com.squareup.picasso:picasso2-okhttp3-downloader: 1.1.0")
+//    //picasso to display product image
+//    implementation ("com.squareup.picasso:picasso: 2.8")
 
     implementation ("androidx.lifecycle:lifecycle-common:2.6.1")
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
@@ -63,6 +67,7 @@ dependencies {
 
     //Coroutains
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+    implementation("androidx.lifecycle:lifecycle-extensions:2.2.0") //extensions
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1") //viewModel scope
     implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1") //lifecycle scope
     implementation ("androidx.fragment:fragment-ktx:1.6.1")

@@ -13,6 +13,11 @@
         <!-- Set the theme of the Activity that directly follows your splash screen. -->
         <!-- Required -->
         <item name="postSplashScreenTheme">@style/Base.Theme.VetQyzmet</item>
+
     </style>
+<!--    <style name="RobotoTextViewStyle">-->
+
+<!--        &lt;!&ndash; Дополнительные атрибуты стиля текста, если необходимо &ndash;&gt;-->
+<!--    </style>-->
 
 </resources>

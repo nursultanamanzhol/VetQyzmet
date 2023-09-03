@@ -12,6 +12,7 @@
 
     <LinearLayout
         android:id="@+id/linear1"
+        android:layout_marginStart="10dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -20,14 +21,13 @@
             android:id="@+id/registr"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/imageView1"
                 android:layout_width="wrap_content"
-
                 android:layout_height="match_parent"
                 android:src="@drawable/registr"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -37,7 +37,9 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:text="Регистрация животных"
+                android:textFontWeight="400"
                 android:textColor="@color/black"
+                style="@style/RobotoTextViewStyle"
                 android:textSize="16sp"
                 app:layout_constraintStart_toEndOf="@+id/imageView1"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -75,8 +77,9 @@
                 android:padding="10dp"
                 android:text="Формы"
                 android:textColor="@color/black"
+                android:textFontWeight="400"
                 android:textSize="16sp"
-
+                style="@style/RobotoTextViewStyle"
                 app:layout_constraintStart_toEndOf="@+id/imageView2"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -111,6 +114,8 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:text="Справка"
+                style="@style/RobotoTextViewStyle"
+                android:textFontWeight="400"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintStart_toEndOf="@+id/imageView3"
@@ -149,6 +154,9 @@
                 android:text="Справки"
                 android:textColor="@color/black"
                 android:textSize="16sp"
+                android:textFontWeight="400"
+                style="@style/RobotoTextViewStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView4"
                 app:layout_constraintTop_toTopOf="parent" />
 

@@ -27,6 +27,12 @@
         
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         
+
+    </style>
+    <style name="RobotoTextViewStyle" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+
+        
     </style>
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
         
@@ -40,6 +46,7 @@
         
         
         <item name="postSplashScreenTheme">@style/Base.Theme.VetQyzmet</item>
+
     </style>
     <style name="Theme.VetQyzmet" parent="Base.Theme.VetQyzmet"/>
     <style name="Theme.VetQyzmetNum2" parent="Theme.AppCompat.DayNight.DarkActionBar">
