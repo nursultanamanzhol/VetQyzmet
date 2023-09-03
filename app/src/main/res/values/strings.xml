@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">VetQyzmet</string>
+    <string name="prof">Profile page</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>

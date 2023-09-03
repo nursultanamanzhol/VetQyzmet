@@ -1,10 +1,11 @@
 package kz.cifron.vetqyzmet_doctor
 
+import android.app.Dialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Toast
+import android.view.*
+import android.widget.*
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.ViewModelProvider
 import kz.cifron.vetqyzmet_doctor.databinding.ActivityMainBinding
@@ -19,28 +20,21 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private lateinit var viewModel : LoginViewModel
+    private lateinit var viewModel: LoginViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
         installSplashScreen()
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         val calendar = Calendar.getInstance().time
         val dateFormat = SimpleDateFormat("dd MMMM", Locale.getDefault())
-
-        binding.dateFormat.text = dateFormat.format(calendar.time)
-
+        binding.dateFormat.text = dateFormat.format(calendar)
 
         val apiService = RetrofitClient.instanceApi
         val repository = LoginRepository(apiService)
-        viewModel = ViewModelProvider(
-            this,
-            LoginViewModelFactory(repository, this)
-        )[LoginViewModel::class.java]
+        viewModel = ViewModelProvider(this, LoginViewModelFactory(repository, this))[LoginViewModel::class.java]
 
         val savedUserInfo = viewModel.getSavedUserInfo()
         savedUserInfo?.let { (savedEmail, savedPassword) ->
@@ -51,15 +45,10 @@ class MainActivity : AppCompatActivity() {
         binding.loginBtn.setOnClickListener {
             val email = binding.emailEt1.text.toString()
             val password = binding.passwordEt1.text.toString()
-
             viewModel.performLogin(email, password)
-
         }
 
-
         observeViewModel()
-
-
     }
 
     private fun observeViewModel() {
@@ -80,7 +69,7 @@ class MainActivity : AppCompatActivity() {
     private fun handleErrorState() {
         binding.progressBar.visibility = View.GONE
         binding.loginBtn.isEnabled = true
-        Toast.makeText(this, "Error This user does not exist", Toast.LENGTH_SHORT).show()
+        showCustomDialog()
     }
 
     private fun handleSuccessState(user: User, token: String) {
@@ -89,9 +78,30 @@ class MainActivity : AppCompatActivity() {
         finish()
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    //Error Dialog icon
+    private fun showCustomDialog() {
+        val dialog = Dialog(this)
+        dialog.setContentView(R.layout.dialog_error)
+        val iconImageView = dialog.findViewById<ImageView>(R.id.iconImageView)
+        val messageTextView = dialog.findViewById<TextView>(R.id.messageTextView)
+        val window = dialog.window
+        window?.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
+        dialog.show()
     }
 
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.LogOut -> {
+                finish()
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }

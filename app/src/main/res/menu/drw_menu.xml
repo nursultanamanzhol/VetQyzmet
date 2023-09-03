@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/id_anonimFragment"
+        android:icon="@drawable/profile_ic"
+        android:title="@string/prof"
+        />
+
+
+    <item
+        android:id="@+id/id_actsFragment"
+        android:icon="@drawable/settings_ic"
+        android:title="@string/settings"/>
+
+    <item
+        android:id="@+id/logoutbtn"
+        android:icon="@drawable/logout_ic"
+        android:title="@string/logout"/>
+
+</menu>
