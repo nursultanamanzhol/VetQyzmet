@@ -17,7 +17,8 @@
         <activity
             android:name=".AnimalRegActivity"
             android:exported="false"
-            android:theme="@style/Theme.VetQyzmetNum2"/>
+            android:theme="@style/Base.Theme.Animal"
+            />
         <activity
             android:name=".PageVetQyzmet"
             android:exported="false"

@@ -12,17 +12,20 @@
 
     <LinearLayout
         android:id="@+id/linear1"
-        android:layout_marginStart="10dp"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/registr"
             android:layout_width="match_parent"
+
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:orientation="horizontal"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
@@ -33,13 +36,13 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
+                style="@style/RobotoTextViewStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:text="Регистрация животных"
-                android:textFontWeight="400"
                 android:textColor="@color/black"
-                style="@style/RobotoTextViewStyle"
+                android:textFontWeight="500"
                 android:textSize="16sp"
                 app:layout_constraintStart_toEndOf="@+id/imageView1"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -72,14 +75,14 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
+                style="@style/RobotoTextViewStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:text="Формы"
                 android:textColor="@color/black"
-                android:textFontWeight="400"
+                android:textFontWeight="500"
                 android:textSize="16sp"
-                style="@style/RobotoTextViewStyle"
                 app:layout_constraintStart_toEndOf="@+id/imageView2"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -110,13 +113,13 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
+                style="@style/RobotoTextViewStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:text="Справка"
-                style="@style/RobotoTextViewStyle"
-                android:textFontWeight="400"
                 android:textColor="@color/black"
+                android:textFontWeight="500"
                 android:textSize="16sp"
                 app:layout_constraintStart_toEndOf="@+id/imageView3"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -148,14 +151,14 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
+                style="@style/RobotoTextViewStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:text="Справки"
                 android:textColor="@color/black"
+                android:textFontWeight="500"
                 android:textSize="16sp"
-                android:textFontWeight="400"
-                style="@style/RobotoTextViewStyle"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView4"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -170,28 +173,6 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
-    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content">-->
-
-    <!--&lt;!&ndash;        <FrameLayout&ndash;&gt;-->
-    <!--&lt;!&ndash;            android:id="@+id/frameLayout"&ndash;&gt;-->
-    <!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
-    <!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
-    <!--&lt;!&ndash;            />&ndash;&gt;-->
-
-    <!--        &lt;!&ndash;   <androidx.fragment.app.FragmentContainerView-->
-    <!--               android:id="@+id/fragment_container_view"-->
-    <!--               android:layout_width="0dp"-->
-    <!--               android:layout_height="0dp"-->
-    <!--               app:defaultNavHost = "true"-->
-    <!--               app:navGraph = "@navigation/my_nav"-->
-    <!--               app:layout_constraintStart_toStartOf="parent"-->
-    <!--               app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--               app:layout_constraintEnd_toEndOf="parent"-->
-    <!--               app:layout_constraintTop_toTopOf="parent"/>&ndash;&gt;-->
-
-    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
 
     <com.google.android.material.navigation.NavigationView
@@ -200,10 +181,10 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="false"
-        android:theme="@style/Theme.VetQyzmetNum2"
         app:headerLayout="@layout/header_page"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
-        app:menu="@menu/drw_menu" />
+        app:menu="@menu/drw_menu"
+        app:itemIconTint="@color/itemIconTint"
+        />
+
 </androidx.drawerlayout.widget.DrawerLayout>
 

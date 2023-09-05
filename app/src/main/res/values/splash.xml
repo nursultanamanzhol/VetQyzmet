@@ -20,4 +20,12 @@
 <!--        &lt;!&ndash; Дополнительные атрибуты стиля текста, если необходимо &ndash;&gt;-->
 <!--    </style>-->
 
+<!--    <style name="MyNavigationViewStyle" parent="Theme.AppCompat.DayNight.DarkActionBar">-->
+<!--        &lt;!&ndash; Цвет иконок "бургер-меню" &ndash;&gt;-->
+<!--        <item name="android:itemIconTint">@color/itemIconTint</item>-->
+<!--        &lt;!&ndash; Цвет текста в элементах меню &ndash;&gt;-->
+<!--        <item name="android:itemTextColor">@color/itemTextColor</item>-->
+<!--    </style>-->
+
+
 </resources>

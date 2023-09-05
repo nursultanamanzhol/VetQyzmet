@@ -28,6 +28,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
         val calendar = Calendar.getInstance().time
         val dateFormat = SimpleDateFormat("dd MMMM", Locale.getDefault())
         binding.dateFormat.text = dateFormat.format(calendar)

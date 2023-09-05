@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
+import android.widget.TextView
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
@@ -20,7 +23,22 @@ class PageVetQyzmet : AppCompatActivity() {
         binding = ActivityPageVetQyzmetBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.navigate1.setOnClickListener {
+
+
+            // Устанавливаем пользовательский макет для ActionBar
+            val actionBar = supportActionBar
+            actionBar?.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM)
+            actionBar?.setCustomView(R.layout.custom_actionbar_layout)
+
+            // Найдем TextView в пользовательском макете и установим текст
+            val titleTextView = actionBar?.customView?.findViewById<TextView>(R.id.action_bar_title)
+            titleTextView?.text = "VetQyzmet" // Замените на ваш заголовок
+
+
+
+
+        binding.registr.setOnClickListener {
+
             startActivity(
                 Intent(
                     this,

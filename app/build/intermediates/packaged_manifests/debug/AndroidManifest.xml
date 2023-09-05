@@ -32,7 +32,7 @@
         <activity
             android:name="kz.cifron.vetqyzmet_doctor.AnimalRegActivity"
             android:exported="false"
-            android:theme="@style/Theme.VetQyzmetNum2" />
+            android:theme="@style/Base.Theme.Animal" />
         <activity
             android:name="kz.cifron.vetqyzmet_doctor.PageVetQyzmet"
             android:exported="false"

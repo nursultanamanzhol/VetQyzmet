@@ -1,20 +1,20 @@
-#Tue Sep 05 19:23:41 ALMT 2023
+#Wed Sep 06 16:06:23 ALMT 2023
 base.0=C\:\\Users\\nursu\\AndroidStudioProjects\\VetQyzmet\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\nursu\\AndroidStudioProjects\\VetQyzmet\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\nursu\\AndroidStudioProjects\\VetQyzmet\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
-base.3=C\:\\Users\\nursu\\AndroidStudioProjects\\VetQyzmet\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
-base.4=C\:\\Users\\nursu\\AndroidStudioProjects\\VetQyzmet\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
-base.5=C\:\\Users\\nursu\\AndroidStudioProjects\\VetQyzmet\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
-base.6=C\:\\Users\\nursu\\AndroidStudioProjects\\VetQyzmet\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.7=C\:\\Users\\nursu\\AndroidStudioProjects\\VetQyzmet\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
+base.2=C\:\\Users\\nursu\\AndroidStudioProjects\\VetQyzmet\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
+base.3=C\:\\Users\\nursu\\AndroidStudioProjects\\VetQyzmet\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
+base.4=C\:\\Users\\nursu\\AndroidStudioProjects\\VetQyzmet\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.5=C\:\\Users\\nursu\\AndroidStudioProjects\\VetQyzmet\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.6=C\:\\Users\\nursu\\AndroidStudioProjects\\VetQyzmet\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.7=C\:\\Users\\nursu\\AndroidStudioProjects\\VetQyzmet\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
-path.2=14/classes.dex
-path.3=2/classes.dex
-path.4=3/classes.dex
-path.5=6/classes.dex
-path.6=classes2.dex
-path.7=10/classes.dex
+path.2=10/classes.dex
+path.3=14/classes.dex
+path.4=2/classes.dex
+path.5=3/classes.dex
+path.6=6/classes.dex
+path.7=classes2.dex
 renamed.0=classes.dex
 renamed.1=classes2.dex
 renamed.2=classes3.dex

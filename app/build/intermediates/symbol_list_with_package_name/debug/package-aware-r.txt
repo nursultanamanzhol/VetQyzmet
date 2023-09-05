@@ -1507,6 +1507,8 @@ color gray01
 color gray02
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color itemIconTint
+color itemTextColor
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -3041,6 +3043,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button_click_effect
 drawable compat_splash_screen
 drawable compat_splash_screen_no_icon_background
 drawable design_fab_background
@@ -3840,6 +3843,7 @@ layout activity_animal_reg
 layout activity_main
 layout activity_page_vet_qyzmet
 layout autoitem
+layout custom_actionbar_layout
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -4193,6 +4197,7 @@ style Base_TextAppearance_MaterialComponents_Subtitle2
 style Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item
 style Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle
 style Base_TextAppearance_Widget_AppCompat_Toolbar_Title
+style Base_Theme_Animal
 style Base_Theme_AppCompat
 style Base_Theme_AppCompat_CompactMenu
 style Base_Theme_AppCompat_Dialog
@@ -4478,6 +4483,7 @@ style PreferenceSummaryTextStyle
 style PreferenceThemeOverlay
 style PreferenceThemeOverlay_v14
 style PreferenceThemeOverlay_v14_Material
+style RobotoBoldViewStyle
 style RobotoTextViewStyle
 style RtlOverlay_DialogWindowTitle_AppCompat
 style RtlOverlay_Widget_AppCompat_ActionBar_TitleItem

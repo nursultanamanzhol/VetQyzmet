@@ -40,6 +40,10 @@
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-54:\\drawable\\profile_ic.xml"
     },
     {
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-52:\\layout_custom_actionbar_layout.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-54:\\layout\\custom_actionbar_layout.xml"
+    },
+    {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-52:\\mipmap-xxhdpi_vet.webp.flat",
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-54:\\mipmap-xxhdpi\\vet.webp"
     },
@@ -98,6 +102,10 @@
     {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-52:\\mipmap-mdpi_vet_round.webp.flat",
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-54:\\mipmap-mdpi\\vet_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-52:\\drawable_button_click_effect.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-54:\\drawable\\button_click_effect.xml"
     },
     {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-52:\\drawable_help.png.flat",

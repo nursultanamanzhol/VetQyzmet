@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-51:\\layout\\custom_actionbar_layout.xml",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-54:\\layout\\custom_actionbar_layout.xml"
+    },
+    {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-51:\\layout\\activity_animal_reg.xml",
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-54:\\layout\\activity_animal_reg.xml"
     },

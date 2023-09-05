@@ -3,6 +3,8 @@ local
 color black
 color gray01
 color gray02
+color itemIconTint
+color itemTextColor
 color orange
 color purple_500
 color purple_700
@@ -10,6 +12,7 @@ color teal_200
 color teal_700
 color white
 drawable arrow_ic
+drawable button_click_effect
 drawable error_ic
 drawable forms
 drawable help
@@ -45,6 +48,7 @@ font roboto_thin
 font roboto_thin_italic
 id LogOut
 id TopConst
+id action_bar_title
 id appName
 id arrow_icon
 id coordinatorLayout
@@ -85,6 +89,7 @@ layout activity_animal_reg
 layout activity_main
 layout activity_page_vet_qyzmet
 layout autoitem
+layout custom_actionbar_layout
 layout dialog_error
 layout header_page
 menu drw_menu
@@ -100,7 +105,9 @@ string logout
 string open
 string prof
 string settings
+style Base.Theme.Animal
 style Base.Theme.VetQyzmet
+style RobotoBoldViewStyle
 style RobotoTextViewStyle
 style Theme.App.Starting
 style Theme.VetQyzmet
