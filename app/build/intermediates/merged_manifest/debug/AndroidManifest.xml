@@ -30,6 +30,18 @@
         android:testOnly="true"
         android:theme="@style/Theme.App.Starting" >
         <activity
+            android:name="kz.cifron.vetqyzmet_doctor.CertificatesActivity"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Animal" />
+        <activity
+            android:name="kz.cifron.vetqyzmet_doctor.MigrationActivity"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Animal" />
+        <activity
+            android:name="kz.cifron.vetqyzmet_doctor.FormActivity"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Animal" />
+        <activity
             android:name="kz.cifron.vetqyzmet_doctor.AnimalRegActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />

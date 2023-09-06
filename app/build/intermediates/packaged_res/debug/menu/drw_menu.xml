@@ -20,7 +20,7 @@
 
     <item
         android:id="@+id/logoutbtn"
-        android:icon="@drawable/logout_ic"
+        android:icon="@drawable/logout"
         android:title="@string/logout"/>
 
 </menu>

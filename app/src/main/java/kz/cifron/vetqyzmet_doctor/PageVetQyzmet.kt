@@ -24,17 +24,14 @@ class PageVetQyzmet : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        // Устанавливаем пользовательский макет для ActionBar
+        val actionBar = supportActionBar
+        actionBar?.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM)
+        actionBar?.setCustomView(R.layout.custom_actionbar_layout)
 
-            // Устанавливаем пользовательский макет для ActionBar
-            val actionBar = supportActionBar
-            actionBar?.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM)
-            actionBar?.setCustomView(R.layout.custom_actionbar_layout)
-
-            // Найдем TextView в пользовательском макете и установим текст
-            val titleTextView = actionBar?.customView?.findViewById<TextView>(R.id.action_bar_title)
-            titleTextView?.text = "VetQyzmet" // Замените на ваш заголовок
-
-
+        // Найдем TextView в пользовательском макете и установим текст
+        val titleTextView = actionBar?.customView?.findViewById<TextView>(R.id.action_bar_title)
+        titleTextView?.text = "VetQyzmet" // Замените на ваш заголовок
 
 
         binding.registr.setOnClickListener {
@@ -43,6 +40,33 @@ class PageVetQyzmet : AppCompatActivity() {
                 Intent(
                     this,
                     AnimalRegActivity::class.java
+                )
+            )
+        }
+        binding.migration.setOnClickListener {
+
+            startActivity(
+                Intent(
+                    this,
+                    MigrationActivity::class.java
+                )
+            )
+        }
+        binding.form.setOnClickListener {
+
+            startActivity(
+                Intent(
+                    this,
+                    FormActivity::class.java
+                )
+            )
+        }
+        binding.certificates.setOnClickListener {
+
+            startActivity(
+                Intent(
+                    this,
+                    CertificatesActivity::class.java
                 )
             )
         }

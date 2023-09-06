@@ -12,4 +12,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gray01">#c5c5c5</color>
     <color name="gray02">#777777</color>
+    <color name="loginPage">#5D6978</color>
+
 </resources>

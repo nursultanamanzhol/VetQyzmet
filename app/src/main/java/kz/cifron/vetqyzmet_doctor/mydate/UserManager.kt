@@ -22,13 +22,13 @@ class UserManager(private val context: Context) {
             .apply()
     }
 
-//    fun getSavedUserInfo(): Pair<String, String>? {
-//        val email = sharedPreferences.getString("email", null)
-//        val password = sharedPreferences.getString("password", null)
-//        return if (!email.isNullOrBlank() && !password.isNullOrBlank()) {
-//            Pair(email, password)
-//        } else {
-//            null
-//        }
-//    }
+    fun getSavedUserInfo(): Pair<String, String>? {
+        val email = sharedPreferences.getString("email", null)
+        val password = sharedPreferences.getString("password", null)
+        return if (!email.isNullOrBlank() && !password.isNullOrBlank()) {
+            Pair(email, password)
+        } else {
+            null
+        }
+    }
 }

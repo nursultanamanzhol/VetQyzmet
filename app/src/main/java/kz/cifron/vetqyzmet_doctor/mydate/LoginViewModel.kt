@@ -39,7 +39,7 @@ class LoginViewModel(private val repository: LoginRepository, private val userMa
         }
     }
 
-//    fun getSavedUserInfo(): Pair<String, String>? {
-//        return userManager.getSavedUserInfo()
-//    }
+    fun getSavedUserInfo(): Pair<String, String>? {
+        return userManager.getSavedUserInfo()
+    }
 }

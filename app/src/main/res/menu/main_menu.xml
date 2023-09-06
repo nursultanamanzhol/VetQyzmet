@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/LogOut"
-        android:icon="@drawable/logout_ic"
+        android:icon="@drawable/logout"
         android:title="@string/logout"
         android:orderInCategory="1"
         app:showAsAction="ifRoom"/>

@@ -23,16 +23,13 @@ public final class ActivityPageVetQyzmetBinding implements ViewBinding {
   private final DrawerLayout rootView;
 
   @NonNull
+  public final ConstraintLayout certificates;
+
+  @NonNull
   public final DrawerLayout drawerLayout;
 
   @NonNull
   public final ConstraintLayout form;
-
-  @NonNull
-  public final ConstraintLayout help;
-
-  @NonNull
-  public final ConstraintLayout helps;
 
   @NonNull
   public final ImageView imageView1;
@@ -50,6 +47,9 @@ public final class ActivityPageVetQyzmetBinding implements ViewBinding {
   public final LinearLayout linear1;
 
   @NonNull
+  public final ConstraintLayout migration;
+
+  @NonNull
   public final NavigationView myNavigationView;
 
   @NonNull
@@ -59,22 +59,21 @@ public final class ActivityPageVetQyzmetBinding implements ViewBinding {
   public final ConstraintLayout registr;
 
   private ActivityPageVetQyzmetBinding(@NonNull DrawerLayout rootView,
-      @NonNull DrawerLayout drawerLayout, @NonNull ConstraintLayout form,
-      @NonNull ConstraintLayout help, @NonNull ConstraintLayout helps,
-      @NonNull ImageView imageView1, @NonNull ImageView imageView2, @NonNull ImageView imageView3,
-      @NonNull ImageView imageView4, @NonNull LinearLayout linear1,
-      @NonNull NavigationView myNavigationView, @NonNull ImageView navigate1,
-      @NonNull ConstraintLayout registr) {
+      @NonNull ConstraintLayout certificates, @NonNull DrawerLayout drawerLayout,
+      @NonNull ConstraintLayout form, @NonNull ImageView imageView1, @NonNull ImageView imageView2,
+      @NonNull ImageView imageView3, @NonNull ImageView imageView4, @NonNull LinearLayout linear1,
+      @NonNull ConstraintLayout migration, @NonNull NavigationView myNavigationView,
+      @NonNull ImageView navigate1, @NonNull ConstraintLayout registr) {
     this.rootView = rootView;
+    this.certificates = certificates;
     this.drawerLayout = drawerLayout;
     this.form = form;
-    this.help = help;
-    this.helps = helps;
     this.imageView1 = imageView1;
     this.imageView2 = imageView2;
     this.imageView3 = imageView3;
     this.imageView4 = imageView4;
     this.linear1 = linear1;
+    this.migration = migration;
     this.myNavigationView = myNavigationView;
     this.navigate1 = navigate1;
     this.registr = registr;
@@ -107,23 +106,17 @@ public final class ActivityPageVetQyzmetBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.certificates;
+      ConstraintLayout certificates = ViewBindings.findChildViewById(rootView, id);
+      if (certificates == null) {
+        break missingId;
+      }
+
       DrawerLayout drawerLayout = (DrawerLayout) rootView;
 
       id = R.id.form;
       ConstraintLayout form = ViewBindings.findChildViewById(rootView, id);
       if (form == null) {
-        break missingId;
-      }
-
-      id = R.id.help;
-      ConstraintLayout help = ViewBindings.findChildViewById(rootView, id);
-      if (help == null) {
-        break missingId;
-      }
-
-      id = R.id.helps;
-      ConstraintLayout helps = ViewBindings.findChildViewById(rootView, id);
-      if (helps == null) {
         break missingId;
       }
 
@@ -157,6 +150,12 @@ public final class ActivityPageVetQyzmetBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.migration;
+      ConstraintLayout migration = ViewBindings.findChildViewById(rootView, id);
+      if (migration == null) {
+        break missingId;
+      }
+
       id = R.id.myNavigationView;
       NavigationView myNavigationView = ViewBindings.findChildViewById(rootView, id);
       if (myNavigationView == null) {
@@ -175,9 +174,9 @@ public final class ActivityPageVetQyzmetBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPageVetQyzmetBinding((DrawerLayout) rootView, drawerLayout, form, help,
-          helps, imageView1, imageView2, imageView3, imageView4, linear1, myNavigationView,
-          navigate1, registr);
+      return new ActivityPageVetQyzmetBinding((DrawerLayout) rootView, certificates, drawerLayout,
+          form, imageView1, imageView2, imageView3, imageView4, linear1, migration,
+          myNavigationView, navigate1, registr);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

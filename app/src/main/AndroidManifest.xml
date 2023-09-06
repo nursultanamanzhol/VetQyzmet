@@ -15,10 +15,21 @@
         android:theme="@style/Theme.App.Starting"
         tools:targetApi="31">
         <activity
+            android:name=".CertificatesActivity"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Animal"/>
+        <activity
+            android:name=".MigrationActivity"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Animal" />
+        <activity
+            android:name=".FormActivity"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Animal" />
+        <activity
             android:name=".AnimalRegActivity"
             android:exported="false"
-            android:theme="@style/Base.Theme.Animal"
-            />
+            android:theme="@style/Base.Theme.Animal" />
         <activity
             android:name=".PageVetQyzmet"
             android:exported="false"

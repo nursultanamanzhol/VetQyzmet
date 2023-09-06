@@ -38,11 +38,11 @@ class MainActivity : AppCompatActivity() {
         val repository = LoginRepository(apiService)
         viewModel = ViewModelProvider(this, LoginViewModelFactory(repository, this))[LoginViewModel::class.java]
 
-//        val savedUserInfo = viewModel.getSavedUserInfo()
-//        savedUserInfo?.let { (savedEmail, savedPassword) ->
-//            binding.emailEt1.setText(savedEmail)
-//            binding.passwordEt1.setText(savedPassword)
-//        }
+        val savedUserInfo = viewModel.getSavedUserInfo()
+        savedUserInfo?.let { (savedEmail, savedPassword) ->
+            binding.emailEt1.setText(savedEmail)
+            binding.passwordEt1.setText(savedPassword)
+        }
 
         binding.loginBtn.setOnClickListener {
             val email = binding.emailEt1.text.toString()
