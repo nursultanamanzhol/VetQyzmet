@@ -16,12 +16,12 @@ import kz.cifron.vetqyzmet_doctor.addanimals.ServiceBuilder
 import kz.cifron.vetqyzmet_doctor.addanimals.TaskState
 import kz.cifron.vetqyzmet_doctor.addanimals.Tasks
 import kz.cifron.vetqyzmet_doctor.databinding.ActivityAnimalRegBinding
-import kz.cifron.vetqyzmet_doctor.databinding.ActivityPageVetQyzmetBinding
 
 class AnimalRegActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAnimalRegBinding
     private lateinit var registerViewModel: RegisterViewModel
     private lateinit var registerAdapter: RegisterAdapter
+
 
     private var originalTaskList: List<Tasks> = emptyList()
 
@@ -30,6 +30,8 @@ class AnimalRegActivity : AppCompatActivity() {
         binding = ActivityAnimalRegBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
         binding.arrowIcon.setOnClickListener {
             onBackPressed()
         }
@@ -37,8 +39,7 @@ class AnimalRegActivity : AppCompatActivity() {
         val taskApiService = ServiceBuilder.taskInstanceApi
         val registerRepository = RegisterRepository(taskApiService)
         registerViewModel = ViewModelProvider(
-            this,
-            RegisterViewModelFactory(registerRepository)
+            this, RegisterViewModelFactory(registerRepository)
         )[RegisterViewModel::class.java]
 
         setUpRecyclerView()
@@ -47,10 +48,14 @@ class AnimalRegActivity : AppCompatActivity() {
 
 
         registerAdapter.setOnItemClickListener { task ->
-            val bundle = Bundle()
-            bundle.putParcelable("task", task)
-            Log.d("AnimalRegActivity", "Task addr: ${task.ADDR}")
+            val intent = Intent(this, OwnerPageActivity::class.java)
+            intent.putExtra("location", task.ADDR)
+            intent.putExtra("client", task.NAME_REG5)
+            intent.putExtra("cvNumber", task.NAME_SCH)
+            intent.putExtra("proverkaDate", task.POVERKA_DATE)
+            startActivity(intent)
         }
+
     }
 
     private fun setUpRecyclerView() {
@@ -80,5 +85,6 @@ class AnimalRegActivity : AppCompatActivity() {
             }
         }
     }
+
 
 }

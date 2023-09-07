@@ -6,6 +6,75 @@
                 {
                     "source": "C:\\Users\\nursu\\.gradle\\caches\\transforms-3\\60c55cbef2e6cdef5b8f3b785c00f588\\transformed\\appcompat-1.6.1\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "18,19,20,21,22,23,24,64",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "854,924,1008,1092,1188,1290,1392,4916",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "919,1003,1087,1183,1285,1387,1481,5000"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\nursu\\.gradle\\caches\\transforms-3\\b2e0d8244a0cce5e02c71dc84a6bc43f\\transformed\\core-splashscreen-1.0.0-beta02\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endColumns": "85",
+                        "endOffsets": "181"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\nursu\\AndroidStudioProjects\\VetQyzmet\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "from": {
+                        "startLines": "2,18",
+                        "startColumns": "4,4",
+                        "startOffsets": "102,986",
+                        "endLines": "16,31",
+                        "endColumns": "12,12",
+                        "endOffsets": "978,1788"
+                    },
+                    "to": {
+                        "startLines": "3,50",
+                        "startColumns": "4,4",
+                        "startOffsets": "186,4247",
+                        "endLines": "17,63",
+                        "endColumns": "12,12",
+                        "endOffsets": "849,4911"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\nursu\\.gradle\\caches\\transforms-3\\b84fd8e0913fbee5ea341511771bb46a\\transformed\\material-1.9.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,65,66,67,68,69,70,71,72",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1486,1561,1672,1761,1862,1969,2076,2175,2282,2385,2473,2597,2699,2801,2917,3019,3133,3261,3377,3499,3635,3755,3889,4009,4121,5005,5122,5246,5376,5498,5636,5770,5886",
+                        "endColumns": "74,110,88,100,106,106,98,106,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
+                        "endOffsets": "1556,1667,1756,1857,1964,2071,2170,2277,2380,2468,2592,2694,2796,2912,3014,3128,3256,3372,3494,3630,3750,3884,4004,4116,4242,5117,5241,5371,5493,5631,5765,5881,6001"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-50:\\values-night-v8\\values-night-v8.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\nursu\\.gradle\\caches\\transforms-3\\60c55cbef2e6cdef5b8f3b785c00f588\\transformed\\appcompat-1.6.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
                         "startOffsets": "55,125,209,293,389,491,593,687",

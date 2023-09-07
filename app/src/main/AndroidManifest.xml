@@ -15,8 +15,12 @@
         android:theme="@style/Theme.App.Starting"
         tools:targetApi="31">
         <activity
-            android:name=".OwnerPageActivity"
+            android:name=".AddAnimalsActivity"
             android:exported="false" />
+        <activity
+            android:name=".OwnerPageActivity"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Animal" />
         <activity
             android:name=".CertificatesActivity"
             android:exported="false"

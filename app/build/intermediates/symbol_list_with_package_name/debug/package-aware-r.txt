@@ -3046,7 +3046,6 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
-drawable button_background
 drawable button_click_effect
 drawable compat_splash_screen
 drawable compat_splash_screen_no_icon_background
@@ -3251,12 +3250,14 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_animals
 id alertTitle
 id aligned
 id all
 id allStates
 id always
 id androidx_window_activity_scope
+id animals_view
 id animateToEnd
 id animateToStart
 id antiClockwise
@@ -3322,6 +3323,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id dataProverka
 id dateFormat
 id date_picker_actions
 id day
@@ -3435,6 +3437,7 @@ id leftToRight
 id legacy
 id line1
 id line3
+id lineOwner
 id lineReg
 id linear
 id linear1
@@ -3507,7 +3510,9 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id myNavigationView
+id name_animal
 id nav_controller_view_tag
+id nav_graph
 id nav_host_fragment_container
 id navigate1
 id navigate2
@@ -3529,13 +3534,16 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id num_animal
 id numsView
+id nums_animal
 id off
 id on
 id onInterceptTouchReturnSwipe
 id outline
 id outward
 id overshoot
+id ownerPageFragment
 id packed
 id parallax
 id parent
@@ -3673,6 +3681,7 @@ id tag_window_insets_animation_callback
 id text
 id text2
 id textEnd
+id textLocation
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -3680,9 +3689,13 @@ id textTop
 id textView
 id textView2
 id textViewTitle
+id text_client
+id text_cv_number
+id text_detail
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
+id text_write
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -3693,6 +3706,8 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id today_num
+id today_nums
 id toggle
 id top
 id topPanel
@@ -3852,6 +3867,7 @@ layout activity_certificates
 layout activity_form
 layout activity_main
 layout activity_migration
+layout activity_owner_page
 layout activity_page_vet_qyzmet
 layout autoitem
 layout custom_actionbar_layout
@@ -3932,6 +3948,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout owneritem
 layout preference
 layout preference_category
 layout preference_category_material
@@ -3960,6 +3977,7 @@ mipmap ic_launcher_round
 mipmap vet
 mipmap vet_foreground
 mipmap vet_round
+navigation nav_graph
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -4010,6 +4028,7 @@ string expand_button_title
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description

@@ -53,7 +53,7 @@
             android:padding="10dp"
             android:text="Регистрация животных"
             android:textColor="@color/black"
-            android:textFontWeight="600"
+            android:textFontWeight="500"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/arrow_icon"

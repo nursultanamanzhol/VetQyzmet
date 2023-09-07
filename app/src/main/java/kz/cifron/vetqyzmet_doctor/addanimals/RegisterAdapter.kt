@@ -35,7 +35,7 @@ class RegisterAdapter : RecyclerView.Adapter<RegisterAdapter.TaskViewHolder>() {
         val task = differ.currentList[position]
         holder.itemView.apply {
             holder.binding.textViewTitle.text = task.ADDR
-            holder.binding.numsView.text = task.RAZ_TIPSCH.toString()
+            holder.binding.numsView.text = task.TYPE_ORDER.toString()
             setOnClickListener {
                 onItemClickListener?.invoke(task)
             }
@@ -51,7 +51,5 @@ class RegisterAdapter : RecyclerView.Adapter<RegisterAdapter.TaskViewHolder>() {
         onItemClickListener = listener
     }
 
-    interface OnItemClickListener {
-        fun onItemClick(position: Int, task: Tasks)
-    }
+
 }

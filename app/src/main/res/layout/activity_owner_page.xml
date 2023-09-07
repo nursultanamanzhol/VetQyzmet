@@ -6,4 +6,278 @@
     android:layout_height="match_parent"
     tools:context=".OwnerPageActivity">
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/TopFont"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:letterSpacing="0.01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+
+        >
+
+        <ImageView
+            android:id="@+id/arrow_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/arrow_ic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/RobotoTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:letterSpacing="0.1"
+            android:padding="10dp"
+            android:text="Страница собственника"
+            android:textColor="@color/black"
+            android:textFontWeight="500"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/arrow_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <View
+            android:id="@+id/lineOwner"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/gray01"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ерубаева 7, 2"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TopFont" />
+
+    <TextView
+        android:id="@+id/text_client"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="***"
+        android:textColor="#FF7800"
+        android:textFontWeight="400"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textLocation" />
+
+    <TextView
+        android:id="@+id/text_cv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="***"
+        android:textColor="#FF7800"
+        android:textFontWeight="400"
+        android:textSize="16sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_client" />
+
+
+    <TextView
+        android:id="@+id/dataProverka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="******"
+        android:textColor="#363636"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_detail" />
+
+    <TextView
+        android:id="@+id/text_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:text="Задание запущено"
+        android:textColor="#5D6978"
+        android:textFontWeight="400"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_cv_number" />
+
+    <TextView
+        android:id="@+id/text_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="ЗАРЕГИСТРИРОВАНО"
+        android:textColor="#5D6978"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataProverka" />
+
+    <View
+        android:id="@+id/animals_view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/gray01"
+        app:layout_constraintBottom_toTopOf="@+id/recycler_view"
+        app:layout_constraintTop_toBottomOf="@+id/text_write"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_animals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animals_view"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/owneritem" />
+
+    <Button
+        android:id="@+id/add_animals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_button01"
+        android:clickable="true"
+        android:fontFamily="@font/roboto_medium"
+        android:letterSpacing="0.02"
+        android:text="Добавить животное"
+        android:textColor="@color/white"
+        android:textFontWeight="500"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-74dp" />
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/text_animal"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@color/white"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/text_write">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/name_animal"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="15dp"-->
+    <!--            android:layout_marginTop="8dp"-->
+    <!--            android:fontFamily="@font/roboto_regular"-->
+    <!--            android:text="Верблюдов"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textFontWeight="400"-->
+    <!--            android:textSize="16sp"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/nums_animal"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="15dp"-->
+    <!--            android:layout_marginTop="8dp"-->
+    <!--            android:fontFamily="@font/roboto_regular"-->
+    <!--            android:text="Всего"-->
+    <!--            android:textColor="#5D6978"-->
+    <!--            android:textFontWeight="400"-->
+    <!--            android:textSize="14sp"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/name_animal" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/num_animal"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="15dp"-->
+    <!--            android:layout_marginTop="8dp"-->
+    <!--            android:fontFamily="@font/roboto_regular"-->
+    <!--            android:text="**"-->
+    <!--            android:textColor="#5D6978"-->
+    <!--            android:textFontWeight="400"-->
+    <!--            android:textSize="14sp"-->
+    <!--            app:layout_constraintStart_toEndOf="@+id/nums_animal"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/name_animal" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/today_nums"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginEnd="45dp"-->
+    <!--            android:fontFamily="@font/roboto_regular"-->
+    <!--            android:text="сегодня"-->
+    <!--            android:textColor="#5D6978"-->
+    <!--            android:textFontWeight="400"-->
+    <!--            android:textSize="14sp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/today_num"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginEnd="25dp"-->
+    <!--            android:fontFamily="@font/roboto_regular"-->
+    <!--            android:text="**"-->
+    <!--            android:textColor="#5D6978"-->
+    <!--            android:textFontWeight="400"-->
+    <!--            android:textSize="14sp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
