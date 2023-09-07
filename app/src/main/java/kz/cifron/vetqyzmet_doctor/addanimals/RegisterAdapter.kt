@@ -35,7 +35,7 @@ class RegisterAdapter : RecyclerView.Adapter<RegisterAdapter.TaskViewHolder>() {
         val task = differ.currentList[position]
         holder.itemView.apply {
             holder.binding.textViewTitle.text = task.ADDR
-            holder.binding.numsView.text = task.LS.toString()
+            holder.binding.numsView.text = task.RAZ_TIPSCH.toString()
             setOnClickListener {
                 onItemClickListener?.invoke(task)
             }

@@ -3,6 +3,7 @@ local
 color black
 color gray01
 color gray02
+color hour
 color itemIconTint
 color itemTextColor
 color loginPage
@@ -34,6 +35,7 @@ drawable settings_ic
 drawable shape_button01
 drawable shape_button02
 drawable shape_edittext01
+drawable shape_nums
 drawable vet_background
 font font_style
 font roboto_black
@@ -70,6 +72,7 @@ id imageView1
 id imageView2
 id imageView3
 id imageView4
+id lineReg
 id linear1
 id loginBtn
 id logoutbtn

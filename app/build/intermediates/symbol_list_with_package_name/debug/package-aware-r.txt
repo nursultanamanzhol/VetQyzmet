@@ -1507,6 +1507,7 @@ color gray01
 color gray02
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color hour
 color itemIconTint
 color itemTextColor
 color loginPage
@@ -3158,6 +3159,7 @@ drawable settings_ic
 drawable shape_button01
 drawable shape_button02
 drawable shape_edittext01
+drawable shape_nums
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3433,6 +3435,7 @@ id leftToRight
 id legacy
 id line1
 id line3
+id lineReg
 id linear
 id linear1
 id listMode

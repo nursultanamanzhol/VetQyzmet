@@ -10,7 +10,8 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/white</item>
+
         <!-- Customize your theme here. -->
 <!--        <item name="android:fontFamily">@font/Roboto-Regular</item>-->
     </style>
@@ -24,7 +25,8 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
         <!-- Customize your theme here. -->
         <!--        <item name="android:fontFamily">@font/Roboto-Regular</item>-->
     </style>
@@ -36,13 +38,14 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
 <!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
 <!--        <item name="colorControlNormal">@color/black</item>-->
 <!--        &lt;!&ndash; Установите цвет текста элементов меню в боковой навигации &ndash;&gt;-->
