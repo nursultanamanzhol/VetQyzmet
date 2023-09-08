@@ -30,6 +30,10 @@
         android:testOnly="true"
         android:theme="@style/Theme.App.Starting" >
         <activity
+            android:name="kz.cifron.vetqyzmet_doctor.AddAnimalsActivity"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Animal" />
+        <activity
             android:name="kz.cifron.vetqyzmet_doctor.OwnerPageActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />

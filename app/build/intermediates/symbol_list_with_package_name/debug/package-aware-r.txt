@@ -3035,9 +3035,11 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable animals
+drawable arrow_down
 drawable arrow_ic
 drawable avd_hide_password
 drawable avd_show_password
+drawable baseline_circle
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3049,6 +3051,7 @@ drawable btn_radio_on_to_off_mtrl_animation
 drawable button_click_effect
 drawable compat_splash_screen
 drawable compat_splash_screen_no_icon_background
+drawable custom_icon
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3159,6 +3162,7 @@ drawable shape_button01
 drawable shape_button02
 drawable shape_edittext01
 drawable shape_nums
+drawable step
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3250,6 +3254,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addAnimals
 id add_animals
 id alertTitle
 id aligned
@@ -3282,6 +3287,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id buttomClose
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3293,6 +3299,7 @@ id centerInside
 id center_horizontal
 id center_vertical
 id certificates
+id chageText
 id chain
 id chain2
 id chains
@@ -3307,6 +3314,7 @@ id clockwise
 id closest
 id collapseActionView
 id compress
+id confirmButton
 id confirm_button
 id constraint
 id container
@@ -3322,6 +3330,8 @@ id cradle
 id currentState
 id custom
 id customPanel
+id customRadioButtonIcon
+id customRadioButtonText
 id cut
 id dataProverka
 id dateFormat
@@ -3540,6 +3550,8 @@ id nums_animal
 id off
 id on
 id onInterceptTouchReturnSwipe
+id option1
+id option2
 id outline
 id outward
 id overshoot
@@ -3569,6 +3581,7 @@ id progressBar
 id progress_circular
 id progress_horizontal
 id radio
+id radioGroup
 id ratio
 id rectangles
 id recycler_view
@@ -3678,6 +3691,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id test
 id text
 id text2
 id textEnd
@@ -3720,6 +3734,9 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id typeInj
+id typeInjConst
+id typeconst
 id unchecked
 id uniform
 id unlabeled
@@ -3862,6 +3879,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_animals
 layout activity_animal_reg
 layout activity_certificates
 layout activity_form
@@ -3870,8 +3888,10 @@ layout activity_migration
 layout activity_owner_page
 layout activity_page_vet_qyzmet
 layout autoitem
+layout bottom_sheet_dialog
 layout custom_actionbar_layout
 layout custom_dialog
+layout custom_radio_button
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar

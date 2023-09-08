@@ -20,6 +20,9 @@ class OwnerPageActivity : AppCompatActivity() {
         binding.arrowIcon.setOnClickListener {
             onBackPressed()
         }
+        binding.addAnimals.setOnClickListener {
+            startActivity(Intent(this, AddAnimalsActivity::class.java))
+        }
 
 
     }
