@@ -4,7 +4,6 @@ package kz.cifron.vetqyzmet_doctor.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -26,7 +25,7 @@ public final class BottomSheetDialogBinding implements ViewBinding {
   public final ConstraintLayout buttomClose;
 
   @NonNull
-  public final Button confirmButton;
+  public final TextView confirmButton;
 
   @NonNull
   public final RadioButton option1;
@@ -35,20 +34,33 @@ public final class BottomSheetDialogBinding implements ViewBinding {
   public final RadioButton option2;
 
   @NonNull
+  public final RadioButton option3;
+
+  @NonNull
+  public final RadioButton option4;
+
+  @NonNull
+  public final RadioButton option5;
+
+  @NonNull
   public final RadioGroup radioGroup;
 
   @NonNull
   public final TextView textTop;
 
   private BottomSheetDialogBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout buttomClose, @NonNull Button confirmButton,
-      @NonNull RadioButton option1, @NonNull RadioButton option2, @NonNull RadioGroup radioGroup,
+      @NonNull ConstraintLayout buttomClose, @NonNull TextView confirmButton,
+      @NonNull RadioButton option1, @NonNull RadioButton option2, @NonNull RadioButton option3,
+      @NonNull RadioButton option4, @NonNull RadioButton option5, @NonNull RadioGroup radioGroup,
       @NonNull TextView textTop) {
     this.rootView = rootView;
     this.buttomClose = buttomClose;
     this.confirmButton = confirmButton;
     this.option1 = option1;
     this.option2 = option2;
+    this.option3 = option3;
+    this.option4 = option4;
+    this.option5 = option5;
     this.radioGroup = radioGroup;
     this.textTop = textTop;
   }
@@ -87,7 +99,7 @@ public final class BottomSheetDialogBinding implements ViewBinding {
       }
 
       id = R.id.confirmButton;
-      Button confirmButton = ViewBindings.findChildViewById(rootView, id);
+      TextView confirmButton = ViewBindings.findChildViewById(rootView, id);
       if (confirmButton == null) {
         break missingId;
       }
@@ -104,6 +116,24 @@ public final class BottomSheetDialogBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.option3;
+      RadioButton option3 = ViewBindings.findChildViewById(rootView, id);
+      if (option3 == null) {
+        break missingId;
+      }
+
+      id = R.id.option4;
+      RadioButton option4 = ViewBindings.findChildViewById(rootView, id);
+      if (option4 == null) {
+        break missingId;
+      }
+
+      id = R.id.option5;
+      RadioButton option5 = ViewBindings.findChildViewById(rootView, id);
+      if (option5 == null) {
+        break missingId;
+      }
+
       id = R.id.radioGroup;
       RadioGroup radioGroup = ViewBindings.findChildViewById(rootView, id);
       if (radioGroup == null) {
@@ -117,7 +147,7 @@ public final class BottomSheetDialogBinding implements ViewBinding {
       }
 
       return new BottomSheetDialogBinding((ConstraintLayout) rootView, buttomClose, confirmButton,
-          option1, option2, radioGroup, textTop);
+          option1, option2, option3, option4, option5, radioGroup, textTop);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

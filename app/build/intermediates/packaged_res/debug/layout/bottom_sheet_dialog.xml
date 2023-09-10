@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+
     android:orientation="vertical">
 
     <TextView
@@ -14,14 +15,16 @@
         android:text="Выберите тип животного"
         android:textColor="@color/black"
         android:textFontWeight="500"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:checkedButton="@id/option1"
         android:gravity="start"
+        android:layout_marginStart="15dp"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/textTop">
 
@@ -31,17 +34,38 @@
 
         <RadioButton
             android:id="@+id/option1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:background="?android:attr/selectableItemBackground"
             android:layout_height="wrap_content"
-            android:text="Вариант 1"
-
-            />
+            android:text="Крупно рогатый скот" />
 
         <RadioButton
             android:id="@+id/option2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:background="?android:attr/selectableItemBackground"
             android:layout_height="wrap_content"
-            android:text="Вариант 2" />
+            android:text="Мелкорогатый скот" />
+
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Свинья" />
+
+        <RadioButton
+            android:id="@+id/option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Верблюд" />
+
+        <RadioButton
+            android:id="@+id/option5"
+            android:layout_width="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:text="Лошадь" />
 
         <!-- Добавьте другие радиокнопки по аналогии -->
 
@@ -51,15 +75,26 @@
         android:id="@+id/buttomClose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
         android:padding="15dp"
+        android:background="@drawable/shape_edittext01"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup">
 
-        <Button
+        <TextView
             android:id="@+id/confirmButton"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14sp"
             android:text="Закрыть"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -33,6 +35,12 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
   public final ImageView arrowIcon;
 
   @NonNull
+  public final ConstraintLayout breedConst;
+
+  @NonNull
+  public final TextView breedText;
+
+  @NonNull
   public final TextView chageText;
 
   @NonNull
@@ -42,10 +50,25 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
   public final TextInputEditText emailEt1;
 
   @NonNull
+  public final RadioButton female;
+
+  @NonNull
+  public final RadioGroup genderAnimal;
+
+  @NonNull
+  public final TextView genderText;
+
+  @NonNull
+  public final RadioButton male;
+
+  @NonNull
   public final ProgressBar progressBar;
 
   @NonNull
-  public final TextView test;
+  public final TextView saveBreed;
+
+  @NonNull
+  public final TextView saveType;
 
   @NonNull
   public final TextView textView;
@@ -61,19 +84,29 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
 
   private ActivityAddAnimalsBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout TopFont, @NonNull ConstraintLayout addAnimals,
-      @NonNull ImageView arrowIcon, @NonNull TextView chageText, @NonNull TextInputLayout emailEt,
-      @NonNull TextInputEditText emailEt1, @NonNull ProgressBar progressBar, @NonNull TextView test,
+      @NonNull ImageView arrowIcon, @NonNull ConstraintLayout breedConst,
+      @NonNull TextView breedText, @NonNull TextView chageText, @NonNull TextInputLayout emailEt,
+      @NonNull TextInputEditText emailEt1, @NonNull RadioButton female,
+      @NonNull RadioGroup genderAnimal, @NonNull TextView genderText, @NonNull RadioButton male,
+      @NonNull ProgressBar progressBar, @NonNull TextView saveBreed, @NonNull TextView saveType,
       @NonNull TextView textView, @NonNull TextView typeInj, @NonNull ConstraintLayout typeInjConst,
       @NonNull ConstraintLayout typeconst) {
     this.rootView = rootView;
     this.TopFont = TopFont;
     this.addAnimals = addAnimals;
     this.arrowIcon = arrowIcon;
+    this.breedConst = breedConst;
+    this.breedText = breedText;
     this.chageText = chageText;
     this.emailEt = emailEt;
     this.emailEt1 = emailEt1;
+    this.female = female;
+    this.genderAnimal = genderAnimal;
+    this.genderText = genderText;
+    this.male = male;
     this.progressBar = progressBar;
-    this.test = test;
+    this.saveBreed = saveBreed;
+    this.saveType = saveType;
     this.textView = textView;
     this.typeInj = typeInj;
     this.typeInjConst = typeInjConst;
@@ -125,6 +158,18 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.breedConst;
+      ConstraintLayout breedConst = ViewBindings.findChildViewById(rootView, id);
+      if (breedConst == null) {
+        break missingId;
+      }
+
+      id = R.id.breedText;
+      TextView breedText = ViewBindings.findChildViewById(rootView, id);
+      if (breedText == null) {
+        break missingId;
+      }
+
       id = R.id.chageText;
       TextView chageText = ViewBindings.findChildViewById(rootView, id);
       if (chageText == null) {
@@ -143,15 +188,45 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.female;
+      RadioButton female = ViewBindings.findChildViewById(rootView, id);
+      if (female == null) {
+        break missingId;
+      }
+
+      id = R.id.genderAnimal;
+      RadioGroup genderAnimal = ViewBindings.findChildViewById(rootView, id);
+      if (genderAnimal == null) {
+        break missingId;
+      }
+
+      id = R.id.genderText;
+      TextView genderText = ViewBindings.findChildViewById(rootView, id);
+      if (genderText == null) {
+        break missingId;
+      }
+
+      id = R.id.male;
+      RadioButton male = ViewBindings.findChildViewById(rootView, id);
+      if (male == null) {
+        break missingId;
+      }
+
       id = R.id.progressBar;
       ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
       if (progressBar == null) {
         break missingId;
       }
 
-      id = R.id.test;
-      TextView test = ViewBindings.findChildViewById(rootView, id);
-      if (test == null) {
+      id = R.id.saveBreed;
+      TextView saveBreed = ViewBindings.findChildViewById(rootView, id);
+      if (saveBreed == null) {
+        break missingId;
+      }
+
+      id = R.id.saveType;
+      TextView saveType = ViewBindings.findChildViewById(rootView, id);
+      if (saveType == null) {
         break missingId;
       }
 
@@ -180,8 +255,9 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
       }
 
       return new ActivityAddAnimalsBinding((ConstraintLayout) rootView, TopFont, addAnimals,
-          arrowIcon, chageText, emailEt, emailEt1, progressBar, test, textView, typeInj,
-          typeInjConst, typeconst);
+          arrowIcon, breedConst, breedText, chageText, emailEt, emailEt1, female, genderAnimal,
+          genderText, male, progressBar, saveBreed, saveType, textView, typeInj, typeInjConst,
+          typeconst);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
