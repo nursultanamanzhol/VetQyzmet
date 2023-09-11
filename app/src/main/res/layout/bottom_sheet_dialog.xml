@@ -23,8 +23,8 @@
         android:id="@+id/radioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="start"
         android:layout_marginStart="15dp"
+        android:gravity="start"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/textTop">
 
@@ -35,15 +35,17 @@
         <RadioButton
             android:id="@+id/option1"
             android:layout_width="match_parent"
-            android:background="?android:attr/selectableItemBackground"
             android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:buttonTint="@color/orange"
             android:text="Крупно рогатый скот" />
 
         <RadioButton
             android:id="@+id/option2"
             android:layout_width="match_parent"
-            android:background="?android:attr/selectableItemBackground"
             android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:buttonTint="@color/orange"
             android:text="Мелкорогатый скот" />
 
         <RadioButton
@@ -51,6 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?android:attr/selectableItemBackground"
+            android:buttonTint="@color/orange"
             android:text="Свинья" />
 
         <RadioButton
@@ -58,13 +61,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?android:attr/selectableItemBackground"
+            android:buttonTint="@color/orange"
             android:text="Верблюд" />
 
         <RadioButton
             android:id="@+id/option5"
             android:layout_width="match_parent"
-            android:background="?android:attr/selectableItemBackground"
             android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:buttonTint="@color/orange"
             android:text="Лошадь" />
 
         <!-- Добавьте другие радиокнопки по аналогии -->
@@ -78,19 +83,19 @@
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_edittext01"
         android:clickable="true"
         android:padding="15dp"
-        android:background="@drawable/shape_edittext01"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup">
 
         <TextView
             android:id="@+id/confirmButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
             android:fontFamily="@font/roboto_regular"
-            android:textSize="14sp"
             android:text="Закрыть"
+            android:textColor="@color/black"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

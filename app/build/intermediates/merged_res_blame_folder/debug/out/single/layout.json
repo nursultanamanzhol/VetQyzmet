@@ -4,6 +4,10 @@
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-54:\\layout\\custom_actionbar_layout.xml"
     },
     {
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-51:\\layout\\dialog_date_picker.xml",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-54:\\layout\\dialog_date_picker.xml"
+    },
+    {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-51:\\layout\\header_page.xml",
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-54:\\layout\\header_page.xml"
     },
@@ -20,8 +24,8 @@
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-54:\\layout\\activity_owner_page.xml"
     },
     {
-        "merged": "kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-51:/layout/dialog_radio_buttons.xml",
-        "source": "kz.cifron.vetqyzmet_doctor.app-main-54:/layout/dialog_radio_buttons.xml"
+        "merged": "kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-51:/layout/activity_add_animals.xml",
+        "source": "kz.cifron.vetqyzmet_doctor.app-main-54:/layout/activity_add_animals.xml"
     },
     {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-51:\\layout\\custom_radio_button.xml",
@@ -54,10 +58,6 @@
     {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-51:\\layout\\activity_add_animals.xml",
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-54:\\layout\\activity_add_animals.xml"
-    },
-    {
-        "merged": "kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-51:/layout/bottom_sheet_dialog.xml",
-        "source": "kz.cifron.vetqyzmet_doctor.app-main-54:/layout/bottom_sheet_dialog.xml"
     },
     {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-51:\\layout\\activity_main.xml",

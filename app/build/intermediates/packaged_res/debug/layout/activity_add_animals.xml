@@ -98,7 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="8dp"
-            android:background="@drawable/shape_edittext01"
+            android:background="@drawable/input_backadress"
             android:clickable="true"
             app:layout_constraintTop_toBottomOf="@+id/chageText">
 
@@ -152,7 +152,6 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:background="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -163,10 +162,10 @@
                     android:id="@+id/emailEt1"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:background="@drawable/shape_edittext01"
                     android:drawablePadding="10dp"
                     android:inputType="number"
                     android:maxLength="10"
+                    android:background="@drawable/input_emailadress"
                     android:padding="10dp"
                     android:textAlignment="viewStart"
                     android:textColor="@color/black" />
@@ -205,7 +204,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/orange"
+                android:padding="5dp"
                 android:text="Самка"
+                android:checked="true"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -215,6 +216,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
+                android:padding="5dp"
                 android:buttonTint="@color/orange"
                 android:text="Самец"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -242,11 +244,12 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="8dp"
-            android:background="@drawable/shape_edittext01"
+            android:background="@drawable/input_backadress"
             android:clickable="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/breedText">
+
 
             <TextView
                 android:id="@+id/saveBreed"
@@ -270,6 +273,69 @@
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/birthMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Дата рождения"
+            android:textColor="#5D6978"
+            android:textFontWeight="400"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/breedConst" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/birthDateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_backadress"
+            app:layout_constraintTop_toBottomOf="@+id/birthMonth"
+            tools:layout_editor_absoluteX="0dp">
+
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/birthDateLabel"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="13dp"-->
+<!--                android:text="Дата рождения:"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+            <TextView
+                android:id="@+id/birthDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#000"
+                android:layout_marginStart="13dp"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <Button
+                android:id="@+id/chooseDateButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/vector"
+                android:textSize="16sp"
+                android:layout_marginEnd="13dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

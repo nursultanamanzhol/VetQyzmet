@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
 
         val calendar = Calendar.getInstance().time
-        val dateFormat = SimpleDateFormat("dd MMMM", Locale.getDefault())
+        val dateFormat = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault())
         binding.dateFormat.text = dateFormat.format(calendar)
 
         val apiService = RetrofitClient.instanceApi
@@ -59,9 +59,16 @@ class MainActivity : AppCompatActivity() {
                 is LoginState.Success -> handleSuccessState(loginState.user, loginState.token)
                 is LoginState.Error -> handleErrorState()
                 LoginState.Loading -> showLoadingState()
+                else -> handleOtherState(loginState)
             }
         }
     }
+
+    private fun handleOtherState(loginState: LoginState) {
+        // Обработка других состояний, если необходимо
+        // Можете добавить логику или дополнительные действия здесь
+    }
+
 
     private fun showLoadingState() {
         binding.progressBar.visibility = View.VISIBLE

@@ -4,6 +4,7 @@ package kz.cifron.vetqyzmet_doctor.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
@@ -35,6 +36,15 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
   public final ImageView arrowIcon;
 
   @NonNull
+  public final ConstraintLayout birthDateLayout;
+
+  @NonNull
+  public final TextView birthDateText;
+
+  @NonNull
+  public final TextView birthMonth;
+
+  @NonNull
   public final ConstraintLayout breedConst;
 
   @NonNull
@@ -42,6 +52,9 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
 
   @NonNull
   public final TextView chageText;
+
+  @NonNull
+  public final Button chooseDateButton;
 
   @NonNull
   public final TextInputLayout emailEt;
@@ -84,20 +97,26 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
 
   private ActivityAddAnimalsBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout TopFont, @NonNull ConstraintLayout addAnimals,
-      @NonNull ImageView arrowIcon, @NonNull ConstraintLayout breedConst,
-      @NonNull TextView breedText, @NonNull TextView chageText, @NonNull TextInputLayout emailEt,
-      @NonNull TextInputEditText emailEt1, @NonNull RadioButton female,
-      @NonNull RadioGroup genderAnimal, @NonNull TextView genderText, @NonNull RadioButton male,
-      @NonNull ProgressBar progressBar, @NonNull TextView saveBreed, @NonNull TextView saveType,
-      @NonNull TextView textView, @NonNull TextView typeInj, @NonNull ConstraintLayout typeInjConst,
-      @NonNull ConstraintLayout typeconst) {
+      @NonNull ImageView arrowIcon, @NonNull ConstraintLayout birthDateLayout,
+      @NonNull TextView birthDateText, @NonNull TextView birthMonth,
+      @NonNull ConstraintLayout breedConst, @NonNull TextView breedText,
+      @NonNull TextView chageText, @NonNull Button chooseDateButton,
+      @NonNull TextInputLayout emailEt, @NonNull TextInputEditText emailEt1,
+      @NonNull RadioButton female, @NonNull RadioGroup genderAnimal, @NonNull TextView genderText,
+      @NonNull RadioButton male, @NonNull ProgressBar progressBar, @NonNull TextView saveBreed,
+      @NonNull TextView saveType, @NonNull TextView textView, @NonNull TextView typeInj,
+      @NonNull ConstraintLayout typeInjConst, @NonNull ConstraintLayout typeconst) {
     this.rootView = rootView;
     this.TopFont = TopFont;
     this.addAnimals = addAnimals;
     this.arrowIcon = arrowIcon;
+    this.birthDateLayout = birthDateLayout;
+    this.birthDateText = birthDateText;
+    this.birthMonth = birthMonth;
     this.breedConst = breedConst;
     this.breedText = breedText;
     this.chageText = chageText;
+    this.chooseDateButton = chooseDateButton;
     this.emailEt = emailEt;
     this.emailEt1 = emailEt1;
     this.female = female;
@@ -158,6 +177,24 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.birthDateLayout;
+      ConstraintLayout birthDateLayout = ViewBindings.findChildViewById(rootView, id);
+      if (birthDateLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.birthDateText;
+      TextView birthDateText = ViewBindings.findChildViewById(rootView, id);
+      if (birthDateText == null) {
+        break missingId;
+      }
+
+      id = R.id.birthMonth;
+      TextView birthMonth = ViewBindings.findChildViewById(rootView, id);
+      if (birthMonth == null) {
+        break missingId;
+      }
+
       id = R.id.breedConst;
       ConstraintLayout breedConst = ViewBindings.findChildViewById(rootView, id);
       if (breedConst == null) {
@@ -173,6 +210,12 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
       id = R.id.chageText;
       TextView chageText = ViewBindings.findChildViewById(rootView, id);
       if (chageText == null) {
+        break missingId;
+      }
+
+      id = R.id.chooseDateButton;
+      Button chooseDateButton = ViewBindings.findChildViewById(rootView, id);
+      if (chooseDateButton == null) {
         break missingId;
       }
 
@@ -255,9 +298,9 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
       }
 
       return new ActivityAddAnimalsBinding((ConstraintLayout) rootView, TopFont, addAnimals,
-          arrowIcon, breedConst, breedText, chageText, emailEt, emailEt1, female, genderAnimal,
-          genderText, male, progressBar, saveBreed, saveType, textView, typeInj, typeInjConst,
-          typeconst);
+          arrowIcon, birthDateLayout, birthDateText, birthMonth, breedConst, breedText, chageText,
+          chooseDateButton, emailEt, emailEt1, female, genderAnimal, genderText, male, progressBar,
+          saveBreed, saveType, textView, typeInj, typeInjConst, typeconst);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

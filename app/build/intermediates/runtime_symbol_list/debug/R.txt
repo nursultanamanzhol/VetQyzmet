@@ -3048,7 +3048,6 @@ int drawable btn_radio_off_to_on_mtrl_animation 0x7f070082
 int drawable btn_radio_on_mtrl 0x7f070083
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f070084
 int drawable button_click_effect 0x7f070085
-int drawable circle_border 0x7f0700ff
 int drawable compat_splash_screen 0x7f070086
 int drawable compat_splash_screen_no_icon_background 0x7f070087
 int drawable custom_icon 0x7f0700fb
@@ -3079,6 +3078,8 @@ int drawable ic_mtrl_chip_checked_circle 0x7f07009f
 int drawable ic_mtrl_chip_close_circle 0x7f0700a0
 int drawable ic_search_black_24 0x7f0700a1
 int drawable icon_background 0x7f0700a2
+int drawable input_backadress 0x7f070101
+int drawable input_emailadress 0x7f070102
 int drawable logo 0x7f0700a3
 int drawable logout 0x7f0700a4
 int drawable m3_appbar_background 0x7f0700a5
@@ -3157,7 +3158,6 @@ int drawable notification_tile_bg 0x7f0700ed
 int drawable notify_panel_notification_icon_bg 0x7f0700ee
 int drawable preference_list_divider_material 0x7f0700ef
 int drawable profile_ic 0x7f0700f0
-int drawable radio 0x7f070100
 int drawable settings_ic 0x7f0700f1
 int drawable shape 0x7f0700fe
 int drawable shape_button01 0x7f0700f2
@@ -3168,6 +3168,7 @@ int drawable step 0x7f0700fc
 int drawable test_level_drawable 0x7f0700f6
 int drawable tooltip_frame_dark 0x7f0700f7
 int drawable tooltip_frame_light 0x7f0700f8
+int drawable vector 0x7f070103
 int drawable vet_background 0x7f0700f9
 int font font_style 0x7f080000
 int font roboto_black 0x7f080001
@@ -3283,6 +3284,9 @@ int id baseline 0x7f090061
 int id beginOnFirstDraw 0x7f090062
 int id beginning 0x7f090063
 int id bestChoice 0x7f090064
+int id birthDateLayout 0x7f090257
+int id birthDateText 0x7f090258
+int id birthMonth 0x7f090259
 int id blocking 0x7f090065
 int id bottom 0x7f090066
 int id bounce 0x7f090067
@@ -3309,6 +3313,7 @@ int id chain2 0x7f090078
 int id chains 0x7f090079
 int id checkbox 0x7f09007a
 int id checked 0x7f09007b
+int id chooseDateButton 0x7f09025a
 int id chronometer 0x7f09007c
 int id circle_center 0x7f09007d
 int id clear_text 0x7f09007e
@@ -3339,6 +3344,7 @@ int id customRadioButtonText 0x7f090242
 int id cut 0x7f090095
 int id dataProverka 0x7f090096
 int id dateFormat 0x7f090097
+int id datePicker 0x7f09025b
 int id date_picker_actions 0x7f090098
 int id day 0x7f090099
 int id decelerate 0x7f09009a
@@ -3923,6 +3929,7 @@ int layout design_navigation_menu 0x7f0c0033
 int layout design_navigation_menu_item 0x7f0c0034
 int layout design_text_input_end_icon 0x7f0c0035
 int layout design_text_input_start_icon 0x7f0c0036
+int layout dialog_date_picker 0x7f0c008c
 int layout dialog_error 0x7f0c0037
 int layout dialog_radio_buttons 0x7f0c008b
 int layout expand_button 0x7f0c0038
