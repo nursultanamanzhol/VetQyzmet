@@ -1,6 +1,7 @@
 package kz.cifron.vetqyzmet_doctor
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.content.res.Resources
 import android.os.Bundle
 import android.os.Handler
@@ -33,6 +34,16 @@ class AddAnimalsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAddAnimalsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.rectangleGray.setOnClickListener {
+            startActivity(Intent(this, PageVetQyzmet::class.java))
+            finish()
+
+        }
+
+        binding.rectangleFurther.setOnClickListener {
+            startActivity(Intent(this,CameraActivity::class.java))
+        }
 
 
         binding.chooseDateButton.setOnClickListener {

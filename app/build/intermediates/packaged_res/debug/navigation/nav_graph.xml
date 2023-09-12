@@ -6,7 +6,7 @@
     app:startDestination="@id/ownerPageFragment">
     <fragment
         android:id="@+id/ownerPageFragment"
-        android:name="kz.cifron.vetqyzmet_doctor.custom.OwnerPageFragment"
+        android:name="kz.cifron.vetqyzmet_doctor.camera.OwnerPageFragment"
         android:label="fragment_owner_page"
         tools:layout="@layout/fragment_owner_page" />
 </navigation>

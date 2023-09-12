@@ -15,6 +15,16 @@
         android:theme="@style/Theme.App.Starting"
         tools:targetApi="31">
         <activity
+            android:name=".camera.ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".camera.ImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CameraActivity"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Animal" />
+        <activity
             android:name=".AddAnimalsActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />

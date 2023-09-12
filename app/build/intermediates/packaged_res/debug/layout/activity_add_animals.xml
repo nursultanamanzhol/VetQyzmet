@@ -162,10 +162,10 @@
                     android:id="@+id/emailEt1"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:background="@drawable/input_emailadress"
                     android:drawablePadding="10dp"
                     android:inputType="number"
                     android:maxLength="10"
-                    android:background="@drawable/input_emailadress"
                     android:padding="10dp"
                     android:textAlignment="viewStart"
                     android:textColor="@color/black" />
@@ -204,9 +204,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/orange"
+                android:checked="true"
                 android:padding="5dp"
                 android:text="Самка"
-                android:checked="true"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -216,8 +216,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
-                android:padding="5dp"
                 android:buttonTint="@color/orange"
+                android:padding="5dp"
                 android:text="Самец"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/female"
@@ -292,49 +292,148 @@
             android:id="@+id/birthDateLayout"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:orientation="horizontal"
             android:layout_marginTop="8dp"
             android:background="@drawable/input_backadress"
+            android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/birthMonth"
             tools:layout_editor_absoluteX="0dp">
 
 
-
-<!--            <TextView-->
-<!--                android:id="@+id/birthDateLabel"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginStart="13dp"-->
-<!--                android:text="Дата рождения:"-->
-<!--                android:textColor="#000"-->
-<!--                android:textSize="16sp"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent" />-->
+            <!--            <TextView-->
+            <!--                android:id="@+id/birthDateLabel"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="13dp"-->
+            <!--                android:text="Дата рождения:"-->
+            <!--                android:textColor="#000"-->
+            <!--                android:textSize="16sp"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent" />-->
 
             <TextView
                 android:id="@+id/birthDateText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
                 android:text=""
                 android:textColor="#000"
-                android:layout_marginStart="13dp"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
+            <ImageView
                 android:id="@+id/chooseDateButton"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:layout_marginEnd="13dp"
                 android:background="@drawable/vector"
                 android:textSize="16sp"
-                android:layout_marginEnd="13dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomAddAnimals"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+        <!-- Auto layout, variables, and unit scale are not yet supported -->
+        <View
+            android:id="@+id/rectangleFurther"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/rectangleGray"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/checkoutGO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/checkout"
+            android:fontFamily="@font/roboto_medium"
+            android:textAppearance="@style/checkout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/rectangleFurther"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--
+          Font family: Roboto
+          Line height: 18sp
+          (identical to box height)
+          translationY compensates for the line height adjustment of text
+          -->
+
+
+        <!-- Auto layout, variables, and unit scale are not yet supported -->
+        <View
+            android:id="@+id/rectangleGray"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rectangle_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/rectangleFurther"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!-- Auto layout, variables, and unit scale are not yet supported -->
+        <TextView
+            android:id="@+id/checkoutBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="2sp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/checkoutback"
+            android:textAppearance="@style/checkoutblack"
+            app:layout_constraintEnd_toEndOf="@id/rectangleGray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/rectangleGray"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--
+          Font family: Roboto
+          Line height: 18sp
+          (identical to box height)
+          translationY compensates for the line height adjustment of text
+          -->
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

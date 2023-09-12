@@ -675,6 +675,7 @@ attr imagePanX
 attr imagePanY
 attr imageRotate
 attr imageZoom
+attr implementationMode
 attr indeterminateAnimationType
 attr indeterminateProgressStyle
 attr indicatorColor
@@ -1068,6 +1069,7 @@ attr roundPercent
 attr route
 attr saturation
 attr scaleFromTextSize
+attr scaleType
 attr scrimAnimationDuration
 attr scrimBackground
 attr scrimVisibleHeightTrigger
@@ -3039,6 +3041,8 @@ drawable arrow_down
 drawable arrow_ic
 drawable avd_hide_password
 drawable avd_show_password
+drawable back_arrow
+drawable background_gallery
 drawable baseline_circle
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3057,8 +3061,10 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ellipse_gallery
 drawable error_ic
 drawable forms
+drawable gallery_icon
 drawable help
 drawable ic_arrow_back_black_24
 drawable ic_arrow_down_24dp
@@ -3079,6 +3085,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
 drawable icon_background
+drawable icon_gallery
 drawable input_backadress
 drawable input_emailadress
 drawable logo
@@ -3159,6 +3166,8 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable preference_list_divider_material
 drawable profile_ic
+drawable rectangle
+drawable rectangle_gray
 drawable settings_ic
 drawable shape
 drawable shape_button01
@@ -3273,6 +3282,7 @@ id antiClockwise
 id anticipate
 id appName
 id arc
+id arrow_back_btn
 id arrow_icon
 id asConfigured
 id async
@@ -3290,12 +3300,14 @@ id birthDateText
 id birthMonth
 id blocking
 id bottom
+id bottomAddAnimals
 id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
 id breedConst
 id breedText
+id btn_gallery
 id buttomClose
 id buttonPanel
 id cache_measures
@@ -3314,6 +3326,8 @@ id chain2
 id chains
 id checkbox
 id checked
+id checkoutBack
+id checkoutGO
 id chooseDateButton
 id chronometer
 id circle_center
@@ -3323,6 +3337,7 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
+id compatible
 id compress
 id confirmButton
 id confirm_button
@@ -3398,6 +3413,9 @@ id expanded_menu
 id fade
 id female
 id fill
+id fillCenter
+id fillEnd
+id fillStart
 id fill_horizontal
 id fill_vertical
 id filled
@@ -3444,6 +3462,8 @@ id imageView1
 id imageView2
 id imageView3
 id imageView4
+id image_capture_button
+id img_gallery
 id immediateStop
 id included
 id indeterminate
@@ -3590,6 +3610,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id performance
 id pin
 id position
 id postLayout
@@ -3604,6 +3625,8 @@ id radio
 id radioDialog
 id radioGroup
 id ratio
+id rectangleFurther
+id rectangleGray
 id rectangles
 id recycler_view
 id registr
@@ -3768,6 +3791,7 @@ id useLogo
 id user_city_text
 id user_name_text
 id vertical_only
+id viewFinder
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3904,12 +3928,15 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_animals
 layout activity_animal_reg
+layout activity_camera
 layout activity_certificates
 layout activity_form
+layout activity_image
 layout activity_main
 layout activity_migration
 layout activity_owner_page
 layout activity_page_vet_qyzmet
+layout activity_result
 layout autoitem
 layout bottom_sheet_dialog
 layout custom_actionbar_layout
@@ -4063,6 +4090,8 @@ string bottomsheet_drag_handle_content_description
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
+string checkout
+string checkoutback
 string clear_text_end_icon_content_description
 string close
 string copy
@@ -5349,6 +5378,8 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style checkout
+style checkoutblack
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
@@ -5487,6 +5518,7 @@ styleable PreferenceFragmentCompat android_layout android_divider android_divide
 styleable PreferenceGroup android_orderingFromXml initialExpandedChildrenCount orderingFromXml
 styleable PreferenceImageView android_maxWidth android_maxHeight maxHeight maxWidth
 styleable PreferenceTheme checkBoxPreferenceStyle dialogPreferenceStyle dropdownPreferenceStyle editTextPreferenceStyle preferenceCategoryStyle preferenceCategoryTitleTextAppearance preferenceCategoryTitleTextColor preferenceFragmentCompatStyle preferenceFragmentListStyle preferenceFragmentStyle preferenceInformationStyle preferenceScreenStyle preferenceStyle preferenceTheme seekBarPreferenceStyle switchPreferenceCompatStyle switchPreferenceStyle
+styleable PreviewView implementationMode scaleType
 styleable PropertySet android_visibility android_alpha layout_constraintTag motionProgress visibilityMode
 styleable RadialViewGroup materialCircleRadius
 styleable RangeSlider minSeparation values

@@ -14,6 +14,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">VetQyzmet</string>
+    <string name="checkout">Далее</string>
+    <string name="checkoutback">Отмена</string>
     <string name="close">Close</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="logout">Logout</string>
@@ -93,5 +95,15 @@
 
 
 
+    </style>
+    <style name="checkout">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="checkoutblack">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">#000000</item>
     </style>
 </resources>

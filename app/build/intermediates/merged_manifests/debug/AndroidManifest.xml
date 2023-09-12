@@ -10,6 +10,12 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <queries>
+        <intent>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
+        </intent>
+    </queries>
+
     <permission
         android:name="kz.cifron.vetqyzmet_doctor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
@@ -29,6 +35,16 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.App.Starting" >
+        <activity
+            android:name="kz.cifron.vetqyzmet_doctor.camera.ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name="kz.cifron.vetqyzmet_doctor.camera.ImageActivity"
+            android:exported="false" />
+        <activity
+            android:name="kz.cifron.vetqyzmet_doctor.CameraActivity"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Animal" />
         <activity
             android:name="kz.cifron.vetqyzmet_doctor.AddAnimalsActivity"
             android:exported="false"
@@ -67,6 +83,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <uses-library
+            android:name="androidx.camera.extensions.impl"
+            android:required="false" />
+
+        <service
+            android:name="androidx.camera.core.impl.MetadataHolderService"
+            android:enabled="false"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+        </service>
 
         <provider
             android:name="androidx.startup.InitializationProvider"

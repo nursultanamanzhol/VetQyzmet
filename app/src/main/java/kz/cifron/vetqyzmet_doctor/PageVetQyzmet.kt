@@ -84,6 +84,26 @@ class PageVetQyzmet : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when (item.itemId) {
+            R.id.LogOut -> {
+                // Обработайте нажатие кнопки "LogOut" здесь
+                // Например, выполните выход из аккаунта и перейдите на страницу входа (логин)
+
+                // Перейдите на страницу входа (логин)
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+
+                // Завершите текущую активность, чтобы пользователь не мог вернуться по кнопке "назад"
+                finish()
+
+                return true
+            }
+
+            else -> return super.onOptionsItemSelected(item)
+        }
+
+
         if (toggle.onOptionsItemSelected(item)) {
             return true
         }
@@ -91,8 +111,11 @@ class PageVetQyzmet : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+
         menuInflater.inflate(R.menu.main_menu, menu)
         return super.onCreateOptionsMenu(menu)
+
+
     }
 
 
