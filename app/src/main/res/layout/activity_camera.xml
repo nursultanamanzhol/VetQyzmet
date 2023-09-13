@@ -44,7 +44,7 @@
         android:layout_height="70dp"
         android:layout_marginBottom="50dp"
         android:elevation="2dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="#FA6A6A"
         android:background="@drawable/ellipse_gallery"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
