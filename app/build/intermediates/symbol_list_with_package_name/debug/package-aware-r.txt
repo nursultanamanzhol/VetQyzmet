@@ -3042,6 +3042,7 @@ drawable arrow_ic
 drawable avd_hide_password
 drawable avd_show_password
 drawable back_arrow
+drawable background_add_image
 drawable background_gallery
 drawable beautiful_r
 drawable btn_checkbox_checked_mtrl
@@ -3053,7 +3054,6 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable btncamera
-drawable button_click_effect
 drawable compat_splash_screen
 drawable compat_splash_screen_no_icon_background
 drawable delete_image
@@ -3065,6 +3065,7 @@ drawable design_snackbar_background
 drawable ellipse_gallery
 drawable error_ic
 drawable forms
+drawable frame_20
 drawable gallery_icon
 drawable help
 drawable ic_arrow_back_black_24
@@ -3370,6 +3371,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id deleteAndResetImage
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -3468,7 +3470,6 @@ id imageView2
 id imageView3
 id imageView4
 id image_capture_button
-id img_gallery
 id immediateStop
 id included
 id indeterminate

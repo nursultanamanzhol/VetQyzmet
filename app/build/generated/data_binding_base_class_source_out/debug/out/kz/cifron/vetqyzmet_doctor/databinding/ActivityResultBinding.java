@@ -45,6 +45,9 @@ public final class ActivityResultBinding implements ViewBinding {
   public final TextView color;
 
   @NonNull
+  public final ImageView deleteAndResetImage;
+
+  @NonNull
   public final TextView genderText;
 
   @NonNull
@@ -78,10 +81,11 @@ public final class ActivityResultBinding implements ViewBinding {
       @NonNull ConstraintLayout TopFont, @NonNull ConstraintLayout addAnimals,
       @NonNull ImageView arrowIcon, @NonNull ImageView beautifulR, @NonNull TextView birthMonth,
       @NonNull TextView breedText, @NonNull TextView chageText, @NonNull TextView color,
-      @NonNull TextView genderText, @NonNull ConstraintLayout imageResultSave,
-      @NonNull TextView saveBirthMonth, @NonNull TextView saveBreed, @NonNull TextView saveGender,
-      @NonNull TextView saveInj, @NonNull TextView saveOlor, @NonNull TextView saveType,
-      @NonNull TextView textView, @NonNull TextView typeInj) {
+      @NonNull ImageView deleteAndResetImage, @NonNull TextView genderText,
+      @NonNull ConstraintLayout imageResultSave, @NonNull TextView saveBirthMonth,
+      @NonNull TextView saveBreed, @NonNull TextView saveGender, @NonNull TextView saveInj,
+      @NonNull TextView saveOlor, @NonNull TextView saveType, @NonNull TextView textView,
+      @NonNull TextView typeInj) {
     this.rootView = rootView;
     this.TopFont = TopFont;
     this.addAnimals = addAnimals;
@@ -91,6 +95,7 @@ public final class ActivityResultBinding implements ViewBinding {
     this.breedText = breedText;
     this.chageText = chageText;
     this.color = color;
+    this.deleteAndResetImage = deleteAndResetImage;
     this.genderText = genderText;
     this.imageResultSave = imageResultSave;
     this.saveBirthMonth = saveBirthMonth;
@@ -178,6 +183,12 @@ public final class ActivityResultBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.deleteAndResetImage;
+      ImageView deleteAndResetImage = ViewBindings.findChildViewById(rootView, id);
+      if (deleteAndResetImage == null) {
+        break missingId;
+      }
+
       id = R.id.genderText;
       TextView genderText = ViewBindings.findChildViewById(rootView, id);
       if (genderText == null) {
@@ -239,8 +250,9 @@ public final class ActivityResultBinding implements ViewBinding {
       }
 
       return new ActivityResultBinding((ConstraintLayout) rootView, TopFont, addAnimals, arrowIcon,
-          beautifulR, birthMonth, breedText, chageText, color, genderText, imageResultSave,
-          saveBirthMonth, saveBreed, saveGender, saveInj, saveOlor, saveType, textView, typeInj);
+          beautifulR, birthMonth, breedText, chageText, color, deleteAndResetImage, genderText,
+          imageResultSave, saveBirthMonth, saveBreed, saveGender, saveInj, saveOlor, saveType,
+          textView, typeInj);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

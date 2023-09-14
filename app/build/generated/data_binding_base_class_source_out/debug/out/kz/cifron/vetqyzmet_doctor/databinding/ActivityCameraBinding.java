@@ -31,19 +31,15 @@ public final class ActivityCameraBinding implements ViewBinding {
   public final ImageView imageCaptureButton;
 
   @NonNull
-  public final ImageView imgGallery;
-
-  @NonNull
   public final PreviewView viewFinder;
 
   private ActivityCameraBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView arrowBackBtn,
       @NonNull ImageButton btnGallery, @NonNull ImageView imageCaptureButton,
-      @NonNull ImageView imgGallery, @NonNull PreviewView viewFinder) {
+      @NonNull PreviewView viewFinder) {
     this.rootView = rootView;
     this.arrowBackBtn = arrowBackBtn;
     this.btnGallery = btnGallery;
     this.imageCaptureButton = imageCaptureButton;
-    this.imgGallery = imgGallery;
     this.viewFinder = viewFinder;
   }
 
@@ -92,12 +88,6 @@ public final class ActivityCameraBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.img_gallery;
-      ImageView imgGallery = ViewBindings.findChildViewById(rootView, id);
-      if (imgGallery == null) {
-        break missingId;
-      }
-
       id = R.id.viewFinder;
       PreviewView viewFinder = ViewBindings.findChildViewById(rootView, id);
       if (viewFinder == null) {
@@ -105,7 +95,7 @@ public final class ActivityCameraBinding implements ViewBinding {
       }
 
       return new ActivityCameraBinding((ConstraintLayout) rootView, arrowBackBtn, btnGallery,
-          imageCaptureButton, imgGallery, viewFinder);
+          imageCaptureButton, viewFinder);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

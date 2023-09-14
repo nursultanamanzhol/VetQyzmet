@@ -39,7 +39,7 @@ class PageVetQyzmet : AppCompatActivity() {
             startActivity(
                 Intent(
                     this,
-                    AddAnimalsActivity::class.java
+                    AnimalRegActivity::class.java
                 )
             )
         }

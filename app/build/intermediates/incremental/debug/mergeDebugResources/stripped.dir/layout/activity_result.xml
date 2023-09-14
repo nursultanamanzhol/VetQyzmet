@@ -89,7 +89,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Корова"
+            android:text=""
             android:textColor="@color/black"
             android:textFontWeight="400"
             android:textSize="16sp"
@@ -288,19 +288,24 @@
         <!-- Auto layout, variables, and unit scale are not yet supported -->
 
         <ImageView
+            android:id="@+id/deleteAndResetImage"
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:layout_marginStart="70dp"
+            android:scaleType="fitCenter"
+            android:elevation="1dp"
             android:src="@drawable/delete_image"
-            android:elevation="2dp"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="71dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/beautiful_r"
             android:layout_width="80dp"
+            android:background="@drawable/background_add_image"
             android:layout_height="80dp"
             android:layout_marginTop="12dp"
-
+            android:src="@drawable/icon_result"
+            android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,15 +5,22 @@ import android.content.Intent
 import android.content.res.Resources
 import android.os.Bundle
 import android.os.Handler
+import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.Button
 import android.widget.RadioButton
+import android.widget.RadioGroup
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doAfterTextChanged
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
+import kz.cifron.vetqyzmet_doctor.camera.ResultActivity
 import kz.cifron.vetqyzmet_doctor.databinding.ActivityAddAnimalsBinding
 import kz.cifron.vetqyzmet_doctor.databinding.BottomSheetDialogBinding
 import kz.cifron.vetqyzmet_doctor.databinding.DialogRadioButtonsBinding
@@ -27,13 +34,30 @@ class AddAnimalsActivity : AppCompatActivity() {
 
     private lateinit var selectedDate: Calendar
 
-
+    private var saveTypeResult: String = ""
     val foramtDate = SimpleDateFormat("yyyy MMMM", Locale.getDefault())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAddAnimalsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.rectangleFurther.setOnClickListener {
+            // Получаем текст из saveType
+            val saveTypeText = saveTypeResult.toString()
+
+            // Создаем Intent
+            val resultIntent = Intent(this, ResultActivity::class.java)
+
+            // Передаем текст в Intent
+            resultIntent.putExtra("saveType", saveTypeText)
+
+            // Запускаем ResultActivity
+            startActivity(resultIntent)
+        }
+
+
+
 
         binding.rectangleGray.setOnClickListener {
             startActivity(Intent(this, PageVetQyzmet::class.java))
@@ -42,7 +66,7 @@ class AddAnimalsActivity : AppCompatActivity() {
         }
 
         binding.rectangleFurther.setOnClickListener {
-            startActivity(Intent(this,CameraActivity::class.java))
+            startActivity(Intent(this, CameraActivity::class.java))
         }
 
 
@@ -119,6 +143,7 @@ class AddAnimalsActivity : AppCompatActivity() {
                 val selectedOptionText = selectedRadioButton.text.toString()
                 viewModel.saveType = selectedOptionText
                 binding.saveType.text = selectedOptionText
+                saveTypeResult = selectedRadioButton.text.toString()
                 Handler().postDelayed({
                     bottomSheetDialog.dismiss()
                 }, 500)

@@ -88,7 +88,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_regular"
-            android:text="Выберите тип животного"
+            android:text="..."
             android:textAlignment="center"
             android:textColor="#5D6978"
             android:textSize="14sp"
@@ -109,7 +109,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="13dp"
-                android:text=""
+                android:text="........"
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -164,6 +164,7 @@
                     android:id="@+id/emailEt1"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:hint=""
                     android:background="@drawable/input_emailadress"
                     android:drawablePadding="10dp"
                     android:inputType="number"
@@ -294,7 +295,7 @@
             android:id="@+id/birthDateLayout"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             android:background="@drawable/input_backadress"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/birthMonth"
@@ -353,6 +354,7 @@
         <!-- Auto layout, variables, and unit scale are not yet supported -->
 
         <!-- Auto layout, variables, and unit scale are not yet supported -->
+
         <View
             android:id="@+id/rectangleFurther"
             android:layout_width="0dp"

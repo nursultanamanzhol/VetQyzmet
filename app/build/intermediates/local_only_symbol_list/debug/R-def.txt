@@ -17,14 +17,15 @@ drawable animals
 drawable arrow_down
 drawable arrow_ic
 drawable back_arrow
+drawable background_add_image
 drawable background_gallery
 drawable beautiful_r
 drawable btncamera
-drawable button_click_effect
 drawable delete_image
 drawable ellipse_gallery
 drawable error_ic
 drawable forms
+drawable frame_20
 drawable gallery_icon
 drawable help
 drawable ic_email_gray
@@ -98,6 +99,7 @@ id dataProverka
 id dateFormat
 id datePicker
 id day
+id deleteAndResetImage
 id drawerLayout
 id email
 id emailEt
@@ -115,7 +117,6 @@ id imageView2
 id imageView3
 id imageView4
 id image_capture_button
-id img_gallery
 id lineOwner
 id lineReg
 id linear1

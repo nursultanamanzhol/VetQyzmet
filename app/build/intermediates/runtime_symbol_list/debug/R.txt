@@ -3041,6 +3041,7 @@ int drawable arrow_ic 0x7f07007a
 int drawable avd_hide_password 0x7f07007b
 int drawable avd_show_password 0x7f07007c
 int drawable back_arrow 0x7f07007d
+int drawable background_add_image 0x7f07010a
 int drawable background_gallery 0x7f07007e
 int drawable beautiful_r 0x7f07007f
 int drawable btn_checkbox_checked_mtrl 0x7f070080
@@ -3052,7 +3053,6 @@ int drawable btn_radio_off_to_on_mtrl_animation 0x7f070085
 int drawable btn_radio_on_mtrl 0x7f070086
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f070087
 int drawable btncamera 0x7f070108
-int drawable button_click_effect 0x7f070088
 int drawable compat_splash_screen 0x7f070089
 int drawable compat_splash_screen_no_icon_background 0x7f07008a
 int drawable delete_image 0x7f07008b
@@ -3064,6 +3064,7 @@ int drawable design_snackbar_background 0x7f070090
 int drawable ellipse_gallery 0x7f070091
 int drawable error_ic 0x7f070092
 int drawable forms 0x7f070093
+int drawable frame_20 0x7f070109
 int drawable gallery_icon 0x7f070094
 int drawable help 0x7f070095
 int drawable ic_arrow_back_black_24 0x7f070096
@@ -3369,6 +3370,7 @@ int id decelerate 0x7f0900ac
 int id decelerateAndComplete 0x7f0900ad
 int id decor_content_parent 0x7f0900ae
 int id default_activity_button 0x7f0900af
+int id deleteAndResetImage 0x7f090270
 int id deltaRelative 0x7f0900b0
 int id dependency_ordering 0x7f0900b1
 int id design_bottom_sheet 0x7f0900b2
@@ -3467,7 +3469,6 @@ int id imageView2 0x7f09010d
 int id imageView3 0x7f09010e
 int id imageView4 0x7f09010f
 int id image_capture_button 0x7f090110
-int id img_gallery 0x7f090111
 int id immediateStop 0x7f090112
 int id included 0x7f090113
 int id indeterminate 0x7f090114
