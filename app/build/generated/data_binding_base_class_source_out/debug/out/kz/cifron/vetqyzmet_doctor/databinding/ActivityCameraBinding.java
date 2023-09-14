@@ -12,7 +12,6 @@ import androidx.camera.view.PreviewView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -29,7 +28,7 @@ public final class ActivityCameraBinding implements ViewBinding {
   public final ImageButton btnGallery;
 
   @NonNull
-  public final MaterialButton imageCaptureButton;
+  public final ImageView imageCaptureButton;
 
   @NonNull
   public final ImageView imgGallery;
@@ -38,7 +37,7 @@ public final class ActivityCameraBinding implements ViewBinding {
   public final PreviewView viewFinder;
 
   private ActivityCameraBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView arrowBackBtn,
-      @NonNull ImageButton btnGallery, @NonNull MaterialButton imageCaptureButton,
+      @NonNull ImageButton btnGallery, @NonNull ImageView imageCaptureButton,
       @NonNull ImageView imgGallery, @NonNull PreviewView viewFinder) {
     this.rootView = rootView;
     this.arrowBackBtn = arrowBackBtn;
@@ -88,7 +87,7 @@ public final class ActivityCameraBinding implements ViewBinding {
       }
 
       id = R.id.image_capture_button;
-      MaterialButton imageCaptureButton = ViewBindings.findChildViewById(rootView, id);
+      ImageView imageCaptureButton = ViewBindings.findChildViewById(rootView, id);
       if (imageCaptureButton == null) {
         break missingId;
       }

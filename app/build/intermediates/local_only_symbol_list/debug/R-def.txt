@@ -18,9 +18,10 @@ drawable arrow_down
 drawable arrow_ic
 drawable back_arrow
 drawable background_gallery
-drawable baseline_circle
+drawable beautiful_r
+drawable btncamera
 drawable button_click_effect
-drawable custom_icon
+drawable delete_image
 drawable ellipse_gallery
 drawable error_ic
 drawable forms
@@ -32,6 +33,7 @@ drawable ic_launcher_foreground
 drawable ic_lock_gray
 drawable ic_logout_white
 drawable icon_gallery
+drawable icon_result
 drawable input_backadress
 drawable input_emailadress
 drawable logo
@@ -48,7 +50,6 @@ drawable shape_button01
 drawable shape_button02
 drawable shape_edittext01
 drawable shape_nums
-drawable step
 drawable vector
 drawable vet_background
 font font_style
@@ -74,6 +75,7 @@ id animals_view
 id appName
 id arrow_back_btn
 id arrow_icon
+id beautiful_r
 id birthDateLayout
 id birthDateText
 id birthMonth
@@ -87,6 +89,7 @@ id chageText
 id checkoutBack
 id checkoutGO
 id chooseDateButton
+id color
 id confirmButton
 id coordinatorLayout
 id customRadioButtonIcon
@@ -106,6 +109,7 @@ id genderText
 id iconImageView
 id id_actsFragment
 id id_anonimFragment
+id imageResultSave
 id imageView1
 id imageView2
 id imageView3
@@ -146,8 +150,12 @@ id rectangleFurther
 id rectangleGray
 id recycler_view
 id registr
+id saveBirthMonth
 id saveBreed
+id saveGender
+id saveInj
 id saveType
+id saveСolor
 id textLocation
 id textRadio
 id textTop

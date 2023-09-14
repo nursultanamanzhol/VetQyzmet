@@ -4,20 +4,103 @@ package kz.cifron.vetqyzmet_doctor.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 import kz.cifron.vetqyzmet_doctor.R;
 
 public final class ActivityResultBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
-  private ActivityResultBinding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final ConstraintLayout TopFont;
+
+  @NonNull
+  public final ConstraintLayout addAnimals;
+
+  @NonNull
+  public final ImageView arrowIcon;
+
+  @NonNull
+  public final ImageView beautifulR;
+
+  @NonNull
+  public final TextView birthMonth;
+
+  @NonNull
+  public final TextView breedText;
+
+  @NonNull
+  public final TextView chageText;
+
+  @NonNull
+  public final TextView color;
+
+  @NonNull
+  public final TextView genderText;
+
+  @NonNull
+  public final ConstraintLayout imageResultSave;
+
+  @NonNull
+  public final TextView saveBirthMonth;
+
+  @NonNull
+  public final TextView saveBreed;
+
+  @NonNull
+  public final TextView saveGender;
+
+  @NonNull
+  public final TextView saveInj;
+
+  @NonNull
+  public final TextView saveOlor;
+
+  @NonNull
+  public final TextView saveType;
+
+  @NonNull
+  public final TextView textView;
+
+  @NonNull
+  public final TextView typeInj;
+
+  private ActivityResultBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ConstraintLayout TopFont, @NonNull ConstraintLayout addAnimals,
+      @NonNull ImageView arrowIcon, @NonNull ImageView beautifulR, @NonNull TextView birthMonth,
+      @NonNull TextView breedText, @NonNull TextView chageText, @NonNull TextView color,
+      @NonNull TextView genderText, @NonNull ConstraintLayout imageResultSave,
+      @NonNull TextView saveBirthMonth, @NonNull TextView saveBreed, @NonNull TextView saveGender,
+      @NonNull TextView saveInj, @NonNull TextView saveOlor, @NonNull TextView saveType,
+      @NonNull TextView textView, @NonNull TextView typeInj) {
     this.rootView = rootView;
+    this.TopFont = TopFont;
+    this.addAnimals = addAnimals;
+    this.arrowIcon = arrowIcon;
+    this.beautifulR = beautifulR;
+    this.birthMonth = birthMonth;
+    this.breedText = breedText;
+    this.chageText = chageText;
+    this.color = color;
+    this.genderText = genderText;
+    this.imageResultSave = imageResultSave;
+    this.saveBirthMonth = saveBirthMonth;
+    this.saveBreed = saveBreed;
+    this.saveGender = saveGender;
+    this.saveInj = saveInj;
+    this.saveOlor = saveOlor;
+    this.saveType = saveType;
+    this.textView = textView;
+    this.typeInj = typeInj;
   }
 
   @Override
@@ -43,10 +126,123 @@ public final class ActivityResultBinding implements ViewBinding {
 
   @NonNull
   public static ActivityResultBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.TopFont;
+      ConstraintLayout TopFont = ViewBindings.findChildViewById(rootView, id);
+      if (TopFont == null) {
+        break missingId;
+      }
 
-    return new ActivityResultBinding((ConstraintLayout) rootView);
+      id = R.id.addAnimals;
+      ConstraintLayout addAnimals = ViewBindings.findChildViewById(rootView, id);
+      if (addAnimals == null) {
+        break missingId;
+      }
+
+      id = R.id.arrow_icon;
+      ImageView arrowIcon = ViewBindings.findChildViewById(rootView, id);
+      if (arrowIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.beautiful_r;
+      ImageView beautifulR = ViewBindings.findChildViewById(rootView, id);
+      if (beautifulR == null) {
+        break missingId;
+      }
+
+      id = R.id.birthMonth;
+      TextView birthMonth = ViewBindings.findChildViewById(rootView, id);
+      if (birthMonth == null) {
+        break missingId;
+      }
+
+      id = R.id.breedText;
+      TextView breedText = ViewBindings.findChildViewById(rootView, id);
+      if (breedText == null) {
+        break missingId;
+      }
+
+      id = R.id.chageText;
+      TextView chageText = ViewBindings.findChildViewById(rootView, id);
+      if (chageText == null) {
+        break missingId;
+      }
+
+      id = R.id.color;
+      TextView color = ViewBindings.findChildViewById(rootView, id);
+      if (color == null) {
+        break missingId;
+      }
+
+      id = R.id.genderText;
+      TextView genderText = ViewBindings.findChildViewById(rootView, id);
+      if (genderText == null) {
+        break missingId;
+      }
+
+      id = R.id.imageResultSave;
+      ConstraintLayout imageResultSave = ViewBindings.findChildViewById(rootView, id);
+      if (imageResultSave == null) {
+        break missingId;
+      }
+
+      id = R.id.saveBirthMonth;
+      TextView saveBirthMonth = ViewBindings.findChildViewById(rootView, id);
+      if (saveBirthMonth == null) {
+        break missingId;
+      }
+
+      id = R.id.saveBreed;
+      TextView saveBreed = ViewBindings.findChildViewById(rootView, id);
+      if (saveBreed == null) {
+        break missingId;
+      }
+
+      id = R.id.saveGender;
+      TextView saveGender = ViewBindings.findChildViewById(rootView, id);
+      if (saveGender == null) {
+        break missingId;
+      }
+
+      id = R.id.saveInj;
+      TextView saveInj = ViewBindings.findChildViewById(rootView, id);
+      if (saveInj == null) {
+        break missingId;
+      }
+
+      id = R.id.saveСolor;
+      TextView saveOlor = ViewBindings.findChildViewById(rootView, id);
+      if (saveOlor == null) {
+        break missingId;
+      }
+
+      id = R.id.saveType;
+      TextView saveType = ViewBindings.findChildViewById(rootView, id);
+      if (saveType == null) {
+        break missingId;
+      }
+
+      id = R.id.textView;
+      TextView textView = ViewBindings.findChildViewById(rootView, id);
+      if (textView == null) {
+        break missingId;
+      }
+
+      id = R.id.typeInj;
+      TextView typeInj = ViewBindings.findChildViewById(rootView, id);
+      if (typeInj == null) {
+        break missingId;
+      }
+
+      return new ActivityResultBinding((ConstraintLayout) rootView, TopFont, addAnimals, arrowIcon,
+          beautifulR, birthMonth, breedText, chageText, color, genderText, imageResultSave,
+          saveBirthMonth, saveBreed, saveGender, saveInj, saveOlor, saveType, textView, typeInj);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

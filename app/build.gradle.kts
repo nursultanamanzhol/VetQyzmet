@@ -42,6 +42,12 @@ android {
 }
 
 dependencies {
+
+    //Glide
+    implementation ("com.github.bumptech.glide:glide:4.12.0")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
+
+
     //splashscreen
     implementation("androidx.core:core-splashscreen:1.0.0-beta02")
     //retrofit //gson

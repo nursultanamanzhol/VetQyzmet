@@ -300,8 +300,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="12dp"
-            android:background="@drawable/beautiful_r"
-            tools:src="@drawable/icon_result"
+
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

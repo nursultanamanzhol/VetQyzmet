@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:2:1-67:12
-INJECTED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:2:1-67:12
-INJECTED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:2:1-67:12
-INJECTED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:2:1-67:12
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:2:1-76:12
 MERGED from [androidx.databinding:viewbinding:8.1.1] C:\Users\nursu\.gradle\caches\transforms-3\f575a921f4883b7da1dfb68c88f72817\transformed\viewbinding-8.1.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\nursu\.gradle\caches\transforms-3\2272c1a7d4d8026284ff458ea45c8cda\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.camera:camera-extensions:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\d1a4fb8c2a0d774fb744c60a1f8b8c0f\transformed\camera-extensions-1.2.2\AndroidManifest.xml:17:1-34:12
@@ -13,6 +13,7 @@ MERGED from [androidx.camera:camera-lifecycle:1.2.2] C:\Users\nursu\.gradle\cach
 MERGED from [androidx.camera:camera-video:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\2e5622d09723d001d3badc9e095b2d99\transformed\camera-video-1.2.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.camera:camera-core:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\275b3c44e97e5e6acd9ddf93191251d1\transformed\camera-core-1.2.2\AndroidManifest.xml:17:1-36:12
 MERGED from [androidx.preference:preference-ktx:1.2.1] C:\Users\nursu\.gradle\caches\transforms-3\a1c34082b3b947626edeb796559d563b\transformed\preference-ktx-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\nursu\.gradle\caches\transforms-3\2a99b23bcf842613080fe37bddce7052\transformed\glide-4.12.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.navigation:navigation-common:2.7.1] C:\Users\nursu\.gradle\caches\transforms-3\62dfa3dc5745d27eb9ebee67d1fa790d\transformed\navigation-common-2.7.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.1] C:\Users\nursu\.gradle\caches\transforms-3\9eccaaa4c5d4be9e0c8a7851dc50e3a7\transformed\navigation-common-ktx-2.7.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-runtime:2.7.1] C:\Users\nursu\.gradle\caches\transforms-3\45e052660384cc2c26983e849e787246\transformed\navigation-runtime-2.7.1\AndroidManifest.xml:17:1-22:12
@@ -63,6 +64,7 @@ MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\nursu\.gradle\ca
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\nursu\.gradle\caches\transforms-3\161b6950168ea19f1779bdac70fa7185\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-splashscreen:1.0.0-beta02] C:\Users\nursu\.gradle\caches\transforms-3\b2e0d8244a0cce5e02c71dc84a6bc43f\transformed\core-splashscreen-1.0.0-beta02\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.security:security-crypto:1.1.0-alpha02] C:\Users\nursu\.gradle\caches\transforms-3\e8c9027c4554ec81ac6cadaef36cdb62\transformed\security-crypto-1.1.0-alpha02\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\nursu\.gradle\caches\transforms-3\74a552b2643fdaef896de4184f0d5f3f\transformed\gifdecoder-4.12.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\nursu\.gradle\caches\transforms-3\eacdf1c4799ec81e06c84cb95a87a530\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\nursu\.gradle\caches\transforms-3\a89cefa91747914e015c9a64ed022f38\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\nursu\.gradle\caches\transforms-3\6e6d849a3ba8a9e54c13fc958700caef\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
@@ -86,13 +88,27 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\nursu\.
 		INJECTED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:2:11-69
-uses-permission#android.permission.INTERNET
-ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:5:5-67
+uses-feature#android.hardware.camera
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:5:5-7:35
+	android:required
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:7:9-32
 	android:name
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:6:9-47
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:9:22-64
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:10:5-65
+	android:name
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:10:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:11:22-78
 application
-ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:7:5-65:19
-INJECTED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:7:5-65:19
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:14:5-74:19
+INJECTED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:14:5-74:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\nursu\.gradle\caches\transforms-3\2272c1a7d4d8026284ff458ea45c8cda\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\nursu\.gradle\caches\transforms-3\2272c1a7d4d8026284ff458ea45c8cda\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.camera:camera-extensions:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\d1a4fb8c2a0d774fb744c60a1f8b8c0f\transformed\camera-extensions-1.2.2\AndroidManifest.xml:28:5-32:19
@@ -101,6 +117,8 @@ MERGED from [androidx.camera:camera-camera2:1.2.2] C:\Users\nursu\.gradle\caches
 MERGED from [androidx.camera:camera-camera2:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\6d00c7ec9eab64ebeab6924a3e32b3f9\transformed\camera-camera2-1.2.2\AndroidManifest.xml:23:5-34:19
 MERGED from [androidx.camera:camera-core:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\275b3c44e97e5e6acd9ddf93191251d1\transformed\camera-core-1.2.2\AndroidManifest.xml:23:5-34:19
 MERGED from [androidx.camera:camera-core:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\275b3c44e97e5e6acd9ddf93191251d1\transformed\camera-core-1.2.2\AndroidManifest.xml:23:5-34:19
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\nursu\.gradle\caches\transforms-3\2a99b23bcf842613080fe37bddce7052\transformed\glide-4.12.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\nursu\.gradle\caches\transforms-3\2a99b23bcf842613080fe37bddce7052\transformed\glide-4.12.0\AndroidManifest.xml:10:5-20
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\nursu\.gradle\caches\transforms-3\b84fd8e0913fbee5ea341511771bb46a\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\nursu\.gradle\caches\transforms-3\b84fd8e0913fbee5ea341511771bb46a\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\nursu\.gradle\caches\transforms-3\4dae1036e86902b2f055441e14dfca0a\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -113,6 +131,8 @@ MERGED from [androidx.window:window:1.0.0] C:\Users\nursu\.gradle\caches\transfo
 MERGED from [androidx.window:window:1.0.0] C:\Users\nursu\.gradle\caches\transforms-3\eed22cf249e817f5b62fcf705825306d\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.core:core:1.9.0] C:\Users\nursu\.gradle\caches\transforms-3\738147d0f85917708540e295877f94a3\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
 MERGED from [androidx.core:core:1.9.0] C:\Users\nursu\.gradle\caches\transforms-3\738147d0f85917708540e295877f94a3\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\nursu\.gradle\caches\transforms-3\74a552b2643fdaef896de4184f0d5f3f\transformed\gifdecoder-4.12.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\nursu\.gradle\caches\transforms-3\74a552b2643fdaef896de4184f0d5f3f\transformed\gifdecoder-4.12.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\nursu\.gradle\caches\transforms-3\6e6d849a3ba8a9e54c13fc958700caef\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\nursu\.gradle\caches\transforms-3\6e6d849a3ba8a9e54c13fc958700caef\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
@@ -124,117 +144,121 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\nursu\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\nursu\.gradle\caches\transforms-3\738147d0f85917708540e295877f94a3\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:21:9-35
 	android:label
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:19:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:10:9-54
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:17:9-54
 	android:roundIcon
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:13:9-40
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:20:9-40
 	tools:targetApi
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:16:9-29
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:23:9-29
 	android:icon
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:11:9-38
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:18:9-38
 	android:allowBackup
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:15:9-35
 	android:theme
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:15:9-50
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:22:9-50
 	android:dataExtractionRules
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:9:9-65
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:16:9-65
 activity#kz.cifron.vetqyzmet_doctor.camera.ResultActivity
-ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:17:9-19:40
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:24:9-27:56
 	android:exported
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:19:13-37
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:27:13-53
 	android:name
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:18:13-50
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:25:13-50
 activity#kz.cifron.vetqyzmet_doctor.camera.ImageActivity
-ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:20:9-22:40
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:28:9-31:56
 	android:exported
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:22:13-37
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:30:13-37
+	android:theme
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:31:13-53
 	android:name
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:21:13-49
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:29:13-49
 activity#kz.cifron.vetqyzmet_doctor.CameraActivity
-ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:23:9-26:56
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:32:9-35:56
 	android:exported
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:25:13-37
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:34:13-37
 	android:theme
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:26:13-53
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:35:13-53
 	android:name
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:24:13-43
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:33:13-43
 activity#kz.cifron.vetqyzmet_doctor.AddAnimalsActivity
-ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:27:9-30:56
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:36:9-39:56
 	android:exported
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:29:13-37
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:38:13-37
 	android:theme
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:30:13-53
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:39:13-53
 	android:name
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:28:13-47
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:37:13-47
 activity#kz.cifron.vetqyzmet_doctor.OwnerPageActivity
-ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:31:9-34:56
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:40:9-43:56
 	android:exported
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:33:13-37
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:42:13-37
 	android:theme
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:34:13-53
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:43:13-53
 	android:name
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:32:13-46
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:41:13-46
 activity#kz.cifron.vetqyzmet_doctor.CertificatesActivity
-ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:35:9-38:56
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:44:9-47:56
 	android:exported
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:37:13-37
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:46:13-37
 	android:theme
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:38:13-53
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:47:13-53
 	android:name
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:36:13-49
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:45:13-49
 activity#kz.cifron.vetqyzmet_doctor.MigrationActivity
-ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:39:9-42:56
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:48:9-51:56
 	android:exported
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:41:13-37
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:50:13-37
 	android:theme
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:42:13-53
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:51:13-53
 	android:name
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:40:13-46
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:49:13-46
 activity#kz.cifron.vetqyzmet_doctor.FormActivity
-ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:43:9-46:56
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:52:9-55:56
 	android:exported
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:45:13-37
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:54:13-37
 	android:theme
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:46:13-53
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:55:13-53
 	android:name
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:44:13-41
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:53:13-41
 activity#kz.cifron.vetqyzmet_doctor.AnimalRegActivity
-ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:47:9-50:56
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:56:9-59:56
 	android:exported
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:49:13-37
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:58:13-37
 	android:theme
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:50:13-53
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:59:13-53
 	android:name
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:48:13-46
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:57:13-46
 activity#kz.cifron.vetqyzmet_doctor.PageVetQyzmet
-ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:51:9-54:58
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:60:9-63:58
 	android:exported
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:53:13-37
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:62:13-37
 	android:theme
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:54:13-55
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:63:13-55
 	android:name
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:52:13-42
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:61:13-42
 activity#kz.cifron.vetqyzmet_doctor.MainActivity
-ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:55:9-64:20
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:64:9-73:20
 	android:exported
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:57:13-36
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:66:13-36
 	android:theme
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:58:13-54
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:67:13-54
 	android:name
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:56:13-41
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:65:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:59:13-63:29
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:68:13-72:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:60:17-69
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:69:17-69
 	android:name
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:60:25-66
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:69:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:62:17-77
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:71:17-77
 	android:name
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:62:27-74
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:71:27-74
 uses-sdk
 INJECTED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml
@@ -257,6 +281,8 @@ MERGED from [androidx.camera:camera-core:1.2.2] C:\Users\nursu\.gradle\caches\tr
 MERGED from [androidx.camera:camera-core:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\275b3c44e97e5e6acd9ddf93191251d1\transformed\camera-core-1.2.2\AndroidManifest.xml:21:5-44
 MERGED from [androidx.preference:preference-ktx:1.2.1] C:\Users\nursu\.gradle\caches\transforms-3\a1c34082b3b947626edeb796559d563b\transformed\preference-ktx-1.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.preference:preference-ktx:1.2.1] C:\Users\nursu\.gradle\caches\transforms-3\a1c34082b3b947626edeb796559d563b\transformed\preference-ktx-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\nursu\.gradle\caches\transforms-3\2a99b23bcf842613080fe37bddce7052\transformed\glide-4.12.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\nursu\.gradle\caches\transforms-3\2a99b23bcf842613080fe37bddce7052\transformed\glide-4.12.0\AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.navigation:navigation-common:2.7.1] C:\Users\nursu\.gradle\caches\transforms-3\62dfa3dc5745d27eb9ebee67d1fa790d\transformed\navigation-common-2.7.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-common:2.7.1] C:\Users\nursu\.gradle\caches\transforms-3\62dfa3dc5745d27eb9ebee67d1fa790d\transformed\navigation-common-2.7.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.1] C:\Users\nursu\.gradle\caches\transforms-3\9eccaaa4c5d4be9e0c8a7851dc50e3a7\transformed\navigation-common-ktx-2.7.1\AndroidManifest.xml:5:5-44
@@ -357,6 +383,8 @@ MERGED from [androidx.core:core-splashscreen:1.0.0-beta02] C:\Users\nursu\.gradl
 MERGED from [androidx.core:core-splashscreen:1.0.0-beta02] C:\Users\nursu\.gradle\caches\transforms-3\b2e0d8244a0cce5e02c71dc84a6bc43f\transformed\core-splashscreen-1.0.0-beta02\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.security:security-crypto:1.1.0-alpha02] C:\Users\nursu\.gradle\caches\transforms-3\e8c9027c4554ec81ac6cadaef36cdb62\transformed\security-crypto-1.1.0-alpha02\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.security:security-crypto:1.1.0-alpha02] C:\Users\nursu\.gradle\caches\transforms-3\e8c9027c4554ec81ac6cadaef36cdb62\transformed\security-crypto-1.1.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\nursu\.gradle\caches\transforms-3\74a552b2643fdaef896de4184f0d5f3f\transformed\gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\nursu\.gradle\caches\transforms-3\74a552b2643fdaef896de4184f0d5f3f\transformed\gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\nursu\.gradle\caches\transforms-3\eacdf1c4799ec81e06c84cb95a87a530\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\nursu\.gradle\caches\transforms-3\eacdf1c4799ec81e06c84cb95a87a530\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\nursu\.gradle\caches\transforms-3\a89cefa91747914e015c9a64ed022f38\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44

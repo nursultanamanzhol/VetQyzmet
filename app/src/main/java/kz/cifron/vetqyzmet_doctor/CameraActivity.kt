@@ -108,7 +108,7 @@ class CameraActivity : AppCompatActivity() {
                     bundle.putString("imageUri", imageUri.toString())
                     bundle.putParcelable("task", receivedTask)
 
-                    val imageIntent = Intent(this@CameraActivity, ImageActivity::class.java)
+                    val imageIntent = Intent(this@CameraActivity, ResultActivity::class.java)
                     imageIntent.putExtras(bundle)
                     startActivity(imageIntent)
                     finish()

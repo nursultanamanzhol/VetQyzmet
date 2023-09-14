@@ -8,251 +8,268 @@
 8        android:minSdkVersion="21"
 9        android:targetSdkVersion="33" />
 10
-11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:5:22-64
-12
-13    <queries>
-13-->[androidx.camera:camera-extensions:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\d1a4fb8c2a0d774fb744c60a1f8b8c0f\transformed\camera-extensions-1.2.2\AndroidManifest.xml:22:5-26:15
-14        <intent>
-14-->[androidx.camera:camera-extensions:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\d1a4fb8c2a0d774fb744c60a1f8b8c0f\transformed\camera-extensions-1.2.2\AndroidManifest.xml:23:9-25:18
-15            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
-15-->[androidx.camera:camera-extensions:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\d1a4fb8c2a0d774fb744c60a1f8b8c0f\transformed\camera-extensions-1.2.2\AndroidManifest.xml:24:13-86
-15-->[androidx.camera:camera-extensions:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\d1a4fb8c2a0d774fb744c60a1f8b8c0f\transformed\camera-extensions-1.2.2\AndroidManifest.xml:24:21-83
-16        </intent>
-17    </queries>
+11    <uses-feature
+11-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:5:5-7:35
+12        android:name="android.hardware.camera"
+12-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:6:9-47
+13        android:required="true" />
+13-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:7:9-32
+14
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:9:5-67
+15-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:9:22-64
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:10:5-65
+16-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:10:22-62
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:11:5-81
+17-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:11:22-78
 18
-19    <permission
-19-->[androidx.core:core:1.9.0] C:\Users\nursu\.gradle\caches\transforms-3\738147d0f85917708540e295877f94a3\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-20        android:name="kz.cifron.vetqyzmet_doctor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-20-->[androidx.core:core:1.9.0] C:\Users\nursu\.gradle\caches\transforms-3\738147d0f85917708540e295877f94a3\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-21        android:protectionLevel="signature" />
-21-->[androidx.core:core:1.9.0] C:\Users\nursu\.gradle\caches\transforms-3\738147d0f85917708540e295877f94a3\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
-22
-23    <uses-permission android:name="kz.cifron.vetqyzmet_doctor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-23-->[androidx.core:core:1.9.0] C:\Users\nursu\.gradle\caches\transforms-3\738147d0f85917708540e295877f94a3\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-23-->[androidx.core:core:1.9.0] C:\Users\nursu\.gradle\caches\transforms-3\738147d0f85917708540e295877f94a3\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+19    <queries>
+19-->[androidx.camera:camera-extensions:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\d1a4fb8c2a0d774fb744c60a1f8b8c0f\transformed\camera-extensions-1.2.2\AndroidManifest.xml:22:5-26:15
+20        <intent>
+20-->[androidx.camera:camera-extensions:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\d1a4fb8c2a0d774fb744c60a1f8b8c0f\transformed\camera-extensions-1.2.2\AndroidManifest.xml:23:9-25:18
+21            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
+21-->[androidx.camera:camera-extensions:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\d1a4fb8c2a0d774fb744c60a1f8b8c0f\transformed\camera-extensions-1.2.2\AndroidManifest.xml:24:13-86
+21-->[androidx.camera:camera-extensions:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\d1a4fb8c2a0d774fb744c60a1f8b8c0f\transformed\camera-extensions-1.2.2\AndroidManifest.xml:24:21-83
+22        </intent>
+23    </queries>
 24
-25    <application
-25-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:7:5-65:19
-26        android:allowBackup="true"
-26-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:8:9-35
-27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-27-->[androidx.core:core:1.9.0] C:\Users\nursu\.gradle\caches\transforms-3\738147d0f85917708540e295877f94a3\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-28        android:dataExtractionRules="@xml/data_extraction_rules"
-28-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:9:9-65
-29        android:debuggable="true"
-30        android:extractNativeLibs="true"
-31        android:fullBackupContent="@xml/backup_rules"
-31-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:10:9-54
-32        android:icon="@drawable/logo"
-32-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:11:9-38
-33        android:label="@string/app_name"
-33-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:12:9-41
-34        android:roundIcon="@mipmap/vet"
-34-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:13:9-40
-35        android:supportsRtl="true"
-35-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:14:9-35
-36        android:testOnly="true"
-37        android:theme="@style/Theme.App.Starting" >
-37-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:15:9-50
-38        <activity
-38-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:17:9-19:40
-39            android:name="kz.cifron.vetqyzmet_doctor.camera.ResultActivity"
-39-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:18:13-50
-40            android:exported="false" />
-40-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:19:13-37
-41        <activity
-41-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:20:9-22:40
-42            android:name="kz.cifron.vetqyzmet_doctor.camera.ImageActivity"
-42-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:21:13-49
-43            android:exported="false" />
-43-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:22:13-37
+25    <permission
+25-->[androidx.core:core:1.9.0] C:\Users\nursu\.gradle\caches\transforms-3\738147d0f85917708540e295877f94a3\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+26        android:name="kz.cifron.vetqyzmet_doctor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+26-->[androidx.core:core:1.9.0] C:\Users\nursu\.gradle\caches\transforms-3\738147d0f85917708540e295877f94a3\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+27        android:protectionLevel="signature" />
+27-->[androidx.core:core:1.9.0] C:\Users\nursu\.gradle\caches\transforms-3\738147d0f85917708540e295877f94a3\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+28
+29    <uses-permission android:name="kz.cifron.vetqyzmet_doctor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+29-->[androidx.core:core:1.9.0] C:\Users\nursu\.gradle\caches\transforms-3\738147d0f85917708540e295877f94a3\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+29-->[androidx.core:core:1.9.0] C:\Users\nursu\.gradle\caches\transforms-3\738147d0f85917708540e295877f94a3\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+30
+31    <application
+31-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:14:5-74:19
+32        android:allowBackup="true"
+32-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:15:9-35
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.9.0] C:\Users\nursu\.gradle\caches\transforms-3\738147d0f85917708540e295877f94a3\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+34        android:dataExtractionRules="@xml/data_extraction_rules"
+34-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:16:9-65
+35        android:debuggable="true"
+36        android:extractNativeLibs="true"
+37        android:fullBackupContent="@xml/backup_rules"
+37-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:17:9-54
+38        android:icon="@drawable/logo"
+38-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:18:9-38
+39        android:label="@string/app_name"
+39-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:19:9-41
+40        android:roundIcon="@mipmap/vet"
+40-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:20:9-40
+41        android:supportsRtl="true"
+41-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:21:9-35
+42        android:testOnly="true"
+43        android:theme="@style/Theme.App.Starting" >
+43-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:22:9-50
 44        <activity
-44-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:23:9-26:56
-45            android:name="kz.cifron.vetqyzmet_doctor.CameraActivity"
-45-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:24:13-43
+44-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:24:9-27:56
+45            android:name="kz.cifron.vetqyzmet_doctor.camera.ResultActivity"
+45-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:25:13-50
 46            android:exported="false"
-46-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:25:13-37
+46-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:26:13-37
 47            android:theme="@style/Base.Theme.Animal" />
-47-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:26:13-53
+47-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:27:13-53
 48        <activity
-48-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:27:9-30:56
-49            android:name="kz.cifron.vetqyzmet_doctor.AddAnimalsActivity"
-49-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:28:13-47
+48-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:28:9-31:56
+49            android:name="kz.cifron.vetqyzmet_doctor.camera.ImageActivity"
+49-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:29:13-49
 50            android:exported="false"
-50-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:29:13-37
+50-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:30:13-37
 51            android:theme="@style/Base.Theme.Animal" />
-51-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:30:13-53
+51-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:31:13-53
 52        <activity
-52-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:31:9-34:56
-53            android:name="kz.cifron.vetqyzmet_doctor.OwnerPageActivity"
-53-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:32:13-46
+52-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:32:9-35:56
+53            android:name="kz.cifron.vetqyzmet_doctor.CameraActivity"
+53-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:33:13-43
 54            android:exported="false"
-54-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:33:13-37
+54-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:34:13-37
 55            android:theme="@style/Base.Theme.Animal" />
-55-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:34:13-53
+55-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:35:13-53
 56        <activity
-56-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:35:9-38:56
-57            android:name="kz.cifron.vetqyzmet_doctor.CertificatesActivity"
-57-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:36:13-49
+56-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:36:9-39:56
+57            android:name="kz.cifron.vetqyzmet_doctor.AddAnimalsActivity"
+57-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:37:13-47
 58            android:exported="false"
-58-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:37:13-37
+58-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:38:13-37
 59            android:theme="@style/Base.Theme.Animal" />
-59-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:38:13-53
+59-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:39:13-53
 60        <activity
-60-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:39:9-42:56
-61            android:name="kz.cifron.vetqyzmet_doctor.MigrationActivity"
-61-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:40:13-46
+60-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:40:9-43:56
+61            android:name="kz.cifron.vetqyzmet_doctor.OwnerPageActivity"
+61-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:41:13-46
 62            android:exported="false"
-62-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:41:13-37
+62-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:42:13-37
 63            android:theme="@style/Base.Theme.Animal" />
-63-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:42:13-53
+63-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:43:13-53
 64        <activity
-64-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:43:9-46:56
-65            android:name="kz.cifron.vetqyzmet_doctor.FormActivity"
-65-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:44:13-41
+64-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:44:9-47:56
+65            android:name="kz.cifron.vetqyzmet_doctor.CertificatesActivity"
+65-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:45:13-49
 66            android:exported="false"
-66-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:45:13-37
+66-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:46:13-37
 67            android:theme="@style/Base.Theme.Animal" />
-67-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:46:13-53
+67-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:47:13-53
 68        <activity
-68-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:47:9-50:56
-69            android:name="kz.cifron.vetqyzmet_doctor.AnimalRegActivity"
-69-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:48:13-46
+68-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:48:9-51:56
+69            android:name="kz.cifron.vetqyzmet_doctor.MigrationActivity"
+69-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:49:13-46
 70            android:exported="false"
-70-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:49:13-37
+70-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:50:13-37
 71            android:theme="@style/Base.Theme.Animal" />
-71-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:50:13-53
+71-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:51:13-53
 72        <activity
-72-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:51:9-54:58
-73            android:name="kz.cifron.vetqyzmet_doctor.PageVetQyzmet"
-73-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:52:13-42
+72-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:52:9-55:56
+73            android:name="kz.cifron.vetqyzmet_doctor.FormActivity"
+73-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:53:13-41
 74            android:exported="false"
-74-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:53:13-37
-75            android:theme="@style/Theme.VetQyzmetNum2" />
-75-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:54:13-55
+74-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:54:13-37
+75            android:theme="@style/Base.Theme.Animal" />
+75-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:55:13-53
 76        <activity
-76-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:55:9-64:20
-77            android:name="kz.cifron.vetqyzmet_doctor.MainActivity"
-77-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:56:13-41
-78            android:exported="true"
-78-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:57:13-36
-79            android:theme="@style/Theme.App.Starting" >
-79-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:58:13-54
-80            <intent-filter>
-80-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:59:13-63:29
-81                <action android:name="android.intent.action.MAIN" />
-81-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:60:17-69
-81-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:60:25-66
-82
-83                <category android:name="android.intent.category.LAUNCHER" />
-83-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:62:17-77
-83-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:62:27-74
-84            </intent-filter>
-85        </activity>
-86
-87        <uses-library
-87-->[androidx.camera:camera-extensions:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\d1a4fb8c2a0d774fb744c60a1f8b8c0f\transformed\camera-extensions-1.2.2\AndroidManifest.xml:29:9-31:40
-88            android:name="androidx.camera.extensions.impl"
-88-->[androidx.camera:camera-extensions:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\d1a4fb8c2a0d774fb744c60a1f8b8c0f\transformed\camera-extensions-1.2.2\AndroidManifest.xml:30:13-59
-89            android:required="false" />
-89-->[androidx.camera:camera-extensions:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\d1a4fb8c2a0d774fb744c60a1f8b8c0f\transformed\camera-extensions-1.2.2\AndroidManifest.xml:31:13-37
+76-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:56:9-59:56
+77            android:name="kz.cifron.vetqyzmet_doctor.AnimalRegActivity"
+77-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:57:13-46
+78            android:exported="false"
+78-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:58:13-37
+79            android:theme="@style/Base.Theme.Animal" />
+79-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:59:13-53
+80        <activity
+80-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:60:9-63:58
+81            android:name="kz.cifron.vetqyzmet_doctor.PageVetQyzmet"
+81-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:61:13-42
+82            android:exported="false"
+82-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:62:13-37
+83            android:theme="@style/Theme.VetQyzmetNum2" />
+83-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:63:13-55
+84        <activity
+84-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:64:9-73:20
+85            android:name="kz.cifron.vetqyzmet_doctor.MainActivity"
+85-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:65:13-41
+86            android:exported="true"
+86-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:66:13-36
+87            android:theme="@style/Theme.App.Starting" >
+87-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:67:13-54
+88            <intent-filter>
+88-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:68:13-72:29
+89                <action android:name="android.intent.action.MAIN" />
+89-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:69:17-69
+89-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:69:25-66
 90
-91        <service
-91-->[androidx.camera:camera-camera2:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\6d00c7ec9eab64ebeab6924a3e32b3f9\transformed\camera-camera2-1.2.2\AndroidManifest.xml:24:9-33:19
-92            android:name="androidx.camera.core.impl.MetadataHolderService"
-92-->[androidx.camera:camera-camera2:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\6d00c7ec9eab64ebeab6924a3e32b3f9\transformed\camera-camera2-1.2.2\AndroidManifest.xml:25:13-75
-93            android:enabled="false"
-93-->[androidx.camera:camera-camera2:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\6d00c7ec9eab64ebeab6924a3e32b3f9\transformed\camera-camera2-1.2.2\AndroidManifest.xml:26:13-36
-94            android:exported="false" >
-94-->[androidx.camera:camera-camera2:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\6d00c7ec9eab64ebeab6924a3e32b3f9\transformed\camera-camera2-1.2.2\AndroidManifest.xml:27:13-37
-95            <meta-data
-95-->[androidx.camera:camera-camera2:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\6d00c7ec9eab64ebeab6924a3e32b3f9\transformed\camera-camera2-1.2.2\AndroidManifest.xml:30:13-32:89
-96                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
-96-->[androidx.camera:camera-camera2:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\6d00c7ec9eab64ebeab6924a3e32b3f9\transformed\camera-camera2-1.2.2\AndroidManifest.xml:31:17-103
-97                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
-97-->[androidx.camera:camera-camera2:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\6d00c7ec9eab64ebeab6924a3e32b3f9\transformed\camera-camera2-1.2.2\AndroidManifest.xml:32:17-86
-98        </service>
-99
-100        <provider
-100-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nursu\.gradle\caches\transforms-3\3ffd57255e6f9966dfb3d4f8b250b487\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-101            android:name="androidx.startup.InitializationProvider"
-101-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nursu\.gradle\caches\transforms-3\3ffd57255e6f9966dfb3d4f8b250b487\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-102            android:authorities="kz.cifron.vetqyzmet_doctor.androidx-startup"
-102-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nursu\.gradle\caches\transforms-3\3ffd57255e6f9966dfb3d4f8b250b487\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-103            android:exported="false" >
-103-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nursu\.gradle\caches\transforms-3\3ffd57255e6f9966dfb3d4f8b250b487\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-104            <meta-data
-104-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nursu\.gradle\caches\transforms-3\3ffd57255e6f9966dfb3d4f8b250b487\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-105                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-105-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nursu\.gradle\caches\transforms-3\3ffd57255e6f9966dfb3d4f8b250b487\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-106                android:value="androidx.startup" />
-106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nursu\.gradle\caches\transforms-3\3ffd57255e6f9966dfb3d4f8b250b487\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-107            <meta-data
-107-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\nursu\.gradle\caches\transforms-3\3aeef1614e1014ecbbbc87c859fcc7f8\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
-108                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-108-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\nursu\.gradle\caches\transforms-3\3aeef1614e1014ecbbbc87c859fcc7f8\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
-109                android:value="androidx.startup" />
-109-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\nursu\.gradle\caches\transforms-3\3aeef1614e1014ecbbbc87c859fcc7f8\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
-110            <meta-data
-110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-111                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-112                android:value="androidx.startup" />
-112-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-113        </provider>
-114
-115        <uses-library
-115-->[androidx.window:window:1.0.0] C:\Users\nursu\.gradle\caches\transforms-3\eed22cf249e817f5b62fcf705825306d\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-116            android:name="androidx.window.extensions"
-116-->[androidx.window:window:1.0.0] C:\Users\nursu\.gradle\caches\transforms-3\eed22cf249e817f5b62fcf705825306d\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-117            android:required="false" />
-117-->[androidx.window:window:1.0.0] C:\Users\nursu\.gradle\caches\transforms-3\eed22cf249e817f5b62fcf705825306d\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-118        <uses-library
-118-->[androidx.window:window:1.0.0] C:\Users\nursu\.gradle\caches\transforms-3\eed22cf249e817f5b62fcf705825306d\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-119            android:name="androidx.window.sidecar"
-119-->[androidx.window:window:1.0.0] C:\Users\nursu\.gradle\caches\transforms-3\eed22cf249e817f5b62fcf705825306d\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-120            android:required="false" />
-120-->[androidx.window:window:1.0.0] C:\Users\nursu\.gradle\caches\transforms-3\eed22cf249e817f5b62fcf705825306d\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-121
-122        <receiver
-122-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-123            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-124            android:directBootAware="false"
-124-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-125            android:enabled="true"
-125-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-126            android:exported="true"
-126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-127            android:permission="android.permission.DUMP" >
-127-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-128            <intent-filter>
-128-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-129                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-130            </intent-filter>
-131            <intent-filter>
-131-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-132                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-132-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-132-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-133            </intent-filter>
-134            <intent-filter>
-134-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-135                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-135-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-135-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-136            </intent-filter>
-137            <intent-filter>
-137-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-138                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-138-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-138-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-139            </intent-filter>
-140        </receiver>
-141    </application>
-142
-143</manifest>
+91                <category android:name="android.intent.category.LAUNCHER" />
+91-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:71:17-77
+91-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:71:27-74
+92            </intent-filter>
+93        </activity>
+94
+95        <uses-library
+95-->[androidx.camera:camera-extensions:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\d1a4fb8c2a0d774fb744c60a1f8b8c0f\transformed\camera-extensions-1.2.2\AndroidManifest.xml:29:9-31:40
+96            android:name="androidx.camera.extensions.impl"
+96-->[androidx.camera:camera-extensions:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\d1a4fb8c2a0d774fb744c60a1f8b8c0f\transformed\camera-extensions-1.2.2\AndroidManifest.xml:30:13-59
+97            android:required="false" />
+97-->[androidx.camera:camera-extensions:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\d1a4fb8c2a0d774fb744c60a1f8b8c0f\transformed\camera-extensions-1.2.2\AndroidManifest.xml:31:13-37
+98
+99        <service
+99-->[androidx.camera:camera-camera2:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\6d00c7ec9eab64ebeab6924a3e32b3f9\transformed\camera-camera2-1.2.2\AndroidManifest.xml:24:9-33:19
+100            android:name="androidx.camera.core.impl.MetadataHolderService"
+100-->[androidx.camera:camera-camera2:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\6d00c7ec9eab64ebeab6924a3e32b3f9\transformed\camera-camera2-1.2.2\AndroidManifest.xml:25:13-75
+101            android:enabled="false"
+101-->[androidx.camera:camera-camera2:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\6d00c7ec9eab64ebeab6924a3e32b3f9\transformed\camera-camera2-1.2.2\AndroidManifest.xml:26:13-36
+102            android:exported="false" >
+102-->[androidx.camera:camera-camera2:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\6d00c7ec9eab64ebeab6924a3e32b3f9\transformed\camera-camera2-1.2.2\AndroidManifest.xml:27:13-37
+103            <meta-data
+103-->[androidx.camera:camera-camera2:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\6d00c7ec9eab64ebeab6924a3e32b3f9\transformed\camera-camera2-1.2.2\AndroidManifest.xml:30:13-32:89
+104                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+104-->[androidx.camera:camera-camera2:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\6d00c7ec9eab64ebeab6924a3e32b3f9\transformed\camera-camera2-1.2.2\AndroidManifest.xml:31:17-103
+105                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+105-->[androidx.camera:camera-camera2:1.2.2] C:\Users\nursu\.gradle\caches\transforms-3\6d00c7ec9eab64ebeab6924a3e32b3f9\transformed\camera-camera2-1.2.2\AndroidManifest.xml:32:17-86
+106        </service>
+107
+108        <provider
+108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nursu\.gradle\caches\transforms-3\3ffd57255e6f9966dfb3d4f8b250b487\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+109            android:name="androidx.startup.InitializationProvider"
+109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nursu\.gradle\caches\transforms-3\3ffd57255e6f9966dfb3d4f8b250b487\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+110            android:authorities="kz.cifron.vetqyzmet_doctor.androidx-startup"
+110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nursu\.gradle\caches\transforms-3\3ffd57255e6f9966dfb3d4f8b250b487\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+111            android:exported="false" >
+111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nursu\.gradle\caches\transforms-3\3ffd57255e6f9966dfb3d4f8b250b487\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+112            <meta-data
+112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nursu\.gradle\caches\transforms-3\3ffd57255e6f9966dfb3d4f8b250b487\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+113                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+113-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nursu\.gradle\caches\transforms-3\3ffd57255e6f9966dfb3d4f8b250b487\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+114                android:value="androidx.startup" />
+114-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nursu\.gradle\caches\transforms-3\3ffd57255e6f9966dfb3d4f8b250b487\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+115            <meta-data
+115-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\nursu\.gradle\caches\transforms-3\3aeef1614e1014ecbbbc87c859fcc7f8\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+116                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+116-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\nursu\.gradle\caches\transforms-3\3aeef1614e1014ecbbbc87c859fcc7f8\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+117                android:value="androidx.startup" />
+117-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\nursu\.gradle\caches\transforms-3\3aeef1614e1014ecbbbc87c859fcc7f8\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+118            <meta-data
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+119                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+120                android:value="androidx.startup" />
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+121        </provider>
+122
+123        <uses-library
+123-->[androidx.window:window:1.0.0] C:\Users\nursu\.gradle\caches\transforms-3\eed22cf249e817f5b62fcf705825306d\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+124            android:name="androidx.window.extensions"
+124-->[androidx.window:window:1.0.0] C:\Users\nursu\.gradle\caches\transforms-3\eed22cf249e817f5b62fcf705825306d\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+125            android:required="false" />
+125-->[androidx.window:window:1.0.0] C:\Users\nursu\.gradle\caches\transforms-3\eed22cf249e817f5b62fcf705825306d\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+126        <uses-library
+126-->[androidx.window:window:1.0.0] C:\Users\nursu\.gradle\caches\transforms-3\eed22cf249e817f5b62fcf705825306d\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+127            android:name="androidx.window.sidecar"
+127-->[androidx.window:window:1.0.0] C:\Users\nursu\.gradle\caches\transforms-3\eed22cf249e817f5b62fcf705825306d\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+128            android:required="false" />
+128-->[androidx.window:window:1.0.0] C:\Users\nursu\.gradle\caches\transforms-3\eed22cf249e817f5b62fcf705825306d\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+129
+130        <receiver
+130-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+131            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+131-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+132            android:directBootAware="false"
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+133            android:enabled="true"
+133-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+134            android:exported="true"
+134-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+135            android:permission="android.permission.DUMP" >
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+136            <intent-filter>
+136-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+137                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+137-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+137-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+138            </intent-filter>
+139            <intent-filter>
+139-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+140                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+140-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+140-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+141            </intent-filter>
+142            <intent-filter>
+142-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+143                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+143-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+143-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+144            </intent-filter>
+145            <intent-filter>
+145-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+146                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+146-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+146-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\nursu\.gradle\caches\transforms-3\77d5a7dd47204633d73b86e2eac15830\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+147            </intent-filter>
+148        </receiver>
+149    </application>
+150
+151</manifest>

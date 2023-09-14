@@ -84,7 +84,6 @@ class PageVetQyzmet : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-
         when (item.itemId) {
             R.id.LogOut -> {
                 // Обработайте нажатие кнопки "LogOut" здесь
@@ -100,14 +99,14 @@ class PageVetQyzmet : AppCompatActivity() {
                 return true
             }
 
-            else -> return super.onOptionsItemSelected(item)
+            else -> {
+                // Проверьте, было ли нажатие обработано бургер-меню
+                if (toggle.onOptionsItemSelected(item)) {
+                    return true
+                }
+                return super.onOptionsItemSelected(item)
+            }
         }
-
-
-        if (toggle.onOptionsItemSelected(item)) {
-            return true
-        }
-        return super.onOptionsItemSelected(item)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

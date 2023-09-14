@@ -3043,7 +3043,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable back_arrow
 drawable background_gallery
-drawable baseline_circle
+drawable beautiful_r
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3052,10 +3052,11 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable btncamera
 drawable button_click_effect
 drawable compat_splash_screen
 drawable compat_splash_screen_no_icon_background
-drawable custom_icon
+drawable delete_image
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3086,6 +3087,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
 drawable icon_background
 drawable icon_gallery
+drawable icon_result
 drawable input_backadress
 drawable input_emailadress
 drawable logo
@@ -3174,7 +3176,6 @@ drawable shape_button01
 drawable shape_button02
 drawable shape_edittext01
 drawable shape_nums
-drawable step
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3292,6 +3293,7 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id barrier
 id baseline
+id beautiful_r
 id beginOnFirstDraw
 id beginning
 id bestChoice
@@ -3337,6 +3339,7 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
+id color
 id compatible
 id compress
 id confirmButton
@@ -3436,6 +3439,7 @@ id genderAnimal
 id genderText
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3458,6 +3462,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageResultSave
 id imageView1
 id imageView2
 id imageView3
@@ -3639,10 +3644,14 @@ id right_side
 id rounded
 id row_index_key
 id rtl
+id saveBirthMonth
 id saveBreed
+id saveGender
+id saveInj
 id saveType
 id save_non_transition_alpha
 id save_overlay_view
+id saveСolor
 id sawtooth
 id scale
 id screen

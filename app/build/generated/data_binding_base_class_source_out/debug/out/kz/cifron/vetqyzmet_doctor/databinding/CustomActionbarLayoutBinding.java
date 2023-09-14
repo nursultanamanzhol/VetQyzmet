@@ -4,10 +4,10 @@ package kz.cifron.vetqyzmet_doctor.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -17,12 +17,12 @@ import kz.cifron.vetqyzmet_doctor.R;
 
 public final class CustomActionbarLayoutBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final TextView actionBarTitle;
 
-  private CustomActionbarLayoutBinding(@NonNull RelativeLayout rootView,
+  private CustomActionbarLayoutBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView actionBarTitle) {
     this.rootView = rootView;
     this.actionBarTitle = actionBarTitle;
@@ -30,7 +30,7 @@ public final class CustomActionbarLayoutBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -61,7 +61,7 @@ public final class CustomActionbarLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      return new CustomActionbarLayoutBinding((RelativeLayout) rootView, actionBarTitle);
+      return new CustomActionbarLayoutBinding((ConstraintLayout) rootView, actionBarTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
