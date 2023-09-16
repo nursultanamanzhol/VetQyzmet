@@ -42,19 +42,8 @@ class AddAnimalsActivity : AppCompatActivity() {
         binding = ActivityAddAnimalsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.rectangleFurther.setOnClickListener {
-            // Получаем текст из saveType
-            val saveTypeText = saveTypeResult.toString()
 
-            // Создаем Intent
-            val resultIntent = Intent(this, ResultActivity::class.java)
 
-            // Передаем текст в Intent
-            resultIntent.putExtra("saveType", saveTypeText)
-
-            // Запускаем ResultActivity
-            startActivity(resultIntent)
-        }
 
 
 
@@ -66,8 +55,17 @@ class AddAnimalsActivity : AppCompatActivity() {
         }
 
         binding.rectangleFurther.setOnClickListener {
-            startActivity(Intent(this, CameraActivity::class.java))
+            startActivity(Intent(this, ResultActivity::class.java))
+            viewModel = ViewModelProvider(this)[AnimalViewModel::class.java]
+            viewModel.saveType = saveTypeResult
+            viewModel.selectedDate = "Новое значение для selectedDate"
+            viewModel.emailEt1 = "sdadad"
+            viewModel.genderAnimal = "Новое значение для genderAnimal"
+            viewModel.saveBreed = "Новое значение для saveBreed"
+            println()
+
         }
+
 
 
         binding.chooseDateButton.setOnClickListener {
@@ -112,11 +110,6 @@ class AddAnimalsActivity : AppCompatActivity() {
 
 
 
-        viewModel = ViewModelProvider(this).get(AnimalViewModel::class.java)
-
-        // Восстановите значения из ViewModel и установите их в соответствующие элементы интерфейса.
-        binding.saveType.text = viewModel.saveType
-        binding.emailEt1.setText(viewModel.emailEt1)
         // Продолжите так же для genderAnimal и saveBreed
 
         binding.arrowIcon.setOnClickListener {
@@ -128,8 +121,7 @@ class AddAnimalsActivity : AppCompatActivity() {
         }
 
         binding.emailEt1.doAfterTextChanged { editable ->
-            val emailText = editable.toString()
-            viewModel.emailEt1 = emailText
+            val emailText = editable
             // Вы можете использовать значение emailText по вашему усмотрению
         }
         binding.typeconst.setOnClickListener {
@@ -141,7 +133,6 @@ class AddAnimalsActivity : AppCompatActivity() {
             bottomSheetBinding.radioGroup.setOnCheckedChangeListener { group, checkedId ->
                 val selectedRadioButton = group.findViewById<RadioButton>(checkedId)
                 val selectedOptionText = selectedRadioButton.text.toString()
-                viewModel.saveType = selectedOptionText
                 binding.saveType.text = selectedOptionText
                 saveTypeResult = selectedRadioButton.text.toString()
                 Handler().postDelayed({
@@ -180,8 +171,7 @@ class AddAnimalsActivity : AppCompatActivity() {
 
         radioButtons.forEachIndexed { index, radioButton ->
             radioButton.setOnClickListener {
-                viewModel.saveBreed = radioButton.text.toString()
-                binding.saveBreed.text = viewModel.saveBreed
+                binding.saveBreed.text = radioButton.text.toString()
                 Handler().postDelayed({
                     dialog.dismiss()
                 }, 500)
