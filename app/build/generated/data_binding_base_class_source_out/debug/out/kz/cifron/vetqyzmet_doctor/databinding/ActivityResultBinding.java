@@ -69,7 +69,7 @@ public final class ActivityResultBinding implements ViewBinding {
   public final TextView saveOlor;
 
   @NonNull
-  public final TextView saveType;
+  public final TextView saveTypeResult;
 
   @NonNull
   public final TextView textView;
@@ -84,7 +84,7 @@ public final class ActivityResultBinding implements ViewBinding {
       @NonNull ImageView deleteAndResetImage, @NonNull TextView genderText,
       @NonNull ConstraintLayout imageResultSave, @NonNull TextView saveBirthMonth,
       @NonNull TextView saveBreed, @NonNull TextView saveGender, @NonNull TextView saveInj,
-      @NonNull TextView saveOlor, @NonNull TextView saveType, @NonNull TextView textView,
+      @NonNull TextView saveOlor, @NonNull TextView saveTypeResult, @NonNull TextView textView,
       @NonNull TextView typeInj) {
     this.rootView = rootView;
     this.TopFont = TopFont;
@@ -103,7 +103,7 @@ public final class ActivityResultBinding implements ViewBinding {
     this.saveGender = saveGender;
     this.saveInj = saveInj;
     this.saveOlor = saveOlor;
-    this.saveType = saveType;
+    this.saveTypeResult = saveTypeResult;
     this.textView = textView;
     this.typeInj = typeInj;
   }
@@ -231,9 +231,9 @@ public final class ActivityResultBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.saveType;
-      TextView saveType = ViewBindings.findChildViewById(rootView, id);
-      if (saveType == null) {
+      id = R.id.saveTypeResult;
+      TextView saveTypeResult = ViewBindings.findChildViewById(rootView, id);
+      if (saveTypeResult == null) {
         break missingId;
       }
 
@@ -251,7 +251,7 @@ public final class ActivityResultBinding implements ViewBinding {
 
       return new ActivityResultBinding((ConstraintLayout) rootView, TopFont, addAnimals, arrowIcon,
           beautifulR, birthMonth, breedText, chageText, color, deleteAndResetImage, genderText,
-          imageResultSave, saveBirthMonth, saveBreed, saveGender, saveInj, saveOlor, saveType,
+          imageResultSave, saveBirthMonth, saveBreed, saveGender, saveInj, saveOlor, saveTypeResult,
           textView, typeInj);
     }
     String missingId = rootView.getResources().getResourceName(id);

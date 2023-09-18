@@ -3650,6 +3650,7 @@ id saveBreed
 id saveGender
 id saveInj
 id saveType
+id saveTypeResult
 id save_non_transition_alpha
 id save_overlay_view
 id saveСolor

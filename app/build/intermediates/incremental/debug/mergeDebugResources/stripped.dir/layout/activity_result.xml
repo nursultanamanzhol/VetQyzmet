@@ -85,7 +85,7 @@
 
 
         <TextView
-            android:id="@+id/saveType"
+            android:id="@+id/saveTypeResult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -109,7 +109,7 @@
             android:textColor="#5D6978"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/saveType" />
+            app:layout_constraintTop_toBottomOf="@+id/saveTypeResult" />
 
         <TextView
             android:id="@+id/saveInj"

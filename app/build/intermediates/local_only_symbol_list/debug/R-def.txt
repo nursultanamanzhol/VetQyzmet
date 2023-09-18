@@ -156,6 +156,7 @@ id saveBreed
 id saveGender
 id saveInj
 id saveType
+id saveTypeResult
 id saveСolor
 id textLocation
 id textRadio
