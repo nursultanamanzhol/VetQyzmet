@@ -8,6 +8,8 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
+import android.util.Log
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
@@ -15,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.ViewModelProvider
 import kz.cifron.vetqyzmet_doctor.addanimals.Tasks
 import kz.cifron.vetqyzmet_doctor.camera.ImageActivity
 import kz.cifron.vetqyzmet_doctor.camera.ResultActivity
@@ -54,6 +57,12 @@ class CameraActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityCameraBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+//        binding.textView1.text = intent.getStringExtra("saveType")
+//        binding.textView2.text = intent.getStringExtra("emailEt1")
+//        binding.textView3.text = intent.getStringExtra("genderAnimal")
+//        binding.textView4.text = intent.getStringExtra("saveBreed")
+//        binding.textView5.text = intent.getStringExtra("birthDateText")
 
         cameraExecutor = ContextCompat.getMainExecutor(this)
 
@@ -109,6 +118,19 @@ class CameraActivity : AppCompatActivity() {
                     bundle.putParcelable("task", receivedTask)
 
                     val imageIntent = Intent(this@CameraActivity, ResultActivity::class.java)
+
+                    val saveType  = intent.getStringExtra("saveType")
+                    val birthDateText  = intent.getStringExtra("birthDateText")
+                    val saveBreed  = intent.getStringExtra("saveBreed")
+                    val genderAnimal  = intent.getStringExtra("genderAnimal")
+                    val emailEt1  = intent.getStringExtra("emailEt1")
+                    imageIntent.putExtra("saveTypeResult", saveType)
+                    imageIntent.putExtra("birthDateTextResult", birthDateText)
+                    imageIntent.putExtra("saveBreedResult", saveBreed)
+                    imageIntent.putExtra("genderAnimalResult", genderAnimal)
+                    imageIntent.putExtra("emailEt1Result", emailEt1)
+
+
                     imageIntent.putExtras(bundle)
                     startActivity(imageIntent)
                     finish()
@@ -132,6 +154,18 @@ class CameraActivity : AppCompatActivity() {
         bundle.putParcelable("task", receivedTask)
 
         val resultIntent = Intent(this@CameraActivity, ResultActivity::class.java)
+
+        val saveType  = intent.getStringExtra("saveType")
+        val birthDateText  = intent.getStringExtra("birthDateText")
+        val saveBreed  = intent.getStringExtra("saveBreed")
+        val genderAnimal  = intent.getStringExtra("genderAnimal")
+        val emailEt1  = intent.getStringExtra("emailEt1")
+        resultIntent.putExtra("saveTypeResult", saveType)
+        resultIntent.putExtra("birthDateTextResult", birthDateText)
+        resultIntent.putExtra("saveBreedResult", saveBreed)
+        resultIntent.putExtra("genderAnimalResult", genderAnimal)
+        resultIntent.putExtra("emailEt1Result", emailEt1)
+
         resultIntent.putExtras(bundle)
         startActivity(resultIntent)
         finish()

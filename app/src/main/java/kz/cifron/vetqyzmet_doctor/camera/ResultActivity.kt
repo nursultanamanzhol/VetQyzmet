@@ -23,14 +23,12 @@ class ResultActivity : AppCompatActivity() {
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        viewModel = ViewModelProvider(this).get(AnimalViewModel::class.java)
-        binding.saveTypeResult.text = viewModel.saveType
-        binding.saveBirthMonth.text = viewModel.selectedDate
-        binding.saveInj.text = viewModel.emailEt1
-//        binding.genderAnimal = viewModel.genderAnimal
-        binding.saveBreed.text = viewModel.saveBreed
 
-
+        binding.saveTypeResult.text = intent.getStringExtra("saveTypeResult")
+        binding.emailEt1Result.text = intent.getStringExtra("emailEt1Result")
+        binding.genderAnimalResult.text = intent.getStringExtra("genderAnimalResult")
+        binding.saveBreedResult.text = intent.getStringExtra("saveBreedResult")
+        binding.saveBirthMonthResult.text = intent.getStringExtra("birthDateTextResult")
 
         // Получение данных из Intent, переданных из CameraActivity
         val imageUriString = intent.getStringExtra("imageUri")

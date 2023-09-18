@@ -5,7 +5,10 @@ import android.content.Intent
 import android.content.res.Resources
 import android.os.Bundle
 import android.os.Handler
+import android.text.Editable
 import android.text.TextUtils
+import android.text.TextWatcher
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
@@ -44,27 +47,45 @@ class AddAnimalsActivity : AppCompatActivity() {
 
 
 
-
-
-
-
         binding.rectangleGray.setOnClickListener {
             startActivity(Intent(this, PageVetQyzmet::class.java))
             finish()
 
         }
+        viewModel = ViewModelProvider(this)[AnimalViewModel::class.java]
 
+//        binding.genderAnimal.setOnCheckedChangeListener { _, checkedId ->
+//            val selectedGenderText = when (checkedId) {
+//                R.id.female -> "Самка"
+//                R.id.male -> "Самец"
+//                else -> "" // Обработка других возможных случаев, если они есть
+//            }
+//        }
         binding.rectangleFurther.setOnClickListener {
-            startActivity(Intent(this, ResultActivity::class.java))
-            viewModel = ViewModelProvider(this)[AnimalViewModel::class.java]
-            viewModel.saveType = saveTypeResult
-            viewModel.selectedDate = "Новое значение для selectedDate"
-            viewModel.emailEt1 = "sdadad"
-            viewModel.genderAnimal = "Новое значение для genderAnimal"
-            viewModel.saveBreed = "Новое значение для saveBreed"
-            println()
+            val selectedRadioButtonId = binding.genderAnimal.checkedRadioButtonId
 
+            // Инициализируйте selectedGenderText с пустой строкой
+            var selectedGenderText = ""
+
+            // Проверьте, какая RadioButton была выбрана
+            if (selectedRadioButtonId == R.id.female) {
+                selectedGenderText = "Самка"
+            } else if (selectedRadioButtonId == R.id.male) {
+                selectedGenderText = "Самец"
+            }
+
+
+            val intent = Intent(this, CameraActivity::class.java)
+            intent.putExtra("saveType", binding.saveType.text.toString())
+            intent.putExtra("birthDateText", binding.birthDateText.text.toString())
+            intent.putExtra("saveBreed", binding.saveBreed.text.toString())
+            intent.putExtra("emailEt1", binding.emailEt1.text.toString())
+            intent.putExtra("genderAnimal", selectedGenderText)
+            Log.d("saveType", binding.saveType.text.toString())
+            startActivity(intent)
         }
+
+
 
 
 
@@ -109,7 +130,6 @@ class AddAnimalsActivity : AppCompatActivity() {
         }
 
 
-
         // Продолжите так же для genderAnimal и saveBreed
 
         binding.arrowIcon.setOnClickListener {
@@ -134,7 +154,6 @@ class AddAnimalsActivity : AppCompatActivity() {
                 val selectedRadioButton = group.findViewById<RadioButton>(checkedId)
                 val selectedOptionText = selectedRadioButton.text.toString()
                 binding.saveType.text = selectedOptionText
-                saveTypeResult = selectedRadioButton.text.toString()
                 Handler().postDelayed({
                     bottomSheetDialog.dismiss()
                 }, 500)
@@ -150,6 +169,7 @@ class AddAnimalsActivity : AppCompatActivity() {
             bottomSheetDialog.show()
         }
     }
+
 
     private fun showRadioButtonDialog() {
         val dialogBinding = DialogRadioButtonsBinding.inflate(LayoutInflater.from(this))
