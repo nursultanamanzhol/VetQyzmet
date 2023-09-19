@@ -3,13 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
+    android:background="@drawable/bottom_sheet_dialog_background"
     android:orientation="vertical">
+
 
     <TextView
         android:id="@+id/textTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/roboto_medium"
         android:padding="12dp"
         android:text="Выберите тип животного"
@@ -23,7 +26,7 @@
         android:id="@+id/radioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="16dp"
         android:gravity="start"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/textTop">
@@ -81,8 +84,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/shape_edittext01"
         android:clickable="true"
         android:padding="15dp"
@@ -102,5 +106,6 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

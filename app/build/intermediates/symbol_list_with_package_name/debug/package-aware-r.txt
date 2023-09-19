@@ -2957,6 +2957,7 @@ dimen tooltip_precise_anchor_threshold
 dimen tooltip_vertical_padding
 dimen tooltip_y_offset_non_touch
 dimen tooltip_y_offset_touch
+dimen your_dimension_here
 drawable abc_ab_share_pack_mtrl_alpha
 drawable abc_action_bar_item_background_material
 drawable abc_btn_borderless_material
@@ -3045,6 +3046,8 @@ drawable back_arrow
 drawable background_add_image
 drawable background_gallery
 drawable beautiful_r
+drawable bottom_sheet_dialog_background
+drawable bottom_sheet_dialog_out
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3760,11 +3763,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textView1
 id textView2
-id textView3
-id textView4
-id textView5
 id textViewTitle
 id text_client
 id text_cv_number

@@ -13,6 +13,7 @@ color purple_700
 color teal_200
 color teal_700
 color white
+dimen your_dimension_here
 drawable animals
 drawable arrow_down
 drawable arrow_ic
@@ -20,6 +21,8 @@ drawable back_arrow
 drawable background_add_image
 drawable background_gallery
 drawable beautiful_r
+drawable bottom_sheet_dialog_background
+drawable bottom_sheet_dialog_out
 drawable btncamera
 drawable delete_image
 drawable ellipse_gallery
@@ -164,11 +167,7 @@ id textLocation
 id textRadio
 id textTop
 id textView
-id textView1
 id textView2
-id textView3
-id textView4
-id textView5
 id textViewTitle
 id text_client
 id text_cv_number

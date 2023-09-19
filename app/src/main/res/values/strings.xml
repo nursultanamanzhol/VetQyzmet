@@ -13,4 +13,5 @@
     <string name="checkoutback">Отмена</string>
     <string name="complete">Завершить</string>
     <string name="resetComplete">Заполнить заново</string>
+    <dimen name="your_dimension_here">16dp</dimen>
 </resources>
