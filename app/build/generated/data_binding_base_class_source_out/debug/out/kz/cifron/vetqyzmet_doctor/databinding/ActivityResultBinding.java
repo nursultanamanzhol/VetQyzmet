@@ -48,28 +48,28 @@ public final class ActivityResultBinding implements ViewBinding {
   public final ImageView deleteAndResetImage;
 
   @NonNull
+  public final TextView emailEt1Result;
+
+  @NonNull
+  public final TextView genderAnimalResult;
+
+  @NonNull
   public final TextView genderText;
 
   @NonNull
   public final ConstraintLayout imageResultSave;
 
   @NonNull
-  public final TextView saveBirthMonth;
+  public final TextView saveBirthMonthResult;
 
   @NonNull
-  public final TextView saveBreed;
-
-  @NonNull
-  public final TextView saveGender;
-
-  @NonNull
-  public final TextView saveInj;
+  public final TextView saveBreedResult;
 
   @NonNull
   public final TextView saveOlor;
 
   @NonNull
-  public final TextView saveType;
+  public final TextView saveTypeResult;
 
   @NonNull
   public final TextView textView;
@@ -81,11 +81,11 @@ public final class ActivityResultBinding implements ViewBinding {
       @NonNull ConstraintLayout TopFont, @NonNull ConstraintLayout addAnimals,
       @NonNull ImageView arrowIcon, @NonNull ImageView beautifulR, @NonNull TextView birthMonth,
       @NonNull TextView breedText, @NonNull TextView chageText, @NonNull TextView color,
-      @NonNull ImageView deleteAndResetImage, @NonNull TextView genderText,
-      @NonNull ConstraintLayout imageResultSave, @NonNull TextView saveBirthMonth,
-      @NonNull TextView saveBreed, @NonNull TextView saveGender, @NonNull TextView saveInj,
-      @NonNull TextView saveOlor, @NonNull TextView saveType, @NonNull TextView textView,
-      @NonNull TextView typeInj) {
+      @NonNull ImageView deleteAndResetImage, @NonNull TextView emailEt1Result,
+      @NonNull TextView genderAnimalResult, @NonNull TextView genderText,
+      @NonNull ConstraintLayout imageResultSave, @NonNull TextView saveBirthMonthResult,
+      @NonNull TextView saveBreedResult, @NonNull TextView saveOlor,
+      @NonNull TextView saveTypeResult, @NonNull TextView textView, @NonNull TextView typeInj) {
     this.rootView = rootView;
     this.TopFont = TopFont;
     this.addAnimals = addAnimals;
@@ -96,14 +96,14 @@ public final class ActivityResultBinding implements ViewBinding {
     this.chageText = chageText;
     this.color = color;
     this.deleteAndResetImage = deleteAndResetImage;
+    this.emailEt1Result = emailEt1Result;
+    this.genderAnimalResult = genderAnimalResult;
     this.genderText = genderText;
     this.imageResultSave = imageResultSave;
-    this.saveBirthMonth = saveBirthMonth;
-    this.saveBreed = saveBreed;
-    this.saveGender = saveGender;
-    this.saveInj = saveInj;
+    this.saveBirthMonthResult = saveBirthMonthResult;
+    this.saveBreedResult = saveBreedResult;
     this.saveOlor = saveOlor;
-    this.saveType = saveType;
+    this.saveTypeResult = saveTypeResult;
     this.textView = textView;
     this.typeInj = typeInj;
   }
@@ -189,6 +189,18 @@ public final class ActivityResultBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.emailEt1Result;
+      TextView emailEt1Result = ViewBindings.findChildViewById(rootView, id);
+      if (emailEt1Result == null) {
+        break missingId;
+      }
+
+      id = R.id.genderAnimalResult;
+      TextView genderAnimalResult = ViewBindings.findChildViewById(rootView, id);
+      if (genderAnimalResult == null) {
+        break missingId;
+      }
+
       id = R.id.genderText;
       TextView genderText = ViewBindings.findChildViewById(rootView, id);
       if (genderText == null) {
@@ -201,27 +213,15 @@ public final class ActivityResultBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.saveBirthMonth;
-      TextView saveBirthMonth = ViewBindings.findChildViewById(rootView, id);
-      if (saveBirthMonth == null) {
+      id = R.id.saveBirthMonthResult;
+      TextView saveBirthMonthResult = ViewBindings.findChildViewById(rootView, id);
+      if (saveBirthMonthResult == null) {
         break missingId;
       }
 
-      id = R.id.saveBreed;
-      TextView saveBreed = ViewBindings.findChildViewById(rootView, id);
-      if (saveBreed == null) {
-        break missingId;
-      }
-
-      id = R.id.saveGender;
-      TextView saveGender = ViewBindings.findChildViewById(rootView, id);
-      if (saveGender == null) {
-        break missingId;
-      }
-
-      id = R.id.saveInj;
-      TextView saveInj = ViewBindings.findChildViewById(rootView, id);
-      if (saveInj == null) {
+      id = R.id.saveBreedResult;
+      TextView saveBreedResult = ViewBindings.findChildViewById(rootView, id);
+      if (saveBreedResult == null) {
         break missingId;
       }
 
@@ -231,9 +231,9 @@ public final class ActivityResultBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.saveType;
-      TextView saveType = ViewBindings.findChildViewById(rootView, id);
-      if (saveType == null) {
+      id = R.id.saveTypeResult;
+      TextView saveTypeResult = ViewBindings.findChildViewById(rootView, id);
+      if (saveTypeResult == null) {
         break missingId;
       }
 
@@ -250,9 +250,9 @@ public final class ActivityResultBinding implements ViewBinding {
       }
 
       return new ActivityResultBinding((ConstraintLayout) rootView, TopFont, addAnimals, arrowIcon,
-          beautifulR, birthMonth, breedText, chageText, color, deleteAndResetImage, genderText,
-          imageResultSave, saveBirthMonth, saveBreed, saveGender, saveInj, saveOlor, saveType,
-          textView, typeInj);
+          beautifulR, birthMonth, breedText, chageText, color, deleteAndResetImage, emailEt1Result,
+          genderAnimalResult, genderText, imageResultSave, saveBirthMonthResult, saveBreedResult,
+          saveOlor, saveTypeResult, textView, typeInj);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.camera.view.PreviewView;
@@ -31,15 +32,36 @@ public final class ActivityCameraBinding implements ViewBinding {
   public final ImageView imageCaptureButton;
 
   @NonNull
+  public final TextView textView1;
+
+  @NonNull
+  public final TextView textView2;
+
+  @NonNull
+  public final TextView textView3;
+
+  @NonNull
+  public final TextView textView4;
+
+  @NonNull
+  public final TextView textView5;
+
+  @NonNull
   public final PreviewView viewFinder;
 
   private ActivityCameraBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView arrowBackBtn,
       @NonNull ImageButton btnGallery, @NonNull ImageView imageCaptureButton,
-      @NonNull PreviewView viewFinder) {
+      @NonNull TextView textView1, @NonNull TextView textView2, @NonNull TextView textView3,
+      @NonNull TextView textView4, @NonNull TextView textView5, @NonNull PreviewView viewFinder) {
     this.rootView = rootView;
     this.arrowBackBtn = arrowBackBtn;
     this.btnGallery = btnGallery;
     this.imageCaptureButton = imageCaptureButton;
+    this.textView1 = textView1;
+    this.textView2 = textView2;
+    this.textView3 = textView3;
+    this.textView4 = textView4;
+    this.textView5 = textView5;
     this.viewFinder = viewFinder;
   }
 
@@ -88,6 +110,36 @@ public final class ActivityCameraBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView1;
+      TextView textView1 = ViewBindings.findChildViewById(rootView, id);
+      if (textView1 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView2;
+      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
+      if (textView2 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView3;
+      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
+      if (textView3 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView4;
+      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
+      if (textView4 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView5;
+      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
+      if (textView5 == null) {
+        break missingId;
+      }
+
       id = R.id.viewFinder;
       PreviewView viewFinder = ViewBindings.findChildViewById(rootView, id);
       if (viewFinder == null) {
@@ -95,7 +147,7 @@ public final class ActivityCameraBinding implements ViewBinding {
       }
 
       return new ActivityCameraBinding((ConstraintLayout) rootView, arrowBackBtn, btnGallery,
-          imageCaptureButton, viewFinder);
+          imageCaptureButton, textView1, textView2, textView3, textView4, textView5, viewFinder);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

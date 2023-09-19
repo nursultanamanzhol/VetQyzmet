@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
+import kz.cifron.vetqyzmet_doctor.AnimalViewModel
 import kz.cifron.vetqyzmet_doctor.CameraActivity
 import kz.cifron.vetqyzmet_doctor.R
 import kz.cifron.vetqyzmet_doctor.addanimals.Tasks
@@ -14,21 +16,19 @@ import kz.cifron.vetqyzmet_doctor.databinding.ActivityResultBinding
 class ResultActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityResultBinding
+    private lateinit var viewModel: AnimalViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Получение текста из Intent
-        val saveTypeText = intent.getStringExtra("saveType")
-        // Найдите TextView, в который вы хотите установить текст
-        binding.saveType.text = saveTypeText
 
-        // Установите полученный текст в TextView
-//        resultTextView.text = saveTypeText
-
-
+        binding.saveTypeResult.text = intent.getStringExtra("saveTypeResult")
+        binding.emailEt1Result.text = intent.getStringExtra("emailEt1Result")
+        binding.genderAnimalResult.text = intent.getStringExtra("genderAnimalResult")
+        binding.saveBreedResult.text = intent.getStringExtra("saveBreedResult")
+        binding.saveBirthMonthResult.text = intent.getStringExtra("birthDateTextResult")
 
         // Получение данных из Intent, переданных из CameraActivity
         val imageUriString = intent.getStringExtra("imageUri")
