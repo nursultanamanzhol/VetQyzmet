@@ -3341,6 +3341,7 @@ int id closest 0x7f09008f
 int id collapseActionView 0x7f090090
 int id color 0x7f090091
 int id compatible 0x7f090092
+int id completeResult 0x7f090279
 int id compress 0x7f090093
 int id confirmButton 0x7f090094
 int id confirm_button 0x7f090095
@@ -4109,6 +4110,7 @@ int string checkout 0x7f120027
 int string checkoutback 0x7f120028
 int string clear_text_end_icon_content_description 0x7f120029
 int string close 0x7f12002a
+int string complete 0x7f1200b1
 int string copy 0x7f12002b
 int string dest_title 0x7f12002c
 int string error_a11y_label 0x7f12002d
@@ -4232,6 +4234,7 @@ int string path_password_eye_mask_visible 0x7f1200a2
 int string path_password_strike_through 0x7f1200a3
 int string preference_copied 0x7f1200a4
 int string prof 0x7f1200a5
+int string resetComplete 0x7f1200b2
 int string search_menu_title 0x7f1200a6
 int string searchbar_scrolling_view_behavior 0x7f1200a7
 int string searchview_clear_text_content_description 0x7f1200a8

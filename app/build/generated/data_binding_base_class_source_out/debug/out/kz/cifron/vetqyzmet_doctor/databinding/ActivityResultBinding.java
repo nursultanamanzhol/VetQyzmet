@@ -36,13 +36,22 @@ public final class ActivityResultBinding implements ViewBinding {
   public final TextView birthMonth;
 
   @NonNull
+  public final ConstraintLayout bottomAddAnimals;
+
+  @NonNull
   public final TextView breedText;
 
   @NonNull
   public final TextView chageText;
 
   @NonNull
+  public final TextView checkoutBack;
+
+  @NonNull
   public final TextView color;
+
+  @NonNull
+  public final TextView completeResult;
 
   @NonNull
   public final ImageView deleteAndResetImage;
@@ -58,6 +67,12 @@ public final class ActivityResultBinding implements ViewBinding {
 
   @NonNull
   public final ConstraintLayout imageResultSave;
+
+  @NonNull
+  public final View rectangleFurther;
+
+  @NonNull
+  public final View rectangleGray;
 
   @NonNull
   public final TextView saveBirthMonthResult;
@@ -80,26 +95,34 @@ public final class ActivityResultBinding implements ViewBinding {
   private ActivityResultBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout TopFont, @NonNull ConstraintLayout addAnimals,
       @NonNull ImageView arrowIcon, @NonNull ImageView beautifulR, @NonNull TextView birthMonth,
-      @NonNull TextView breedText, @NonNull TextView chageText, @NonNull TextView color,
-      @NonNull ImageView deleteAndResetImage, @NonNull TextView emailEt1Result,
-      @NonNull TextView genderAnimalResult, @NonNull TextView genderText,
-      @NonNull ConstraintLayout imageResultSave, @NonNull TextView saveBirthMonthResult,
-      @NonNull TextView saveBreedResult, @NonNull TextView saveOlor,
-      @NonNull TextView saveTypeResult, @NonNull TextView textView, @NonNull TextView typeInj) {
+      @NonNull ConstraintLayout bottomAddAnimals, @NonNull TextView breedText,
+      @NonNull TextView chageText, @NonNull TextView checkoutBack, @NonNull TextView color,
+      @NonNull TextView completeResult, @NonNull ImageView deleteAndResetImage,
+      @NonNull TextView emailEt1Result, @NonNull TextView genderAnimalResult,
+      @NonNull TextView genderText, @NonNull ConstraintLayout imageResultSave,
+      @NonNull View rectangleFurther, @NonNull View rectangleGray,
+      @NonNull TextView saveBirthMonthResult, @NonNull TextView saveBreedResult,
+      @NonNull TextView saveOlor, @NonNull TextView saveTypeResult, @NonNull TextView textView,
+      @NonNull TextView typeInj) {
     this.rootView = rootView;
     this.TopFont = TopFont;
     this.addAnimals = addAnimals;
     this.arrowIcon = arrowIcon;
     this.beautifulR = beautifulR;
     this.birthMonth = birthMonth;
+    this.bottomAddAnimals = bottomAddAnimals;
     this.breedText = breedText;
     this.chageText = chageText;
+    this.checkoutBack = checkoutBack;
     this.color = color;
+    this.completeResult = completeResult;
     this.deleteAndResetImage = deleteAndResetImage;
     this.emailEt1Result = emailEt1Result;
     this.genderAnimalResult = genderAnimalResult;
     this.genderText = genderText;
     this.imageResultSave = imageResultSave;
+    this.rectangleFurther = rectangleFurther;
+    this.rectangleGray = rectangleGray;
     this.saveBirthMonthResult = saveBirthMonthResult;
     this.saveBreedResult = saveBreedResult;
     this.saveOlor = saveOlor;
@@ -165,6 +188,12 @@ public final class ActivityResultBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.bottomAddAnimals;
+      ConstraintLayout bottomAddAnimals = ViewBindings.findChildViewById(rootView, id);
+      if (bottomAddAnimals == null) {
+        break missingId;
+      }
+
       id = R.id.breedText;
       TextView breedText = ViewBindings.findChildViewById(rootView, id);
       if (breedText == null) {
@@ -177,9 +206,21 @@ public final class ActivityResultBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.checkoutBack;
+      TextView checkoutBack = ViewBindings.findChildViewById(rootView, id);
+      if (checkoutBack == null) {
+        break missingId;
+      }
+
       id = R.id.color;
       TextView color = ViewBindings.findChildViewById(rootView, id);
       if (color == null) {
+        break missingId;
+      }
+
+      id = R.id.completeResult;
+      TextView completeResult = ViewBindings.findChildViewById(rootView, id);
+      if (completeResult == null) {
         break missingId;
       }
 
@@ -210,6 +251,18 @@ public final class ActivityResultBinding implements ViewBinding {
       id = R.id.imageResultSave;
       ConstraintLayout imageResultSave = ViewBindings.findChildViewById(rootView, id);
       if (imageResultSave == null) {
+        break missingId;
+      }
+
+      id = R.id.rectangleFurther;
+      View rectangleFurther = ViewBindings.findChildViewById(rootView, id);
+      if (rectangleFurther == null) {
+        break missingId;
+      }
+
+      id = R.id.rectangleGray;
+      View rectangleGray = ViewBindings.findChildViewById(rootView, id);
+      if (rectangleGray == null) {
         break missingId;
       }
 
@@ -250,8 +303,9 @@ public final class ActivityResultBinding implements ViewBinding {
       }
 
       return new ActivityResultBinding((ConstraintLayout) rootView, TopFont, addAnimals, arrowIcon,
-          beautifulR, birthMonth, breedText, chageText, color, deleteAndResetImage, emailEt1Result,
-          genderAnimalResult, genderText, imageResultSave, saveBirthMonthResult, saveBreedResult,
+          beautifulR, birthMonth, bottomAddAnimals, breedText, chageText, checkoutBack, color,
+          completeResult, deleteAndResetImage, emailEt1Result, genderAnimalResult, genderText,
+          imageResultSave, rectangleFurther, rectangleGray, saveBirthMonthResult, saveBreedResult,
           saveOlor, saveTypeResult, textView, typeInj);
     }
     String missingId = rootView.getResources().getResourceName(id);

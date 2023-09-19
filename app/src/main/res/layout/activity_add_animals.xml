@@ -71,8 +71,6 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/addAnimals"
         android:layout_width="match_parent"
@@ -164,9 +162,9 @@
                     android:id="@+id/emailEt1"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:hint=""
                     android:background="@drawable/input_emailadress"
                     android:drawablePadding="10dp"
+                    android:hint=""
                     android:inputType="number"
                     android:maxLength="10"
                     android:padding="10dp"
@@ -351,10 +349,6 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <!-- Auto layout, variables, and unit scale are not yet supported -->
-
-        <!-- Auto layout, variables, and unit scale are not yet supported -->
-
         <View
             android:id="@+id/rectangleFurther"
             android:layout_width="0dp"
@@ -378,25 +372,17 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:fontFamily="@font/roboto_medium"
             android:gravity="center_horizontal|top"
             android:lineSpacingExtra="2sp"
             android:text="@string/checkout"
-            android:fontFamily="@font/roboto_medium"
             android:textAppearance="@style/checkout"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/rectangleFurther"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!--
-          Font family: Roboto
-          Line height: 18sp
-          (identical to box height)
-          translationY compensates for the line height adjustment of text
-          -->
 
-
-        <!-- Auto layout, variables, and unit scale are not yet supported -->
         <View
             android:id="@+id/rectangleGray"
             android:layout_width="0dp"
@@ -413,7 +399,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
-        <!-- Auto layout, variables, and unit scale are not yet supported -->
         <TextView
             android:id="@+id/checkoutBack"
             android:layout_width="wrap_content"
@@ -421,21 +406,15 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:fontFamily="@font/roboto_medium"
             android:gravity="center_horizontal|top"
             android:lineSpacingExtra="2sp"
-            android:fontFamily="@font/roboto_medium"
             android:text="@string/checkoutback"
             android:textAppearance="@style/checkoutblack"
-            app:layout_constraintEnd_toEndOf="@id/rectangleGray"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/rectangleGray"
             app:layout_constraintStart_toStartOf="@+id/rectangleGray"
             app:layout_constraintTop_toTopOf="parent" />
-        <!--
-          Font family: Roboto
-          Line height: 18sp
-          (identical to box height)
-          translationY compensates for the line height adjustment of text
-          -->
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

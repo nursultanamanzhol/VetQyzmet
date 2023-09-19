@@ -14,13 +14,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">VetQyzmet</string>
-    <string name="checkout">Далее</string>
+    <string name="checkout">Завершить</string>
     <string name="checkoutback">Отмена</string>
     <string name="close">Close</string>
+    <string name="complete">Завершить</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="logout">Logout</string>
     <string name="open">Open</string>
     <string name="prof">Profile page</string>
+    <string name="resetComplete">Заполнить заново</string>
     <string name="settings">Settings</string>
     <style name="Base.Theme.Animal" parent="Theme.MaterialComponents.Light.NoActionBar">
         

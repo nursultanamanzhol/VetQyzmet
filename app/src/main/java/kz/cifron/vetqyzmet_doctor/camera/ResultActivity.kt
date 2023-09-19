@@ -22,7 +22,13 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        
+        binding.rectangleGray.setOnClickListener {
+            onBackPressed()
+            onBackPressed()
+            onBackPressed()
+            finish()
+        }
 
         binding.saveTypeResult.text = intent.getStringExtra("saveTypeResult")
         binding.emailEt1Result.text = intent.getStringExtra("emailEt1Result")
