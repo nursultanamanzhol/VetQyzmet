@@ -3407,6 +3407,7 @@ id elastic
 id email
 id emailEt
 id emailEt1
+id emailEt1Result
 id embed
 id end
 id endToStart
@@ -3438,6 +3439,7 @@ id fragment_container_view_tag
 id frost
 id fullscreen_header
 id genderAnimal
+id genderAnimalResult
 id genderText
 id ghost_view
 id ghost_view_holder
@@ -3645,10 +3647,9 @@ id right_side
 id rounded
 id row_index_key
 id rtl
-id saveBirthMonth
+id saveBirthMonthResult
 id saveBreed
-id saveGender
-id saveInj
+id saveBreedResult
 id saveType
 id saveTypeResult
 id save_non_transition_alpha
@@ -3758,7 +3759,11 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView1
 id textView2
+id textView3
+id textView4
+id textView5
 id textViewTitle
 id text_client
 id text_cv_number

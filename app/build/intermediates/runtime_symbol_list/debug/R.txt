@@ -3406,6 +3406,7 @@ int id elastic 0x7f0900d0
 int id email 0x7f0900d1
 int id emailEt 0x7f0900d2
 int id emailEt1 0x7f0900d3
+int id emailEt1Result 0x7f090275
 int id embed 0x7f0900d4
 int id end 0x7f0900d5
 int id endToStart 0x7f0900d6
@@ -3437,6 +3438,7 @@ int id fragment_container_view_tag 0x7f0900ef
 int id frost 0x7f0900f0
 int id fullscreen_header 0x7f0900f1
 int id genderAnimal 0x7f0900f2
+int id genderAnimalResult 0x7f090276
 int id genderText 0x7f0900f3
 int id ghost_view 0x7f0900f4
 int id ghost_view_holder 0x7f0900f5
@@ -3644,10 +3646,9 @@ int id right_side 0x7f0901be
 int id rounded 0x7f0901bf
 int id row_index_key 0x7f0901c0
 int id rtl 0x7f0901c1
-int id saveBirthMonth 0x7f0901c2
+int id saveBirthMonthResult 0x7f090277
 int id saveBreed 0x7f0901c3
-int id saveGender 0x7f0901c4
-int id saveInj 0x7f0901c5
+int id saveBreedResult 0x7f090278
 int id saveType 0x7f0901c6
 int id saveTypeResult 0x7f0901c7
 int id save_non_transition_alpha 0x7f0901c8
@@ -3757,7 +3758,11 @@ int id textSpacerNoTitle 0x7f09022f
 int id textStart 0x7f090230
 int id textTop 0x7f090231
 int id textView 0x7f090232
+int id textView1 0x7f090271
 int id textView2 0x7f090233
+int id textView3 0x7f090272
+int id textView4 0x7f090273
+int id textView5 0x7f090274
 int id textViewTitle 0x7f090234
 int id text_client 0x7f090235
 int id text_cv_number 0x7f090236
