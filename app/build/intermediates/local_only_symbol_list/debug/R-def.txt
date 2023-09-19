@@ -91,6 +91,7 @@ id checkoutBack
 id checkoutGO
 id chooseDateButton
 id color
+id completeResult
 id confirmButton
 id coordinatorLayout
 id customRadioButtonIcon
@@ -213,10 +214,12 @@ string app_name
 string checkout
 string checkoutback
 string close
+string complete
 string hello_blank_fragment
 string logout
 string open
 string prof
+string resetComplete
 string settings
 style Base.Theme.Animal
 style Base.Theme.VetQyzmet

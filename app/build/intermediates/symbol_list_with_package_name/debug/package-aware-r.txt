@@ -3342,6 +3342,7 @@ id closest
 id collapseActionView
 id color
 id compatible
+id completeResult
 id compress
 id confirmButton
 id confirm_button
@@ -4110,6 +4111,7 @@ string checkout
 string checkoutback
 string clear_text_end_icon_content_description
 string close
+string complete
 string copy
 string dest_title
 string error_a11y_label
@@ -4233,6 +4235,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string preference_copied
 string prof
+string resetComplete
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description

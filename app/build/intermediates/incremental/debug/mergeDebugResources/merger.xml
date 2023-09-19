@@ -11846,7 +11846,7 @@
         
         <item name="postSplashScreenTheme">@style/Base.Theme.VetQyzmet</item>
 
-    </style></file><file path="C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">VetQyzmet</string><string name="prof">Profile page</string><string name="settings">Settings</string><string name="logout">Logout</string><string name="open">Open</string><string name="close">Close</string><string name="hello_blank_fragment">Hello blank fragment</string><string name="checkout">Далее</string><string name="checkoutback">Отмена</string></file><file path="C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\res\values\themes.xml" qualifiers=""><style name="Base.Theme.VetQyzmet" parent="Theme.MaterialComponents.Light.NoActionBar">
+    </style></file><file path="C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">VetQyzmet</string><string name="prof">Profile page</string><string name="settings">Settings</string><string name="logout">Logout</string><string name="open">Open</string><string name="close">Close</string><string name="hello_blank_fragment">Hello blank fragment</string><string name="checkout">Завершить</string><string name="checkoutback">Отмена</string><string name="resetComplete">Заполнить заново</string><string name="complete">Завершить</string></file><file path="C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\res\values\themes.xml" qualifiers=""><style name="Base.Theme.VetQyzmet" parent="Theme.MaterialComponents.Light.NoActionBar">
         
         <item name="colorPrimary">@color/orange</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>

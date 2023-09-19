@@ -1,4 +1,4 @@
-#Tue Sep 19 18:02:55 ALMT 2023
+#Tue Sep 19 20:03:57 ALMT 2023
 base.0=C\:\\Users\\nursu\\AndroidStudioProjects\\VetQyzmet\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\nursu\\AndroidStudioProjects\\VetQyzmet\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\nursu\\AndroidStudioProjects\\VetQyzmet\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
