@@ -18,6 +18,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.widget.doAfterTextChanged
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.bottomsheet.BottomSheetDialog
@@ -144,26 +145,44 @@ class AddAnimalsActivity : AppCompatActivity() {
             val emailText = editable
             // Вы можете использовать значение emailText по вашему усмотрению
         }
+        // Объявите переменную для хранения индекса выбранного RadioButton
+        var selectedRadioButtonIndex: Int = -1
+
         binding.typeconst.setOnClickListener {
             val bottomSheetBinding = BottomSheetDialogBinding.inflate(layoutInflater)
             val bottomSheetDialog = BottomSheetDialog(this)
-            bottomSheetDialog.setContentView(bottomSheetBinding.root)
+            val dialogView = bottomSheetBinding.root
+
+            // Устанавливаем фоновый ресурс для BottomSheetDialog
+            val dialogBackground =
+                ContextCompat.getDrawable(this, R.drawable.bottom_sheet_dialog_background)
+            dialogView.background =
+                dialogBackground // Устанавливаем фоновый ресурс для корневого макета
+
+            bottomSheetDialog.setContentView(dialogView)
 
             // Устанавливаем слушатель для RadioGroup
             bottomSheetBinding.radioGroup.setOnCheckedChangeListener { group, checkedId ->
                 val selectedRadioButton = group.findViewById<RadioButton>(checkedId)
                 val selectedOptionText = selectedRadioButton.text.toString()
                 binding.saveType.text = selectedOptionText
-                Handler().postDelayed({
-                    bottomSheetDialog.dismiss()
-                }, 500)
+
+                // Сохраняем индекс выбранного RadioButton
+                selectedRadioButtonIndex = group.indexOfChild(selectedRadioButton)
+
+                bottomSheetDialog.dismiss()
             }
 
             // Закрываем диалог при нажатии на кнопку "Выбрать"
             bottomSheetBinding.buttomClose.setOnClickListener {
-                Handler().postDelayed({
-                    bottomSheetDialog.dismiss()
-                }, 500) // Здесь 1000 миллисекунд (1 секунда) - это задержка перед закрытием
+                bottomSheetDialog.dismiss()
+            }
+
+            // Восстанавливаем выбранный RadioButton, если есть сохраненный индекс
+            if (selectedRadioButtonIndex != -1) {
+                val selectedRadioButton =
+                    bottomSheetBinding.radioGroup.getChildAt(selectedRadioButtonIndex) as RadioButton
+                selectedRadioButton.isChecked = true
             }
 
             bottomSheetDialog.show()

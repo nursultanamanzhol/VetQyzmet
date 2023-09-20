@@ -33,7 +33,8 @@ class CameraActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCameraBinding
     private lateinit var cameraExecutor: Executor
     private var imageCapture: ImageCapture? = null
-    private val name = SimpleDateFormat(FILENAME_FORMAT, Locale.US).format(System.currentTimeMillis())
+    private val name =
+        SimpleDateFormat(FILENAME_FORMAT, Locale.US).format(System.currentTimeMillis())
 
     private val launcher =
         registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { map ->
@@ -57,12 +58,6 @@ class CameraActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityCameraBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-//        binding.textView1.text = intent.getStringExtra("saveType")
-//        binding.textView2.text = intent.getStringExtra("emailEt1")
-//        binding.textView3.text = intent.getStringExtra("genderAnimal")
-//        binding.textView4.text = intent.getStringExtra("saveBreed")
-//        binding.textView5.text = intent.getStringExtra("birthDateText")
 
         cameraExecutor = ContextCompat.getMainExecutor(this)
 
@@ -119,16 +114,26 @@ class CameraActivity : AppCompatActivity() {
 
                     val imageIntent = Intent(this@CameraActivity, ResultActivity::class.java)
 
-                    val saveType  = intent.getStringExtra("saveType")
-                    val birthDateText  = intent.getStringExtra("birthDateText")
-                    val saveBreed  = intent.getStringExtra("saveBreed")
-                    val genderAnimal  = intent.getStringExtra("genderAnimal")
-                    val emailEt1  = intent.getStringExtra("emailEt1")
+                    val saveType = intent.getStringExtra("saveType")
+                    val birthDateText = intent.getStringExtra("birthDateText")
+                    val saveBreed = intent.getStringExtra("saveBreed")
+                    val genderAnimal = intent.getStringExtra("genderAnimal")
+                    val emailEt1 = intent.getStringExtra("emailEt1")
                     imageIntent.putExtra("saveTypeResult", saveType)
                     imageIntent.putExtra("birthDateTextResult", birthDateText)
                     imageIntent.putExtra("saveBreedResult", saveBreed)
                     imageIntent.putExtra("genderAnimalResult", genderAnimal)
                     imageIntent.putExtra("emailEt1Result", emailEt1)
+                    val saveTypeReset = intent.getStringExtra("saveTypeResult")
+                    val birthDateTextReset = intent.getStringExtra("birthDateTextResult")
+                    val saveBreedReset = intent.getStringExtra("saveBreedResult")
+                    val genderAnimalReset = intent.getStringExtra("genderAnimalResult")
+                    val emailEt1Reset = intent.getStringExtra("emailEt1Result")
+                    imageIntent.putExtra("saveTypeResultReset", saveTypeReset)
+                    imageIntent.putExtra("birthDateTextResultReset", birthDateTextReset)
+                    imageIntent.putExtra("saveBreedResultReset", saveBreedReset)
+                    imageIntent.putExtra("genderAnimalResultReset", genderAnimalReset)
+                    imageIntent.putExtra("emailEt1ResultReset", emailEt1Reset)
 
 
                     imageIntent.putExtras(bundle)
@@ -155,20 +160,38 @@ class CameraActivity : AppCompatActivity() {
 
         val resultIntent = Intent(this@CameraActivity, ResultActivity::class.java)
 
-        val saveType  = intent.getStringExtra("saveType")
-        val birthDateText  = intent.getStringExtra("birthDateText")
-        val saveBreed  = intent.getStringExtra("saveBreed")
-        val genderAnimal  = intent.getStringExtra("genderAnimal")
-        val emailEt1  = intent.getStringExtra("emailEt1")
-        resultIntent.putExtra("saveTypeResult", saveType)
-        resultIntent.putExtra("birthDateTextResult", birthDateText)
-        resultIntent.putExtra("saveBreedResult", saveBreed)
-        resultIntent.putExtra("genderAnimalResult", genderAnimal)
-        resultIntent.putExtra("emailEt1Result", emailEt1)
+        val saveType = intent.getStringExtra("saveType")
+        val birthDateText = intent.getStringExtra("birthDateText")
+        val saveBreed = intent.getStringExtra("saveBreed")
+        val genderAnimal = intent.getStringExtra("genderAnimal")
+        val emailEt1 = intent.getStringExtra("emailEt1")
+        // Вместо простого startActivity используйте setResult и finish
 
-        resultIntent.putExtras(bundle)
-        startActivity(resultIntent)
+        resultIntent.putExtra("saveTypeResult", saveType)
+        resultIntent.putExtra("emailEt1Result", emailEt1)
+        resultIntent.putExtra("genderAnimalResult", genderAnimal)
+        resultIntent.putExtra("saveBreedResult", saveBreed)
+        resultIntent.putExtra("birthDateTextResult", birthDateText)
+
+        val saveTypeReset = intent.getStringExtra("saveTypeResult")
+        val birthDateTextReset = intent.getStringExtra("birthDateTextResult")
+        val saveBreedReset = intent.getStringExtra("saveBreedResult")
+        val genderAnimalReset = intent.getStringExtra("genderAnimalResult")
+        val emailEt1Reset = intent.getStringExtra("emailEt1Result")
+
+        resultIntent.putExtra("saveTypeResultReset", saveTypeReset)
+        resultIntent.putExtra("birthDateTextResultReset", birthDateTextReset)
+        resultIntent.putExtra("saveBreedResultReset", saveBreedReset)
+        resultIntent.putExtra("genderAnimalResultReset", genderAnimalReset)
+        resultIntent.putExtra("emailEt1ResultReset", emailEt1Reset)
+
+
+        setResult(RESULT_OK, resultIntent)
         finish()
+
+//        resultIntent.putExtras(bundle)
+//        startActivity(resultIntent)
+//        finish()
     }
 
     private fun startCamera() {
@@ -204,6 +227,7 @@ class CameraActivity : AppCompatActivity() {
             launcher.launch(REQUEST_PERMISSION)
         }
     }
+
 
     companion object {
         private val REQUEST_PERMISSION: Array<String> = buildList {
