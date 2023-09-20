@@ -3,6 +3,8 @@
     <style name="Base.Theme.VetQyzmet" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/orange</item>
+<!--        <item name="colorControlNormal">@color/myControlColor</item>-->
+
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
@@ -14,11 +16,14 @@
         <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
 
         <!-- Customize your theme here. -->
-<!--        <item name="android:fontFamily">@font/Roboto-Regular</item>-->
+        <!--        <item name="android:fontFamily">@font/Roboto-Regular</item>-->
     </style>
+
     <style name="Base.Theme.Animal" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/orange</item>
+<!--        <item name="colorControlNormal">@color/myControlColor</item>-->
+
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
@@ -38,6 +43,7 @@
     <style name="Theme.VetQyzmetNum2" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/white</item>
+        <item name="colorControlNormal">@color/myControlColor</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
@@ -47,10 +53,10 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
         <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
-<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
-<!--        <item name="colorControlNormal">@color/black</item>-->
-<!--        &lt;!&ndash; Установите цвет текста элементов меню в боковой навигации &ndash;&gt;-->
-<!--        <item name="android:textColorSecondary">@color/black</item>-->
+        <!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--        <item name="colorControlNormal">@color/black</item>-->
+        <!--        &lt;!&ndash; Установите цвет текста элементов меню в боковой навигации &ndash;&gt;-->
+        <!--        <item name="android:textColorSecondary">@color/black</item>-->
 
     </style>
 
@@ -59,10 +65,15 @@
 
         <!-- Дополнительные атрибуты стиля текста, если необходимо -->
     </style>
+
     <style name="RobotoBoldViewStyle" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <item name="android:fontFamily">@font/roboto_bold</item>
 
         <!-- Дополнительные атрибуты стиля текста, если необходимо -->
     </style>
 
+    <style name="CustomDatePickerDialog" parent="android:Theme.Holo.Light.Dialog.NoActionBar">
+        <item name="android:windowBackground">@drawable/custom_dialog_background</item>
+
+    </style>
 </resources>

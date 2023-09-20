@@ -2135,6 +2135,7 @@ int color mtrl_textinput_disabled_color 0x7f0502cf
 int color mtrl_textinput_filled_box_default_background_color 0x7f0502d0
 int color mtrl_textinput_focused_box_stroke_color 0x7f0502d1
 int color mtrl_textinput_hovered_box_stroke_color 0x7f0502d2
+int color myControlColor 0x7f0502f3
 int color notification_action_color_filter 0x7f0502d3
 int color notification_icon_bg_color 0x7f0502d4
 int color orange 0x7f0502d5
@@ -2166,6 +2167,7 @@ int color teal_700 0x7f0502ee
 int color tooltip_background_dark 0x7f0502ef
 int color tooltip_background_light 0x7f0502f0
 int color white 0x7f0502f1
+int color your_background_color 0x7f0502f2
 int dimen abc_action_bar_content_inset_material 0x7f060000
 int dimen abc_action_bar_content_inset_with_nav 0x7f060001
 int dimen abc_action_bar_default_height_material 0x7f060002
@@ -3058,6 +3060,7 @@ int drawable btn_radio_on_to_off_mtrl_animation 0x7f070088
 int drawable btncamera 0x7f070089
 int drawable compat_splash_screen 0x7f07008a
 int drawable compat_splash_screen_no_icon_background 0x7f07008b
+int drawable custom_dialog_background 0x7f07010c
 int drawable delete_image 0x7f07008c
 int drawable design_fab_background 0x7f07008d
 int drawable design_ic_visibility 0x7f07008e
@@ -3087,6 +3090,7 @@ int drawable ic_mtrl_checked_circle 0x7f0700a5
 int drawable ic_mtrl_chip_checked_black 0x7f0700a6
 int drawable ic_mtrl_chip_checked_circle 0x7f0700a7
 int drawable ic_mtrl_chip_close_circle 0x7f0700a8
+int drawable ic_my_dark_menu 0x7f07010d
 int drawable ic_search_black_24 0x7f0700a9
 int drawable icon_background 0x7f0700aa
 int drawable icon_gallery 0x7f0700ab
@@ -3343,6 +3347,8 @@ int id clockwise 0x7f09008e
 int id closest 0x7f09008f
 int id collapseActionView 0x7f090090
 int id color 0x7f090091
+int id colorConst 0x7f09027d
+int id colorText 0x7f09027e
 int id compatible 0x7f090092
 int id completeResult 0x7f090279
 int id compress 0x7f090093
@@ -3493,7 +3499,6 @@ int id legacy 0x7f090121
 int id line1 0x7f090122
 int id line3 0x7f090123
 int id lineOwner 0x7f090124
-int id lineReg 0x7f090125
 int id linear 0x7f090126
 int id linear1 0x7f090127
 int id listMode 0x7f090128
@@ -3695,6 +3700,13 @@ int id seekbar_value 0x7f0901ec
 int id select_dialog_listview 0x7f0901ed
 int id selected 0x7f0901ee
 int id selection_type 0x7f0901ef
+int id separatorBottom 0x7f09027f
+int id separatorTop 0x7f090280
+int id separator_1 0x7f090281
+int id separator_2 0x7f090282
+int id separator_3 0x7f090283
+int id separator_4 0x7f090284
+int id separator_5 0x7f090285
 int id sharedValueSet 0x7f0901f0
 int id sharedValueUnset 0x7f0901f1
 int id shortcut 0x7f0901f2
@@ -3953,7 +3965,6 @@ int layout activity_owner_page 0x7f0c0024
 int layout activity_page_vet_qyzmet 0x7f0c0025
 int layout activity_result 0x7f0c0026
 int layout autoitem 0x7f0c0027
-int layout bottom_sheet_dialog 0x7f0c0028
 int layout custom_actionbar_layout 0x7f0c0029
 int layout custom_dialog 0x7f0c002a
 int layout custom_radio_button 0x7f0c002b
@@ -3972,6 +3983,8 @@ int layout design_navigation_menu 0x7f0c0037
 int layout design_navigation_menu_item 0x7f0c0038
 int layout design_text_input_end_icon 0x7f0c0039
 int layout design_text_input_start_icon 0x7f0c003a
+int layout dialog_bottom_sheet_animal_color 0x7f0c0091
+int layout dialog_bottom_sheet_type_animal 0x7f0c0092
 int layout dialog_date_picker 0x7f0c003b
 int layout dialog_error 0x7f0c003c
 int layout dialog_radio_buttons 0x7f0c003d
@@ -4539,6 +4552,7 @@ int style BasePreferenceThemeOverlay 0x7f130122
 int style CardView 0x7f130123
 int style CardView_Dark 0x7f130124
 int style CardView_Light 0x7f130125
+int style CustomDatePickerDialog 0x7f130481
 int style MaterialAlertDialog_Material3 0x7f130126
 int style MaterialAlertDialog_Material3_Animation 0x7f130127
 int style MaterialAlertDialog_Material3_Body_Text 0x7f130128

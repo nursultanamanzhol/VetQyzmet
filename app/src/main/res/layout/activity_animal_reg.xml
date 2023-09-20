@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AnimalRegActivity">
+    tools:context=".main.vetQyzmetPages.AnimalRegActivity">
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -19,7 +19,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/TopConst"
         android:layout_width="0dp"
-        android:layout_height="78dp"
+        android:layout_height="56dp"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -61,46 +61,43 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <View
-            android:id="@+id/lineReg"
+            android:id="@+id/separatorTop"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
-            android:background="@color/gray01"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:layout_constraintVertical_bias="0.0"
-            tools:layout_editor_absoluteX="10dp" />
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#E8EDF1"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="ВЫБЕРИТЕ ОКРУГ"
+        android:textColor="#5D6978"
+        android:textFontWeight="500"
+        android:id="@+id/textTop"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/recycler_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopConst" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/TopConst"
+        app:layout_constraintTop_toBottomOf="@id/textTop"
         app:layout_constraintVertical_bias="0.0"
         tools:listitem="@layout/autoitem" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="15dp"
-        android:fontFamily="@font/roboto_regular"
-        android:text="ВЫБЕРИТЕ ОКРУГ"
-        android:textColor="#5D6978"
-        android:textFontWeight="500"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/recycler_view"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TopConst" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

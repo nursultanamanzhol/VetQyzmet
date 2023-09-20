@@ -42,47 +42,50 @@
         android:testOnly="true"
         android:theme="@style/Theme.App.Starting" >
         <activity
-            android:name="kz.cifron.vetqyzmet_doctor.camera.ResultActivity"
+            android:name="kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.camera.CustomDatePickerDialog"
+            android:exported="false" />
+        <activity
+            android:name="kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.camera.ResultActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity
-            android:name="kz.cifron.vetqyzmet_doctor.camera.ImageActivity"
+            android:name="kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.camera.ImageActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity
-            android:name="kz.cifron.vetqyzmet_doctor.CameraActivity"
+            android:name="kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.camera.CameraActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity
-            android:name="kz.cifron.vetqyzmet_doctor.AddAnimalsActivity"
+            android:name="kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.AddAnimalsActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity
-            android:name="kz.cifron.vetqyzmet_doctor.OwnerPageActivity"
+            android:name="kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.OwnerPageActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity
-            android:name="kz.cifron.vetqyzmet_doctor.CertificatesActivity"
+            android:name="kz.cifron.vetqyzmet_doctor.main.vetQyzmetPages.CertificatesActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity
-            android:name="kz.cifron.vetqyzmet_doctor.MigrationActivity"
+            android:name="kz.cifron.vetqyzmet_doctor.main.vetQyzmetPages.MigrationActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity
-            android:name="kz.cifron.vetqyzmet_doctor.FormActivity"
+            android:name="kz.cifron.vetqyzmet_doctor.main.vetQyzmetPages.FormActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity
-            android:name="kz.cifron.vetqyzmet_doctor.AnimalRegActivity"
+            android:name="kz.cifron.vetqyzmet_doctor.main.vetQyzmetPages.AnimalRegActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity
-            android:name="kz.cifron.vetqyzmet_doctor.PageVetQyzmet"
+            android:name="kz.cifron.vetqyzmet_doctor.main.PageVetQyzmet"
             android:exported="false"
             android:theme="@style/Theme.VetQyzmetNum2" />
         <activity
-            android:name="kz.cifron.vetqyzmet_doctor.MainActivity"
+            android:name="kz.cifron.vetqyzmet_doctor.loginData.LoginActivity"
             android:exported="true"
             android:theme="@style/Theme.App.Starting" >
             <intent-filter>
