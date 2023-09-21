@@ -27,13 +27,17 @@ public final class AutoitemBinding implements ViewBinding {
   public final TextView numsView;
 
   @NonNull
+  public final View separatorBottom;
+
+  @NonNull
   public final TextView textViewTitle;
 
   private AutoitemBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView navigate2,
-      @NonNull TextView numsView, @NonNull TextView textViewTitle) {
+      @NonNull TextView numsView, @NonNull View separatorBottom, @NonNull TextView textViewTitle) {
     this.rootView = rootView;
     this.navigate2 = navigate2;
     this.numsView = numsView;
+    this.separatorBottom = separatorBottom;
     this.textViewTitle = textViewTitle;
   }
 
@@ -76,13 +80,20 @@ public final class AutoitemBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.separatorBottom;
+      View separatorBottom = ViewBindings.findChildViewById(rootView, id);
+      if (separatorBottom == null) {
+        break missingId;
+      }
+
       id = R.id.textViewTitle;
       TextView textViewTitle = ViewBindings.findChildViewById(rootView, id);
       if (textViewTitle == null) {
         break missingId;
       }
 
-      return new AutoitemBinding((ConstraintLayout) rootView, navigate2, numsView, textViewTitle);
+      return new AutoitemBinding((ConstraintLayout) rootView, navigate2, numsView, separatorBottom,
+          textViewTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
