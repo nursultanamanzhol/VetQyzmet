@@ -5,8 +5,7 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PageVetQyzmet"
-
+    tools:context=".main.PageVetQyzmet"
     tools:openDrawer="start">
 
 
@@ -46,12 +45,12 @@
                 android:padding="10dp"
                 android:text="Регистрация животных"
                 android:textColor="@color/black"
-
                 android:textFontWeight="500"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView1"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                />
 
             <ImageView
                 android:id="@+id/navigate1"
@@ -94,7 +93,6 @@
                 android:layout_marginStart="10dp"
                 android:padding="10dp"
                 android:text="Формы"
-
                 android:textColor="@color/black"
                 android:textFontWeight="500"
                 android:textSize="18sp"
@@ -118,9 +116,9 @@
             android:id="@+id/migration"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="10dp"
             android:background="?android:attr/selectableItemBackground"
             android:clickable="true"
-            android:layout_marginTop="10dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@id/form">
 

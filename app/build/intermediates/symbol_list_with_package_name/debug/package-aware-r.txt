@@ -2136,6 +2136,7 @@ color mtrl_textinput_disabled_color
 color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
+color myControlColor
 color notification_action_color_filter
 color notification_icon_bg_color
 color orange
@@ -2167,6 +2168,7 @@ color teal_700
 color tooltip_background_dark
 color tooltip_background_light
 color white
+color your_background_color
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -3059,6 +3061,7 @@ drawable btn_radio_on_to_off_mtrl_animation
 drawable btncamera
 drawable compat_splash_screen
 drawable compat_splash_screen_no_icon_background
+drawable custom_dialog_background
 drawable delete_image
 drawable design_fab_background
 drawable design_ic_visibility
@@ -3088,6 +3091,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_my_dark_menu
 drawable ic_search_black_24
 drawable icon_background
 drawable icon_gallery
@@ -3344,6 +3348,8 @@ id clockwise
 id closest
 id collapseActionView
 id color
+id colorConst
+id colorText
 id compatible
 id completeResult
 id compress
@@ -3494,7 +3500,6 @@ id legacy
 id line1
 id line3
 id lineOwner
-id lineReg
 id linear
 id linear1
 id listMode
@@ -3696,6 +3701,13 @@ id seekbar_value
 id select_dialog_listview
 id selected
 id selection_type
+id separatorBottom
+id separatorTop
+id separator_1
+id separator_2
+id separator_3
+id separator_4
+id separator_5
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3954,7 +3966,6 @@ layout activity_owner_page
 layout activity_page_vet_qyzmet
 layout activity_result
 layout autoitem
-layout bottom_sheet_dialog
 layout custom_actionbar_layout
 layout custom_dialog
 layout custom_radio_button
@@ -3973,6 +3984,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_bottom_sheet_animal_color
+layout dialog_bottom_sheet_type_animal
 layout dialog_date_picker
 layout dialog_error
 layout dialog_radio_buttons
@@ -4540,6 +4553,7 @@ style BasePreferenceThemeOverlay
 style CardView
 style CardView_Dark
 style CardView_Light
+style CustomDatePickerDialog
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Animation
 style MaterialAlertDialog_Material3_Body_Text

@@ -10,7 +10,6 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -22,47 +21,50 @@
         android:theme="@style/Theme.App.Starting"
         tools:targetApi="31">
         <activity
-            android:name=".camera.ResultActivity"
+            android:name=".registerAnimal.ownerPage.addAnimals.camera.CustomDatePickerDialog"
+            android:exported="false" />
+        <activity
+            android:name=".registerAnimal.ownerPage.addAnimals.camera.ResultActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity
-            android:name=".camera.ImageActivity"
+            android:name=".registerAnimal.ownerPage.addAnimals.camera.ImageActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity
-            android:name=".CameraActivity"
+            android:name=".registerAnimal.ownerPage.addAnimals.camera.CameraActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity
-            android:name=".AddAnimalsActivity"
+            android:name=".registerAnimal.ownerPage.addAnimals.AddAnimalsActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity
-            android:name=".OwnerPageActivity"
+            android:name=".registerAnimal.ownerPage.OwnerPageActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity
-            android:name=".CertificatesActivity"
+            android:name=".main.vetQyzmetPages.CertificatesActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity
-            android:name=".MigrationActivity"
+            android:name=".main.vetQyzmetPages.MigrationActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity
-            android:name=".FormActivity"
+            android:name=".main.vetQyzmetPages.FormActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity
-            android:name=".AnimalRegActivity"
+            android:name=".main.vetQyzmetPages.AnimalRegActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity
-            android:name=".PageVetQyzmet"
+            android:name=".main.PageVetQyzmet"
             android:exported="false"
             android:theme="@style/Theme.VetQyzmetNum2" />
         <activity
-            android:name=".MainActivity"
+            android:name=".loginData.LoginActivity"
             android:exported="true"
             android:theme="@style/Theme.App.Starting">
             <intent-filter>
