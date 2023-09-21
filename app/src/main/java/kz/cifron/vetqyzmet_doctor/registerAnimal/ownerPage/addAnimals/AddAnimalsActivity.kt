@@ -16,6 +16,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import kz.cifron.vetqyzmet_doctor.R
 import kz.cifron.vetqyzmet_doctor.databinding.ActivityAddAnimalsBinding
+import kz.cifron.vetqyzmet_doctor.databinding.DialogBottomSheetAnimalColorBinding
 import kz.cifron.vetqyzmet_doctor.databinding.DialogBottomSheetTypeAnimalBinding
 import kz.cifron.vetqyzmet_doctor.databinding.DialogRadioButtonsBinding
 import kz.cifron.vetqyzmet_doctor.main.PageVetQyzmet
@@ -61,13 +62,11 @@ class AddAnimalsActivity : AppCompatActivity() {
             intent.putExtra("birthDateText", binding.birthDateText.text.toString())
             intent.putExtra("saveBreed", binding.saveBreed.text.toString())
             intent.putExtra("emailEt1", binding.emailEt1.text.toString())
+            intent.putExtra("saveColor", binding.saveColor.text.toString())
             intent.putExtra("genderAnimal", selectedGenderText)
             Log.d("saveType", binding.saveType.text.toString())
             startActivity(intent)
         }
-
-
-
 
 
 //фон по умолчанию на устройствах Android 4.4.4
@@ -138,6 +137,41 @@ class AddAnimalsActivity : AppCompatActivity() {
                 val selectedRadioButton = group.findViewById<RadioButton>(checkedId)
                 val selectedOptionText = selectedRadioButton.text.toString()
                 binding.saveType.text = selectedOptionText
+
+                // Сохраняем индекс выбранного RadioButton
+                selectedRadioButtonIndex = group.indexOfChild(selectedRadioButton)
+
+//                Handler().postDelayed({
+                bottomSheetDialog.dismiss()
+//                }, 500)
+            }
+
+            // Закрываем диалог при нажатии на кнопку "Выбрать"
+            bottomSheetBinding.buttomClose.setOnClickListener {
+                Handler().postDelayed({
+                    bottomSheetDialog.dismiss()
+                }, 500)
+            }
+
+            // Восстанавливаем выбранный RadioButton, если есть сохраненный индекс
+            if (selectedRadioButtonIndex != -1) {
+                val selectedRadioButton =
+                    bottomSheetBinding.radioGroup.getChildAt(selectedRadioButtonIndex) as RadioButton
+                selectedRadioButton.isChecked = true
+            }
+
+            bottomSheetDialog.show()
+        }
+        binding.colorConst.setOnClickListener {
+            val bottomSheetBinding = DialogBottomSheetAnimalColorBinding.inflate(layoutInflater)
+            val bottomSheetDialog = BottomSheetDialog(this)
+            bottomSheetDialog.setContentView(bottomSheetBinding.root)
+
+            // Устанавливаем слушатель для RadioGroup
+            bottomSheetBinding.radioGroup.setOnCheckedChangeListener { group, checkedId ->
+                val selectedRadioButton = group.findViewById<RadioButton>(checkedId)
+                val selectedOptionText = selectedRadioButton.text.toString()
+                binding.saveColor.text = selectedOptionText
 
                 // Сохраняем индекс выбранного RadioButton
                 selectedRadioButtonIndex = group.indexOfChild(selectedRadioButton)

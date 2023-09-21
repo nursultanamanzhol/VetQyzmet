@@ -17,7 +17,7 @@
     <color name="your_background_color">#FFFFFFFF</color>
     <dimen name="your_dimension_here">16dp</dimen>
     <string name="app_name">VetQyzmet</string>
-    <string name="checkout">Завершить</string>
+    <string name="checkout">Далее</string>
     <string name="checkoutback">Отмена</string>
     <string name="close">Close</string>
     <string name="complete">Завершить</string>
