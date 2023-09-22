@@ -80,7 +80,7 @@
         <activity
             android:name="kz.cifron.vetqyzmet_doctor.main.PageVetQyzmet"
             android:exported="false"
-            android:theme="@style/Theme.VetQyzmetNum2" />
+            android:theme="@style/Base.Theme.Animal" />
         <activity
             android:name="kz.cifron.vetqyzmet_doctor.loginData.LoginActivity"
             android:exported="true"

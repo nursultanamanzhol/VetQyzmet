@@ -5,14 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.google.android.material.navigation.NavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -23,10 +22,13 @@ public final class ActivityPageVetQyzmetBinding implements ViewBinding {
   private final DrawerLayout rootView;
 
   @NonNull
+  public final ImageView btnNavView;
+
+  @NonNull
   public final ConstraintLayout certificates;
 
   @NonNull
-  public final DrawerLayout drawerLayout;
+  public final DrawerLayout drawer;
 
   @NonNull
   public final ConstraintLayout form;
@@ -44,39 +46,63 @@ public final class ActivityPageVetQyzmetBinding implements ViewBinding {
   public final ImageView imageView4;
 
   @NonNull
-  public final LinearLayout linear1;
+  public final ConstraintLayout linear1;
+
+  @NonNull
+  public final ImageView logOutIcon;
 
   @NonNull
   public final ConstraintLayout migration;
 
   @NonNull
-  public final NavigationView myNavigationView;
+  public final ImageView navigate1;
 
   @NonNull
-  public final ImageView navigate1;
+  public final TextView regAnimalPage;
 
   @NonNull
   public final ConstraintLayout registr;
 
+  @NonNull
+  public final ConstraintLayout topToolbarCustom;
+
+  @NonNull
+  public final TextView userCityText;
+
+  @NonNull
+  public final TextView userNameText;
+
+  @NonNull
+  public final TextView vetQyzmetTitle;
+
   private ActivityPageVetQyzmetBinding(@NonNull DrawerLayout rootView,
-      @NonNull ConstraintLayout certificates, @NonNull DrawerLayout drawerLayout,
-      @NonNull ConstraintLayout form, @NonNull ImageView imageView1, @NonNull ImageView imageView2,
-      @NonNull ImageView imageView3, @NonNull ImageView imageView4, @NonNull LinearLayout linear1,
-      @NonNull ConstraintLayout migration, @NonNull NavigationView myNavigationView,
-      @NonNull ImageView navigate1, @NonNull ConstraintLayout registr) {
+      @NonNull ImageView btnNavView, @NonNull ConstraintLayout certificates,
+      @NonNull DrawerLayout drawer, @NonNull ConstraintLayout form, @NonNull ImageView imageView1,
+      @NonNull ImageView imageView2, @NonNull ImageView imageView3, @NonNull ImageView imageView4,
+      @NonNull ConstraintLayout linear1, @NonNull ImageView logOutIcon,
+      @NonNull ConstraintLayout migration, @NonNull ImageView navigate1,
+      @NonNull TextView regAnimalPage, @NonNull ConstraintLayout registr,
+      @NonNull ConstraintLayout topToolbarCustom, @NonNull TextView userCityText,
+      @NonNull TextView userNameText, @NonNull TextView vetQyzmetTitle) {
     this.rootView = rootView;
+    this.btnNavView = btnNavView;
     this.certificates = certificates;
-    this.drawerLayout = drawerLayout;
+    this.drawer = drawer;
     this.form = form;
     this.imageView1 = imageView1;
     this.imageView2 = imageView2;
     this.imageView3 = imageView3;
     this.imageView4 = imageView4;
     this.linear1 = linear1;
+    this.logOutIcon = logOutIcon;
     this.migration = migration;
-    this.myNavigationView = myNavigationView;
     this.navigate1 = navigate1;
+    this.regAnimalPage = regAnimalPage;
     this.registr = registr;
+    this.topToolbarCustom = topToolbarCustom;
+    this.userCityText = userCityText;
+    this.userNameText = userNameText;
+    this.vetQyzmetTitle = vetQyzmetTitle;
   }
 
   @Override
@@ -106,13 +132,19 @@ public final class ActivityPageVetQyzmetBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnNavView;
+      ImageView btnNavView = ViewBindings.findChildViewById(rootView, id);
+      if (btnNavView == null) {
+        break missingId;
+      }
+
       id = R.id.certificates;
       ConstraintLayout certificates = ViewBindings.findChildViewById(rootView, id);
       if (certificates == null) {
         break missingId;
       }
 
-      DrawerLayout drawerLayout = (DrawerLayout) rootView;
+      DrawerLayout drawer = (DrawerLayout) rootView;
 
       id = R.id.form;
       ConstraintLayout form = ViewBindings.findChildViewById(rootView, id);
@@ -145,8 +177,14 @@ public final class ActivityPageVetQyzmetBinding implements ViewBinding {
       }
 
       id = R.id.linear1;
-      LinearLayout linear1 = ViewBindings.findChildViewById(rootView, id);
+      ConstraintLayout linear1 = ViewBindings.findChildViewById(rootView, id);
       if (linear1 == null) {
+        break missingId;
+      }
+
+      id = R.id.logOutIcon;
+      ImageView logOutIcon = ViewBindings.findChildViewById(rootView, id);
+      if (logOutIcon == null) {
         break missingId;
       }
 
@@ -156,15 +194,15 @@ public final class ActivityPageVetQyzmetBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.myNavigationView;
-      NavigationView myNavigationView = ViewBindings.findChildViewById(rootView, id);
-      if (myNavigationView == null) {
-        break missingId;
-      }
-
       id = R.id.navigate1;
       ImageView navigate1 = ViewBindings.findChildViewById(rootView, id);
       if (navigate1 == null) {
+        break missingId;
+      }
+
+      id = R.id.regAnimalPage;
+      TextView regAnimalPage = ViewBindings.findChildViewById(rootView, id);
+      if (regAnimalPage == null) {
         break missingId;
       }
 
@@ -174,9 +212,34 @@ public final class ActivityPageVetQyzmetBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPageVetQyzmetBinding((DrawerLayout) rootView, certificates, drawerLayout,
-          form, imageView1, imageView2, imageView3, imageView4, linear1, migration,
-          myNavigationView, navigate1, registr);
+      id = R.id.topToolbarCustom;
+      ConstraintLayout topToolbarCustom = ViewBindings.findChildViewById(rootView, id);
+      if (topToolbarCustom == null) {
+        break missingId;
+      }
+
+      id = R.id.user_city_text;
+      TextView userCityText = ViewBindings.findChildViewById(rootView, id);
+      if (userCityText == null) {
+        break missingId;
+      }
+
+      id = R.id.user_name_text;
+      TextView userNameText = ViewBindings.findChildViewById(rootView, id);
+      if (userNameText == null) {
+        break missingId;
+      }
+
+      id = R.id.vetQyzmetTitle;
+      TextView vetQyzmetTitle = ViewBindings.findChildViewById(rootView, id);
+      if (vetQyzmetTitle == null) {
+        break missingId;
+      }
+
+      return new ActivityPageVetQyzmetBinding((DrawerLayout) rootView, btnNavView, certificates,
+          drawer, form, imageView1, imageView2, imageView3, imageView4, linear1, logOutIcon,
+          migration, navigate1, regAnimalPage, registr, topToolbarCustom, userCityText,
+          userNameText, vetQyzmetTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

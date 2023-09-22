@@ -13,20 +13,20 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.ViewModelProvider
 import kz.cifron.vetqyzmet_doctor.R
-import kz.cifron.vetqyzmet_doctor.databinding.LoginActivityBinding
+import kz.cifron.vetqyzmet_doctor.databinding.ActivityLoginBinding
 import kz.cifron.vetqyzmet_doctor.main.PageVetQyzmet
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
 
 class LoginActivity : AppCompatActivity() {
-    private lateinit var binding: LoginActivityBinding
+    private lateinit var binding: ActivityLoginBinding
     private lateinit var viewModel: LoginViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
         super.onCreate(savedInstanceState)
-        binding = LoginActivityBinding.inflate(layoutInflater)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
 
@@ -86,8 +86,9 @@ class LoginActivity : AppCompatActivity() {
 
     private fun handleSuccessState(user: User, token: String) {
         val intent = Intent(this, PageVetQyzmet::class.java)
+        intent.putExtra("name", user.name)
+        intent.putExtra("location", user.RAYON_NAME)
         startActivity(intent)
-        finish()
     }
 
     //Error Dialog icon

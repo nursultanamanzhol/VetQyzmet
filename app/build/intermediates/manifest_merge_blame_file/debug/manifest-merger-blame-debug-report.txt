@@ -142,13 +142,13 @@
 79            android:theme="@style/Base.Theme.Animal" />
 79-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:58:13-53
 80        <activity
-80-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:59:9-62:58
+80-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:59:9-62:56
 81            android:name="kz.cifron.vetqyzmet_doctor.main.PageVetQyzmet"
 81-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:60:13-47
 82            android:exported="false"
 82-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:61:13-37
-83            android:theme="@style/Theme.VetQyzmetNum2" />
-83-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:62:13-55
+83            android:theme="@style/Base.Theme.Animal" />
+83-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:62:13-53
 84        <activity
 84-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:63:9-72:20
 85            android:name="kz.cifron.vetqyzmet_doctor.loginData.LoginActivity"

@@ -27,6 +27,7 @@ class OwnerPageActivity : AppCompatActivity() {
 
 
     }
+
     private fun DataFrom() {
         val location = intent.getStringExtra("location")
         val client = intent.getStringExtra("client")
@@ -42,9 +43,6 @@ class OwnerPageActivity : AppCompatActivity() {
             Log.e("OwnerPageActivity", "One or more extras are missing")
         }
     }
-
-
-
 
 
 }

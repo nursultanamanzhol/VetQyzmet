@@ -80,6 +80,9 @@ class AddAnimalsActivity : AppCompatActivity() {
             if (binding.emailEt1.text.toString().isBlank()) {
                 missingFields.add("Введите ИНЖ")
             }
+            if (binding.saveColor.text.toString().isBlank()) {
+                missingFields.add("Введите Масть")
+            }
             if (selectedGenderText.isBlank()) {
                 missingFields.add("Пол животного")
             }
@@ -90,6 +93,7 @@ class AddAnimalsActivity : AppCompatActivity() {
                 intent.putExtra("birthDateText", binding.birthDateText.text.toString())
                 intent.putExtra("saveBreed", binding.saveBreed.text.toString())
                 intent.putExtra("emailEt1", binding.emailEt1.text.toString())
+                intent.putExtra("saveColor", binding.saveColor.text.toString())
                 intent.putExtra("genderAnimal", selectedGenderText)
                 Log.d("saveType", binding.saveType.text.toString())
                 startActivity(intent)
