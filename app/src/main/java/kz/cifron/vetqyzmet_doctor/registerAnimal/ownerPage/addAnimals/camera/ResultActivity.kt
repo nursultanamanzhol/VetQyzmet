@@ -67,11 +67,13 @@ class ResultActivity : AppCompatActivity() {
             val saveBreed = intent.getStringExtra("saveBreedResult")
             val genderAnimal = intent.getStringExtra("genderAnimalResult")
             val emailEt1 = intent.getStringExtra("emailEt1Result")
+            val saveColor = intent.getStringExtra("saveColorResult")
             cameraIntent.putExtra("saveTypeResult", saveType)
             cameraIntent.putExtra("birthDateTextResult", birthDateText)
             cameraIntent.putExtra("saveBreedResult", saveBreed)
             cameraIntent.putExtra("genderAnimalResult", genderAnimal)
             cameraIntent.putExtra("emailEt1Result", emailEt1)
+            cameraIntent.putExtra("emailEt1Result", saveColor)
 
             startActivity(cameraIntent)
             finish()

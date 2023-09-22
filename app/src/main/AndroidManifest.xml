@@ -59,7 +59,7 @@
         <activity
             android:name=".main.PageVetQyzmet"
             android:exported="false"
-            android:theme="@style/Theme.VetQyzmetNum2" />
+            android:theme="@style/Base.Theme.Animal" />
         <activity
             android:name=".loginData.LoginActivity"
             android:exported="true"

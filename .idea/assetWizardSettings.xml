@@ -28,8 +28,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_my_dark_menu" />
-                            <entry key="sourceFile" value="C:\Users\nursu\Downloads\Frame 20.svg" />
+                            <entry key="assetSourceType" value="FILE" />
+                            <entry key="outputName" value="title_vetqyzmet" />
+                            <entry key="sourceFile" value="C:\Users\nursu\Downloads\title_vetqyzmet.svg" />
                           </map>
                         </option>
                       </PersistentState>

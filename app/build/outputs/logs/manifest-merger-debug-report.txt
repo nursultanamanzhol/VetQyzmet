@@ -234,11 +234,11 @@ ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:56:13-66
 activity#kz.cifron.vetqyzmet_doctor.main.PageVetQyzmet
-ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:59:9-62:58
+ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:59:9-62:56
 	android:exported
 		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:61:13-37
 	android:theme
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:62:13-55
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:62:13-53
 	android:name
 		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:60:13-47
 activity#kz.cifron.vetqyzmet_doctor.loginData.LoginActivity

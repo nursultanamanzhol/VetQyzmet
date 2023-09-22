@@ -3039,12 +3039,15 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
-drawable animals
+drawable activity_forms_page
+drawable activity_help_page
+drawable activity_migration_page
+drawable activity_reg_animals
 drawable arrow_down
 drawable arrow_ic
 drawable avd_hide_password
 drawable avd_show_password
-drawable back_arrow
+drawable back_arrow_camera
 drawable background_add_image
 drawable background_gallery
 drawable beautiful_r
@@ -3068,12 +3071,9 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable ellipse_gallery
 drawable error_ic
-drawable forms
 drawable frame_20
 drawable gallery_icon
-drawable help
 drawable ic_arrow_back_black_24
 drawable ic_arrow_down_24dp
 drawable ic_clear_black_24
@@ -3121,7 +3121,6 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
-drawable migration
 drawable mtrl_bottomsheet_drag_handle
 drawable mtrl_checkbox_button
 drawable mtrl_checkbox_button_checked_unchecked
@@ -3179,12 +3178,12 @@ drawable profile_ic
 drawable rectangle
 drawable rectangle_gray
 drawable settings_ic
-drawable shape
 drawable shape_button01
 drawable shape_button02
 drawable shape_edittext01
 drawable shape_nums
 drawable test_level_drawable
+drawable title_vetqyzmet
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable vector
@@ -3310,6 +3309,7 @@ id bounceEnd
 id bounceStart
 id breedConst
 id breedText
+id btnNavView
 id btn_gallery
 id buttomClose
 id buttonPanel
@@ -3362,8 +3362,6 @@ id cradle
 id currentState
 id custom
 id customPanel
-id customRadioButtonIcon
-id customRadioButtonText
 id cut
 id dataProverka
 id dateFormat
@@ -3398,7 +3396,7 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
-id drawerLayout
+id drawer
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -3500,6 +3498,7 @@ id linear1
 id listMode
 id list_item
 id locale
+id logOutIcon
 id loginBtn
 id logoutbtn
 id ltr
@@ -3566,7 +3565,6 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
-id myNavigationView
 id name_animal
 id nav_controller_view_tag
 id nav_graph
@@ -3640,6 +3638,7 @@ id rectangleFurther
 id rectangleGray
 id rectangles
 id recycler_view
+id regAnimalPage
 id registr
 id report_drawn
 id reverseSawtooth
@@ -3793,6 +3792,7 @@ id today_nums
 id toggle
 id top
 id topPanel
+id topToolbarCustom
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -3813,6 +3813,7 @@ id useLogo
 id user_city_text
 id user_name_text
 id vertical_only
+id vetQyzmetTitle
 id viewFinder
 id view_offset_helper
 id view_transition
@@ -3954,6 +3955,7 @@ layout activity_camera
 layout activity_certificates
 layout activity_form
 layout activity_image
+layout activity_login
 layout activity_migration
 layout activity_owner_page
 layout activity_page_vet_qyzmet
@@ -3961,7 +3963,6 @@ layout activity_result
 layout autoitem
 layout custom_actionbar_layout
 layout custom_dialog
-layout custom_radio_button
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -3985,7 +3986,6 @@ layout dialog_radio_buttons
 layout expand_button
 layout header_page
 layout image_frame
-layout login_activity
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

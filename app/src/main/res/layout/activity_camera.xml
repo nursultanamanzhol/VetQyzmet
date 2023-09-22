@@ -17,7 +17,7 @@
             android:layout_height="36dp"
             android:layout_marginTop="10dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/back_arrow" />
+            android:src="@drawable/back_arrow_camera" />
     </androidx.camera.view.PreviewView>
 
 

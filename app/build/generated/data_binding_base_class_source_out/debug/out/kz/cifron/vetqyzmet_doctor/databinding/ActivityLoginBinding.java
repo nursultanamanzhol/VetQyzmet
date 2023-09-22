@@ -19,7 +19,7 @@ import java.lang.Override;
 import java.lang.String;
 import kz.cifron.vetqyzmet_doctor.R;
 
-public final class LoginActivityBinding implements ViewBinding {
+public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
@@ -59,7 +59,7 @@ public final class LoginActivityBinding implements ViewBinding {
   @NonNull
   public final ProgressBar progressBar;
 
-  private LoginActivityBinding(@NonNull ConstraintLayout rootView, @NonNull TextView appName,
+  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull TextView appName,
       @NonNull ConstraintLayout coordinatorLayout, @NonNull TextView dateFormat,
       @NonNull TextView day, @NonNull TextView email, @NonNull TextInputLayout emailEt,
       @NonNull TextInputEditText emailEt1, @NonNull Button loginBtn, @NonNull TextView password,
@@ -87,14 +87,14 @@ public final class LoginActivityBinding implements ViewBinding {
   }
 
   @NonNull
-  public static LoginActivityBinding inflate(@NonNull LayoutInflater inflater) {
+  public static ActivityLoginBinding inflate(@NonNull LayoutInflater inflater) {
     return inflate(inflater, null, false);
   }
 
   @NonNull
-  public static LoginActivityBinding inflate(@NonNull LayoutInflater inflater,
+  public static ActivityLoginBinding inflate(@NonNull LayoutInflater inflater,
       @Nullable ViewGroup parent, boolean attachToParent) {
-    View root = inflater.inflate(R.layout.login_activity, parent, false);
+    View root = inflater.inflate(R.layout.activity_login, parent, false);
     if (attachToParent) {
       parent.addView(root);
     }
@@ -102,7 +102,7 @@ public final class LoginActivityBinding implements ViewBinding {
   }
 
   @NonNull
-  public static LoginActivityBinding bind(@NonNull View rootView) {
+  public static ActivityLoginBinding bind(@NonNull View rootView) {
     // The body of this method is generated in a way you would not otherwise write.
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
@@ -175,7 +175,7 @@ public final class LoginActivityBinding implements ViewBinding {
         break missingId;
       }
 
-      return new LoginActivityBinding((ConstraintLayout) rootView, appName, coordinatorLayout,
+      return new ActivityLoginBinding((ConstraintLayout) rootView, appName, coordinatorLayout,
           dateFormat, day, email, emailEt, emailEt1, loginBtn, password, passwordEt, passwordEt1,
           progressBar);
     }
