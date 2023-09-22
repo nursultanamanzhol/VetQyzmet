@@ -114,21 +114,25 @@ class CameraActivity : AppCompatActivity() {
                     val saveBreed = intent.getStringExtra("saveBreed")
                     val genderAnimal = intent.getStringExtra("genderAnimal")
                     val emailEt1 = intent.getStringExtra("emailEt1")
+                    val saveColor = intent.getStringExtra("saveColor")
                     imageIntent.putExtra("saveTypeResult", saveType)
                     imageIntent.putExtra("birthDateTextResult", birthDateText)
                     imageIntent.putExtra("saveBreedResult", saveBreed)
                     imageIntent.putExtra("genderAnimalResult", genderAnimal)
                     imageIntent.putExtra("emailEt1Result", emailEt1)
+                    imageIntent.putExtra("saveColorResult", saveColor)
                     val saveTypeReset = intent.getStringExtra("saveTypeResult")
                     val birthDateTextReset = intent.getStringExtra("birthDateTextResult")
                     val saveBreedReset = intent.getStringExtra("saveBreedResult")
                     val genderAnimalReset = intent.getStringExtra("genderAnimalResult")
                     val emailEt1Reset = intent.getStringExtra("emailEt1Result")
+                    val saveColorReset = intent.getStringExtra("saveColorResult")
                     imageIntent.putExtra("saveTypeResultReset", saveTypeReset)
                     imageIntent.putExtra("birthDateTextResultReset", birthDateTextReset)
                     imageIntent.putExtra("saveBreedResultReset", saveBreedReset)
                     imageIntent.putExtra("genderAnimalResultReset", genderAnimalReset)
                     imageIntent.putExtra("emailEt1ResultReset", emailEt1Reset)
+                    imageIntent.putExtra("saveColorResultReset", saveColorReset)
 
 
                     imageIntent.putExtras(bundle)
@@ -160,6 +164,7 @@ class CameraActivity : AppCompatActivity() {
         val saveBreed = intent.getStringExtra("saveBreed")
         val genderAnimal = intent.getStringExtra("genderAnimal")
         val emailEt1 = intent.getStringExtra("emailEt1")
+        val saveColor = intent.getStringExtra("saveColor")
         // Вместо простого startActivity используйте setResult и finish
 
         resultIntent.putExtra("saveTypeResult", saveType)
@@ -167,19 +172,21 @@ class CameraActivity : AppCompatActivity() {
         resultIntent.putExtra("genderAnimalResult", genderAnimal)
         resultIntent.putExtra("saveBreedResult", saveBreed)
         resultIntent.putExtra("birthDateTextResult", birthDateText)
+        resultIntent.putExtra("saveColorResult", saveColor)
 
         val saveTypeReset = intent.getStringExtra("saveTypeResult")
         val birthDateTextReset = intent.getStringExtra("birthDateTextResult")
         val saveBreedReset = intent.getStringExtra("saveBreedResult")
         val genderAnimalReset = intent.getStringExtra("genderAnimalResult")
         val emailEt1Reset = intent.getStringExtra("emailEt1Result")
+        val saveColorReset = intent.getStringExtra("saveColorResult")
 
         resultIntent.putExtra("saveTypeResultReset", saveTypeReset)
         resultIntent.putExtra("birthDateTextResultReset", birthDateTextReset)
         resultIntent.putExtra("saveBreedResultReset", saveBreedReset)
         resultIntent.putExtra("genderAnimalResultReset", genderAnimalReset)
         resultIntent.putExtra("emailEt1ResultReset", emailEt1Reset)
-
+        resultIntent.putExtra("saveColorResultReset", saveColorReset)
 
         setResult(RESULT_OK, resultIntent)
         finish()

@@ -81,7 +81,7 @@ public final class ActivityResultBinding implements ViewBinding {
   public final TextView saveBreedResult;
 
   @NonNull
-  public final TextView saveOlor;
+  public final TextView saveColorResult;
 
   @NonNull
   public final TextView saveTypeResult;
@@ -102,8 +102,8 @@ public final class ActivityResultBinding implements ViewBinding {
       @NonNull TextView genderText, @NonNull ConstraintLayout imageResultSave,
       @NonNull View rectangleFurther, @NonNull View rectangleGray,
       @NonNull TextView saveBirthMonthResult, @NonNull TextView saveBreedResult,
-      @NonNull TextView saveOlor, @NonNull TextView saveTypeResult, @NonNull TextView textView,
-      @NonNull TextView typeInj) {
+      @NonNull TextView saveColorResult, @NonNull TextView saveTypeResult,
+      @NonNull TextView textView, @NonNull TextView typeInj) {
     this.rootView = rootView;
     this.TopFont = TopFont;
     this.addAnimals = addAnimals;
@@ -125,7 +125,7 @@ public final class ActivityResultBinding implements ViewBinding {
     this.rectangleGray = rectangleGray;
     this.saveBirthMonthResult = saveBirthMonthResult;
     this.saveBreedResult = saveBreedResult;
-    this.saveOlor = saveOlor;
+    this.saveColorResult = saveColorResult;
     this.saveTypeResult = saveTypeResult;
     this.textView = textView;
     this.typeInj = typeInj;
@@ -278,9 +278,9 @@ public final class ActivityResultBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.saveСolor;
-      TextView saveOlor = ViewBindings.findChildViewById(rootView, id);
-      if (saveOlor == null) {
+      id = R.id.saveColorResult;
+      TextView saveColorResult = ViewBindings.findChildViewById(rootView, id);
+      if (saveColorResult == null) {
         break missingId;
       }
 
@@ -306,7 +306,7 @@ public final class ActivityResultBinding implements ViewBinding {
           beautifulR, birthMonth, bottomAddAnimals, breedText, chageText, checkoutBack, color,
           completeResult, deleteAndResetImage, emailEt1Result, genderAnimalResult, genderText,
           imageResultSave, rectangleFurther, rectangleGray, saveBirthMonthResult, saveBreedResult,
-          saveOlor, saveTypeResult, textView, typeInj);
+          saveColorResult, saveTypeResult, textView, typeInj);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

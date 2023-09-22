@@ -83,6 +83,7 @@ id animals_view
 id appName
 id arrow_back_btn
 id arrow_icon
+id backBtn
 id beautiful_r
 id birthDateLayout
 id birthDateText
@@ -120,6 +121,7 @@ id form
 id genderAnimal
 id genderAnimalResult
 id genderText
+id goonBtn
 id iconImageView
 id id_actsFragment
 id id_anonimFragment
@@ -165,9 +167,10 @@ id registr
 id saveBirthMonthResult
 id saveBreed
 id saveBreedResult
+id saveColor
+id saveColorResult
 id saveType
 id saveTypeResult
-id saveСolor
 id separatorBottom
 id separatorTop
 id separator_1

@@ -45,6 +45,10 @@ class ResultActivity : AppCompatActivity() {
         binding.saveBirthMonthResult.text = intent.getStringExtra("birthDateTextResult")
             ?.takeIf { it.isNotEmpty() }
             ?: intent.getStringExtra("birthDateTextResultReset")
+        
+        binding.saveColorResult.text = intent.getStringExtra("saveColorResult")
+            ?.takeIf { it.isNotEmpty() }
+            ?: intent.getStringExtra("saveColorResultReset")
 
         val imageUri = intent.getStringExtra("imageUri") // Получаем URI из Intent
         val imageView =
