@@ -27,7 +27,7 @@
             android:layout_height="25dp"
             android:layout_marginStart="10dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/arrow_ic"
+            android:src="@drawable/all_activity_use_arrow_ic"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -240,12 +240,11 @@
         android:id="@+id/imageResultSave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/addAnimals"
-        android:orientation="horizontal"
         android:layout_marginStart="15dp"
         android:layout_marginTop="26dp"
         android:layout_marginEnd="15dp"
-        >
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/addAnimals">
 
         <!-- Auto layout, variables, and unit scale are not yet supported -->
 
@@ -254,9 +253,9 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginStart="70dp"
-            android:scaleType="fitCenter"
             android:elevation="1dp"
-            android:src="@drawable/delete_image"
+            android:scaleType="fitCenter"
+            android:src="@drawable/result_activity_delete_image"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -264,8 +263,8 @@
             android:id="@+id/beautiful_r"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/icon_result"
             android:layout_marginTop="12dp"
+            android:background="@drawable/result_activity_icon_result_image"
             android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -289,7 +288,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:background="@drawable/rectangle"
+            android:background="@drawable/btn_result_and_addanimals"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"

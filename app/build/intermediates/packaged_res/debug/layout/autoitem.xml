@@ -31,7 +31,7 @@
         android:layout_marginTop="13dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="13dp"
-        android:background="@drawable/shape_nums"
+        android:background="@drawable/activity_reg_nums_backg"
         android:orientation="horizontal"
         android:padding="8dp"
         android:shadowRadius="3"
@@ -50,7 +50,7 @@
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
         android:layout_marginEnd="16dp"
-        android:src="@drawable/navigate_ic2"
+        android:src="@drawable/activity_reg_nav_gray_btn_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

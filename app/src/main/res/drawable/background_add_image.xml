@@ -1,6 +1,0 @@
-<!-- background_add_image.xml -->
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
-    <solid android:color="#FFFFFF" /> <!-- Цвет фона -->
-    <corners android:radius="8dp" /> <!-- Радиус скругления -->
-</shape>

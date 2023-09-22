@@ -9,19 +9,19 @@
 
     <item
         android:id="@+id/id_anonimFragment"
-        android:icon="@drawable/profile_ic"
+        android:icon="@drawable/vet_qyzmet_drawer_page_profile_icon"
         android:title="@string/prof"
         />
 
 
     <item
         android:id="@+id/id_actsFragment"
-        android:icon="@drawable/settings_ic"
+        android:icon="@drawable/vet_qyzmet_drawer_page_settings_icon"
         android:title="@string/settings"/>
 
     <item
         android:id="@+id/logoutbtn"
-        android:icon="@drawable/logout"
+        android:icon="@drawable/vet_qyzmet_activity_logout_icon"
         android:title="@string/logout"/>
 
 </menu>

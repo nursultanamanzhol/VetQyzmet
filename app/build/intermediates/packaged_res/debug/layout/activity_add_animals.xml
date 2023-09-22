@@ -36,7 +36,7 @@
             android:layout_height="25dp"
             android:layout_marginStart="10dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/arrow_ic"
+            android:src="@drawable/all_activity_use_arrow_ic"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -106,7 +106,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/input_backadress">
+                android:background="@drawable/add_animals_input_background_gray">
 
                 <TextView
                     android:id="@+id/saveType"
@@ -123,7 +123,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
-                    android:src="@drawable/arrow_down"
+                    android:src="@drawable/add_animals_activity_arrow_down"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -169,7 +169,7 @@
                     android:id="@+id/emailEt1"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:background="@drawable/input_emailadress"
+                    android:background="@drawable/add_animals_input_background_orange"
                     android:drawablePadding="10dp"
                     android:hint=""
                     android:inputType="number"
@@ -263,7 +263,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/input_backadress">
+                android:background="@drawable/add_animals_input_background_gray">
 
                 <TextView
                     android:id="@+id/saveBreed"
@@ -280,7 +280,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
-                    android:src="@drawable/arrow_down"
+                    android:src="@drawable/add_animals_activity_arrow_down"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -316,7 +316,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/input_backadress">
+                android:background="@drawable/add_animals_input_background_gray">
 
                 <!--            <TextView-->
                 <!--                android:id="@+id/birthDateLabel"-->
@@ -357,7 +357,7 @@
                         android:id="@+id/imageDateButton"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:background="@drawable/vector"
+                        android:background="@drawable/add_animals_activity_datepicker"
                         android:textSize="16sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -396,7 +396,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/input_backadress">
+                android:background="@drawable/add_animals_input_background_gray">
 
 
                 <TextView
@@ -414,7 +414,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
-                    android:src="@drawable/arrow_down"
+                    android:src="@drawable/add_animals_activity_arrow_down"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -454,7 +454,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
-                android:background="@drawable/rectangle"
+                android:background="@drawable/btn_result_and_addanimals"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
