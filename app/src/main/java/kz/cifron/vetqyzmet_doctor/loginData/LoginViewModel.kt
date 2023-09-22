@@ -6,7 +6,10 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class LoginViewModel(private val repository: LoginRepository, private val userManager: UserManager) :
+class LoginViewModel(
+    private val repository: LoginRepository,
+    private val userManager: UserManager
+) :
     ViewModel() {
 
     val loginStateLiveData = MutableLiveData<LoginState>()
@@ -38,6 +41,7 @@ class LoginViewModel(private val repository: LoginRepository, private val userMa
             }
         }
     }
+
 
     fun getSavedUserInfo(): Pair<String, String>? {
         return userManager.getSavedUserInfo()

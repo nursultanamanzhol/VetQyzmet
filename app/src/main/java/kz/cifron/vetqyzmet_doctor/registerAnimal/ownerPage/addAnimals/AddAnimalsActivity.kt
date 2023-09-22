@@ -35,9 +35,18 @@ class AddAnimalsActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        val dateClickListener = View.OnClickListener {
+            showDatePickerDialog()
+        }
+        binding.birthDateText.setOnClickListener(dateClickListener)
+        binding.chooseDateButton.setOnClickListener(dateClickListener)
+
+        // Функция для отображения DatePickerDialog
+
 
         binding.rectangleGray.setOnClickListener {
             startActivity(Intent(this, PageVetQyzmet::class.java))
+            finish()
             finish()
 
         }
@@ -56,58 +65,54 @@ class AddAnimalsActivity : AppCompatActivity() {
                 selectedGenderText = "Самец"
             }
 
+            val missingFields = mutableListOf<String>()
 
-            val intent = Intent(this, CameraActivity::class.java)
-            intent.putExtra("saveType", binding.saveType.text.toString())
-            intent.putExtra("birthDateText", binding.birthDateText.text.toString())
-            intent.putExtra("saveBreed", binding.saveBreed.text.toString())
-            intent.putExtra("emailEt1", binding.emailEt1.text.toString())
-            intent.putExtra("saveColor", binding.saveColor.text.toString())
-            intent.putExtra("genderAnimal", selectedGenderText)
-            Log.d("saveType", binding.saveType.text.toString())
-            startActivity(intent)
+            // Проверьте, какие поля остались не заполненными
+            if (binding.saveType.text.isBlank()) {
+                missingFields.add("Выберите тип животного")
+            }
+            if (binding.birthDateText.text.isBlank()) {
+                missingFields.add("Дата рождения")
+            }
+            if (binding.saveBreed.text.isBlank()) {
+                missingFields.add("Порода")
+            }
+            if (binding.emailEt1.text.toString().isBlank()) {
+                missingFields.add("Введите ИНЖ")
+            }
+            if (selectedGenderText.isBlank()) {
+                missingFields.add("Пол животного")
+            }
+
+            if (missingFields.isEmpty()) {
+                val intent = Intent(this, CameraActivity::class.java)
+                intent.putExtra("saveType", binding.saveType.text.toString())
+                intent.putExtra("birthDateText", binding.birthDateText.text.toString())
+                intent.putExtra("saveBreed", binding.saveBreed.text.toString())
+                intent.putExtra("emailEt1", binding.emailEt1.text.toString())
+                intent.putExtra("genderAnimal", selectedGenderText)
+                Log.d("saveType", binding.saveType.text.toString())
+                startActivity(intent)
+            } else {
+                // Сообщение предупреждения с перечислением не заполненных полей
+                val missingFieldsMessage =
+                    "Заполните следующие поля: ${missingFields.joinToString(", ")}"
+                val alertDialog = AlertDialog.Builder(this)
+                    .setTitle("Предупреждение")
+                    .setMessage(missingFieldsMessage)
+                    .setPositiveButton("OK", null) // Можете добавить обработчик, если нужно
+                    .show()
+            }
         }
 
 
 //фон по умолчанию на устройствах Android 4.4.4
-        binding.chooseDateButton.setOnClickListener {
-            val getDate = Calendar.getInstance()
-            val datepicker = DatePickerDialog(
-                this,
-                R.style.CustomDatePickerDialog, // Используйте ваш пользовательский стиль
-                DatePickerDialog.OnDateSetListener { _, year, month, _ ->
+        // Создайте обработчик нажатия, который будет вызывать функцию отображения DatePickerDialog
+//        val dateClickListener = View.OnClickListener {
+//            showDatePickerDialog()
+//        }
 
-                    val selecDate = Calendar.getInstance()
-                    selecDate.set(Calendar.YEAR, year)
-                    selecDate.set(Calendar.MONTH, month)
-
-                    // Форматируйте дату для отображения только месяца и года
-                    val dateFormat = SimpleDateFormat("yyyy, MMMM", Locale.getDefault())
-                    val formattedDate = dateFormat.format(selecDate.time)
-
-                    // Отобразите отформатированную дату
-                    binding.birthDateText.text = formattedDate
-                },
-                getDate.get(Calendar.YEAR),
-                getDate.get(Calendar.MONTH),
-                getDate.get(Calendar.DAY_OF_MONTH)
-            )
-
-
-// Скройте день, отключив его в DatePicker
-            try {
-                val datePicker = datepicker.datePicker
-                val daySpinnerId = Resources.getSystem().getIdentifier("day", "id", "android")
-                val daySpinner = datePicker.findViewById<View>(daySpinnerId)
-                if (daySpinner != null) {
-                    daySpinner.visibility = View.GONE
-                }
-            } catch (e: Exception) {
-                e.printStackTrace()
-            }
-
-            datepicker.show()
-        }
+// Установите обработчик нажатия как для birthDateText, так и для chooseDateButton
 
 
         // Продолжите так же для genderAnimal и saveBreed
@@ -181,6 +186,7 @@ class AddAnimalsActivity : AppCompatActivity() {
 //                }, 500)
             }
 
+
             // Закрываем диалог при нажатии на кнопку "Выбрать"
             bottomSheetBinding.buttomClose.setOnClickListener {
                 Handler().postDelayed({
@@ -232,9 +238,9 @@ class AddAnimalsActivity : AppCompatActivity() {
                 // Сохраняем индекс выбранного RadioButton
                 selectedRadioButtonIndex = index
 
-                Handler().postDelayed({
-                    dialog.dismiss()
-                }, 500)
+//                Handler().postDelayed({
+                dialog.dismiss()
+//                }, 500)
             }
         }
 
@@ -244,6 +250,45 @@ class AddAnimalsActivity : AppCompatActivity() {
         }
 
         dialog.show()
+    }
+
+
+    fun showDatePickerDialog() {
+        val getDate = Calendar.getInstance()
+        val datepicker = DatePickerDialog(
+            this,
+            R.style.CustomDatePickerDialog, // Используйте ваш пользовательский стиль
+            DatePickerDialog.OnDateSetListener { _, year, month, _ ->
+
+                val selecDate = Calendar.getInstance()
+                selecDate.set(Calendar.YEAR, year)
+                selecDate.set(Calendar.MONTH, month)
+
+                // Форматируйте дату для отображения только месяца и года
+                val dateFormat = SimpleDateFormat("yyyy, MMMM", Locale.getDefault())
+                val formattedDate = dateFormat.format(selecDate.time)
+
+                // Отобразите отформатированную дату
+                binding.birthDateText.text = formattedDate
+            },
+            getDate.get(Calendar.YEAR),
+            getDate.get(Calendar.MONTH),
+            getDate.get(Calendar.DAY_OF_MONTH)
+        )
+
+        // Скройте день, отключив его в DatePicker
+        try {
+            val datePicker = datepicker.datePicker
+            val daySpinnerId = Resources.getSystem().getIdentifier("day", "id", "android")
+            val daySpinner = datePicker.findViewById<View>(daySpinnerId)
+            if (daySpinner != null) {
+                daySpinner.visibility = View.GONE
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+
+        datepicker.show()
     }
 
 

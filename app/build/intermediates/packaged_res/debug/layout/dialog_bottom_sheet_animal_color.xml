@@ -56,7 +56,7 @@
                 android:id="@+id/separator_1"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="44dp"
+                android:layout_marginLeft="28dp"
                 android:background="#E8EDF1" />
 
             <RadioButton
@@ -71,7 +71,7 @@
                 android:id="@+id/separator_2"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="44dp"
+                android:layout_marginLeft="28dp"
                 android:background="#E8EDF1" />
 
             <RadioButton
@@ -86,7 +86,7 @@
                 android:id="@+id/separator_3"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="44dp"
+                android:layout_marginLeft="28dp"
                 android:background="#E8EDF1" />
 
             <RadioButton
@@ -101,7 +101,7 @@
                 android:id="@+id/separator_4"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="44dp"
+                android:layout_marginLeft="28dp"
                 android:background="#E8EDF1" />
 
             <!-- Добавьте другие радиокнопки по аналогии -->

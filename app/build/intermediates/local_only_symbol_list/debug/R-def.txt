@@ -61,20 +61,12 @@ drawable shape_nums
 drawable vector
 drawable vet_background
 font font_style
-font roboto_black
-font roboto_black_italic
 font roboto_bold
-font roboto_bold_italic
-font roboto_italic
 font roboto_light
 font roboto_light_italic
 font roboto_medium
-font roboto_medium_italic
 font roboto_regular
-font roboto_thin
-font roboto_thin_italic
 id LogOut
-id TopConst
 id TopFont
 id action_bar_title
 id addAnimals
@@ -125,6 +117,7 @@ id goonBtn
 id iconImageView
 id id_actsFragment
 id id_anonimFragment
+id imageDateButton
 id imageResultSave
 id imageView1
 id imageView2
@@ -153,7 +146,6 @@ id option4
 id option5
 id option6
 id option7
-id ownerPageFragment
 id password
 id passwordEt
 id passwordEt1
@@ -182,7 +174,6 @@ id textLocation
 id textRadio
 id textTop
 id textView
-id textView2
 id textViewTitle
 id text_client
 id text_cv_number
@@ -202,7 +193,6 @@ layout activity_camera
 layout activity_certificates
 layout activity_form
 layout activity_image
-layout activity_main
 layout activity_migration
 layout activity_owner_page
 layout activity_page_vet_qyzmet
@@ -216,6 +206,7 @@ layout dialog_date_picker
 layout dialog_error
 layout dialog_radio_buttons
 layout header_page
+layout login_activity
 layout owneritem
 menu drw_menu
 menu main_menu

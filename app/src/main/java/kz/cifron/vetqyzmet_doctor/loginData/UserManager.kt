@@ -1,25 +1,16 @@
 package kz.cifron.vetqyzmet_doctor.loginData
 
 import android.content.Context
-import androidx.security.crypto.EncryptedSharedPreferences
-import androidx.security.crypto.MasterKey
+import android.content.SharedPreferences
 
 class UserManager(private val context: Context) {
-    private val sharedPreferences = EncryptedSharedPreferences.create(
-        context,
-        "user_data",
-        MasterKey.Builder(context)
-            .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
-            .build(),
-        EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
-        EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
-    )
+    private val sharedPreferences: SharedPreferences = context.getSharedPreferences("user_data", Context.MODE_PRIVATE)
 
     fun saveUserInfo(email: String, password: String) {
-        sharedPreferences.edit()
-            .putString("email", email)
-            .putString("password", password)
-            .apply()
+        val editor = sharedPreferences.edit()
+        editor.putString("email", email)
+        editor.putString("password", password)
+        editor.apply()
     }
 
     fun getSavedUserInfo(): Pair<String, String>? {

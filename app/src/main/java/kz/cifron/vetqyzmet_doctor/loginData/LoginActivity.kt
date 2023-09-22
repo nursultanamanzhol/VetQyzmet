@@ -2,28 +2,32 @@ package kz.cifron.vetqyzmet_doctor.loginData
 
 import android.app.Dialog
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.*
-import android.widget.*
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.ViewModelProvider
-import kz.cifron.vetqyzmet_doctor.main.PageVetQyzmet
 import kz.cifron.vetqyzmet_doctor.R
-import kz.cifron.vetqyzmet_doctor.databinding.ActivityMainBinding
+import kz.cifron.vetqyzmet_doctor.databinding.LoginActivityBinding
+import kz.cifron.vetqyzmet_doctor.main.PageVetQyzmet
 import java.text.SimpleDateFormat
-import java.util.*
+import java.util.Calendar
+import java.util.Locale
 
 class LoginActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: LoginActivityBinding
     private lateinit var viewModel: LoginViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = LoginActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
 
         val calendar = Calendar.getInstance().time
@@ -32,7 +36,10 @@ class LoginActivity : AppCompatActivity() {
 
         val apiService = RetrofitClient.instanceApi
         val repository = LoginRepository(apiService)
-        viewModel = ViewModelProvider(this, LoginViewModelFactory(repository, this))[LoginViewModel::class.java]
+        viewModel = ViewModelProvider(
+            this,
+            LoginViewModelFactory(repository, this)
+        )[LoginViewModel::class.java]
 
         val savedUserInfo = viewModel.getSavedUserInfo()
         savedUserInfo?.let { (savedEmail, savedPassword) ->

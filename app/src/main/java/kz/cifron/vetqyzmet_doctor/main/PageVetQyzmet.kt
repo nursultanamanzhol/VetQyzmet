@@ -13,6 +13,7 @@ import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.drawable.DrawableCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+import kz.cifron.vetqyzmet_doctor.R
 import kz.cifron.vetqyzmet_doctor.databinding.ActivityPageVetQyzmetBinding
 import kz.cifron.vetqyzmet_doctor.loginData.LoginActivity
 import kz.cifron.vetqyzmet_doctor.main.vetQyzmetPages.AnimalRegActivity
@@ -30,28 +31,6 @@ class PageVetQyzmet : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityPageVetQyzmetBinding.inflate(layoutInflater)
         setContentView(binding.root)
-//
-//        var drawable = ResourcesCompat.getDrawable(resources, kz.cifron.vetqyzmet_doctor.R.drawable., null)
-//        drawable = DrawableCompat.wrap(drawable!!)
-//        DrawableCompat.setTint(drawable, Color.BLACK)
-//        actionBar!!.setHomeAsUpIndicator(drawable)
-//        actionBar.setHomeAsUpIndicator(kz.cifron.vetqyzmet_doctor.R.drawable.ic_my_dark_menu);
-
-
-        supportActionBar?.apply {
-            setDisplayHomeAsUpEnabled(true) // Включает кнопку "Домой"
-            setHomeAsUpIndicator(kz.cifron.vetqyzmet_doctor.R.drawable.ic_my_dark_menu) // Устанавливает значок
-        }
-
-        // Устанавливаем пользовательский макет для ActionBar
-        val actionBar = supportActionBar
-        actionBar?.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM)
-        actionBar?.setCustomView(kz.cifron.vetqyzmet_doctor.R.layout.custom_actionbar_layout)
-
-        // Найдем TextView в пользовательском макете и установим текст
-        val titleTextView = actionBar?.customView?.findViewById<TextView>(kz.cifron.vetqyzmet_doctor.R.id.action_bar_title)
-        titleTextView?.text = "VetQyzmet" // Замените на ваш заголовок
-
 
         binding.registr.setOnClickListener {
 
@@ -90,12 +69,49 @@ class PageVetQyzmet : AppCompatActivity() {
             )
         }
 
-        val drawerLayout: DrawerLayout = findViewById(kz.cifron.vetqyzmet_doctor.R.id.drawerLayout)
-        val navView: NavigationView = findViewById(kz.cifron.vetqyzmet_doctor.R.id.myNavigationView)
+        binding.drawerLayout // Ваш DrawerLayout
+        binding.myNavigationView // Ваш NavigationView
+        toggle = ActionBarDrawerToggle(
+            this,
+            binding.drawerLayout,
+            R.string.open,
+            R.string.close
+        )
+        // Получите ActionBar
+        val actionBar = supportActionBar
 
-        toggle = ActionBarDrawerToggle(this, drawerLayout, kz.cifron.vetqyzmet_doctor.R.string.open, kz.cifron.vetqyzmet_doctor.R.string.close)
-        drawerLayout.addDrawerListener(toggle)
-        toggle.syncState()
+        actionBar?.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM)
+        actionBar?.setCustomView(kz.cifron.vetqyzmet_doctor.R.layout.custom_actionbar_layout)
+// Установите кастомный значок гамбургера
+        actionBar?.setHomeAsUpIndicator(R.drawable.ic_my_dark_menu)
+
+// Включите кнопку "Домой" (гамбургер) для активации нажатия
+        actionBar?.setDisplayHomeAsUpEnabled(true)
+
+// Установите обработчик нажатия на значок гамбургера
+        actionBar?.setHomeButtonEnabled(true)
+
+// Обработчик нажатия на значок гамбургера (или "бургер-меню")
+//        actionBar?.setNavigationOnClickListener {
+//            // В этом блоке вы можете определить действия, которые должны выполняться при нажатии на значок
+//            // Например, открыть боковое меню (NavigationView) или выполнять другие действия.
+//        }
+
+        val titleTextView =
+            actionBar?.customView?.findViewById<TextView>(kz.cifron.vetqyzmet_doctor.R.id.action_bar_title)
+        titleTextView?.text = "VetQyzmet" // Замените на ваш заголовок
+
+//        val drawerLayout: DrawerLayout = findViewById(kz.cifron.vetqyzmet_doctor.R.id.drawerLayout)
+//        val navView: NavigationView = findViewById(kz.cifron.vetqyzmet_doctor.R.id.myNavigationView)
+
+//        toggle = ActionBarDrawerToggle(
+//            this,
+//            drawerLayout,
+//            kz.cifron.vetqyzmet_doctor.R.string.open,
+//            kz.cifron.vetqyzmet_doctor.R.string.close
+//        )
+//        drawerLayout.addDrawerListener(toggle)
+//        toggle.syncState()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true) //back icon display when hamburger opened
 
@@ -105,18 +121,13 @@ class PageVetQyzmet : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             kz.cifron.vetqyzmet_doctor.R.id.LogOut -> {
-                // Обработайте нажатие кнопки "LogOut" здесь
-                // Например, выполните выход из аккаунта и перейдите на страницу входа (логин)
-
-                // Перейдите на страницу входа (логин)
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
-
-                // Завершите текущую активность, чтобы пользователь не мог вернуться по кнопке "назад"
                 finish()
 
                 return true
             }
+
 
             else -> {
                 // Проверьте, было ли нажатие обработано бургер-меню

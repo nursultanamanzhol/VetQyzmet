@@ -65,7 +65,7 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
   public final TextView checkoutGO;
 
   @NonNull
-  public final ImageView chooseDateButton;
+  public final ConstraintLayout chooseDateButton;
 
   @NonNull
   public final ConstraintLayout colorConst;
@@ -90,6 +90,9 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
 
   @NonNull
   public final ConstraintLayout goonBtn;
+
+  @NonNull
+  public final ImageView imageDateButton;
 
   @NonNull
   public final RadioButton male;
@@ -134,15 +137,16 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
       @NonNull TextView birthMonth, @NonNull ConstraintLayout bottomAddAnimals,
       @NonNull ConstraintLayout breedConst, @NonNull TextView breedText,
       @NonNull TextView chageText, @NonNull TextView checkoutBack, @NonNull TextView checkoutGO,
-      @NonNull ImageView chooseDateButton, @NonNull ConstraintLayout colorConst,
+      @NonNull ConstraintLayout chooseDateButton, @NonNull ConstraintLayout colorConst,
       @NonNull TextView colorText, @NonNull TextInputLayout emailEt,
       @NonNull TextInputEditText emailEt1, @NonNull RadioButton female,
       @NonNull RadioGroup genderAnimal, @NonNull TextView genderText,
-      @NonNull ConstraintLayout goonBtn, @NonNull RadioButton male,
-      @NonNull ProgressBar progressBar, @NonNull View rectangleFurther, @NonNull View rectangleGray,
-      @NonNull TextView saveBreed, @NonNull TextView saveColor, @NonNull TextView saveType,
-      @NonNull View separatorTop, @NonNull TextView textView, @NonNull TextView typeInj,
-      @NonNull ConstraintLayout typeInjConst, @NonNull ConstraintLayout typeconst) {
+      @NonNull ConstraintLayout goonBtn, @NonNull ImageView imageDateButton,
+      @NonNull RadioButton male, @NonNull ProgressBar progressBar, @NonNull View rectangleFurther,
+      @NonNull View rectangleGray, @NonNull TextView saveBreed, @NonNull TextView saveColor,
+      @NonNull TextView saveType, @NonNull View separatorTop, @NonNull TextView textView,
+      @NonNull TextView typeInj, @NonNull ConstraintLayout typeInjConst,
+      @NonNull ConstraintLayout typeconst) {
     this.rootView = rootView;
     this.TopFont = TopFont;
     this.addAnimals = addAnimals;
@@ -166,6 +170,7 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
     this.genderAnimal = genderAnimal;
     this.genderText = genderText;
     this.goonBtn = goonBtn;
+    this.imageDateButton = imageDateButton;
     this.male = male;
     this.progressBar = progressBar;
     this.rectangleFurther = rectangleFurther;
@@ -286,7 +291,7 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
       }
 
       id = R.id.chooseDateButton;
-      ImageView chooseDateButton = ViewBindings.findChildViewById(rootView, id);
+      ConstraintLayout chooseDateButton = ViewBindings.findChildViewById(rootView, id);
       if (chooseDateButton == null) {
         break missingId;
       }
@@ -336,6 +341,12 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
       id = R.id.goonBtn;
       ConstraintLayout goonBtn = ViewBindings.findChildViewById(rootView, id);
       if (goonBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.imageDateButton;
+      ImageView imageDateButton = ViewBindings.findChildViewById(rootView, id);
+      if (imageDateButton == null) {
         break missingId;
       }
 
@@ -414,8 +425,8 @@ public final class ActivityAddAnimalsBinding implements ViewBinding {
       return new ActivityAddAnimalsBinding((ConstraintLayout) rootView, TopFont, addAnimals,
           arrowIcon, backBtn, birthDateLayout, birthDateText, birthMonth, bottomAddAnimals,
           breedConst, breedText, chageText, checkoutBack, checkoutGO, chooseDateButton, colorConst,
-          colorText, emailEt, emailEt1, female, genderAnimal, genderText, goonBtn, male,
-          progressBar, rectangleFurther, rectangleGray, saveBreed, saveColor, saveType,
+          colorText, emailEt, emailEt1, female, genderAnimal, genderText, goonBtn, imageDateButton,
+          male, progressBar, rectangleFurther, rectangleGray, saveBreed, saveColor, saveType,
           separatorTop, textView, typeInj, typeInjConst, typeconst);
     }
     String missingId = rootView.getResources().getResourceName(id);
