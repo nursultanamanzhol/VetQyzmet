@@ -3299,6 +3299,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backBtn
 id barrier
 id baseline
 id beautiful_r
@@ -3455,6 +3456,7 @@ id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
 id gone
+id goonBtn
 id graph
 id graph_wrap
 id group_divider
@@ -3659,11 +3661,12 @@ id rtl
 id saveBirthMonthResult
 id saveBreed
 id saveBreedResult
+id saveColor
+id saveColorResult
 id saveType
 id saveTypeResult
 id save_non_transition_alpha
 id save_overlay_view
-id saveСolor
 id sawtooth
 id scale
 id screen

@@ -36,6 +36,10 @@
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-61:\\layout\\custom_actionbar_layout.xml"
     },
     {
+        "merged": "kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-58:/layout/activity_result.xml",
+        "source": "kz.cifron.vetqyzmet_doctor.app-main-61:/layout/activity_result.xml"
+    },
+    {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-58:\\layout\\dialog_bottom_sheet_animal_color.xml",
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-61:\\layout\\dialog_bottom_sheet_animal_color.xml"
     },
@@ -46,10 +50,6 @@
     {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-58:\\layout\\activity_add_animals.xml",
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-61:\\layout\\activity_add_animals.xml"
-    },
-    {
-        "merged": "kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-58:/layout/activity_page_vet_qyzmet.xml",
-        "source": "kz.cifron.vetqyzmet_doctor.app-main-61:/layout/activity_page_vet_qyzmet.xml"
     },
     {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-58:\\layout\\dialog_radio_buttons.xml",
@@ -94,5 +94,9 @@
     {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-58:\\layout\\activity_form.xml",
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-61:\\layout\\activity_form.xml"
+    },
+    {
+        "merged": "kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-58:/layout/activity_add_animals.xml",
+        "source": "kz.cifron.vetqyzmet_doctor.app-main-61:/layout/activity_add_animals.xml"
     }
 ]
