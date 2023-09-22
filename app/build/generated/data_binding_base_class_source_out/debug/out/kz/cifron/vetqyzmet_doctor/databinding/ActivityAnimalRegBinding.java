@@ -23,10 +23,13 @@ public final class ActivityAnimalRegBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ConstraintLayout TopConst;
+  public final ConstraintLayout TopFont;
 
   @NonNull
   public final ImageView arrowIcon;
+
+  @NonNull
+  public final View lineOwner;
 
   @NonNull
   public final ProgressBar progressBar;
@@ -35,26 +38,23 @@ public final class ActivityAnimalRegBinding implements ViewBinding {
   public final RecyclerView recyclerView;
 
   @NonNull
-  public final View separatorTop;
-
-  @NonNull
   public final TextView textTop;
 
   @NonNull
-  public final TextView textView2;
+  public final TextView textView;
 
   private ActivityAnimalRegBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout TopConst, @NonNull ImageView arrowIcon,
+      @NonNull ConstraintLayout TopFont, @NonNull ImageView arrowIcon, @NonNull View lineOwner,
       @NonNull ProgressBar progressBar, @NonNull RecyclerView recyclerView,
-      @NonNull View separatorTop, @NonNull TextView textTop, @NonNull TextView textView2) {
+      @NonNull TextView textTop, @NonNull TextView textView) {
     this.rootView = rootView;
-    this.TopConst = TopConst;
+    this.TopFont = TopFont;
     this.arrowIcon = arrowIcon;
+    this.lineOwner = lineOwner;
     this.progressBar = progressBar;
     this.recyclerView = recyclerView;
-    this.separatorTop = separatorTop;
     this.textTop = textTop;
-    this.textView2 = textView2;
+    this.textView = textView;
   }
 
   @Override
@@ -84,15 +84,21 @@ public final class ActivityAnimalRegBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.TopConst;
-      ConstraintLayout TopConst = ViewBindings.findChildViewById(rootView, id);
-      if (TopConst == null) {
+      id = R.id.TopFont;
+      ConstraintLayout TopFont = ViewBindings.findChildViewById(rootView, id);
+      if (TopFont == null) {
         break missingId;
       }
 
       id = R.id.arrow_icon;
       ImageView arrowIcon = ViewBindings.findChildViewById(rootView, id);
       if (arrowIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.lineOwner;
+      View lineOwner = ViewBindings.findChildViewById(rootView, id);
+      if (lineOwner == null) {
         break missingId;
       }
 
@@ -108,26 +114,20 @@ public final class ActivityAnimalRegBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.separatorTop;
-      View separatorTop = ViewBindings.findChildViewById(rootView, id);
-      if (separatorTop == null) {
-        break missingId;
-      }
-
       id = R.id.textTop;
       TextView textTop = ViewBindings.findChildViewById(rootView, id);
       if (textTop == null) {
         break missingId;
       }
 
-      id = R.id.textView2;
-      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
-      if (textView2 == null) {
+      id = R.id.textView;
+      TextView textView = ViewBindings.findChildViewById(rootView, id);
+      if (textView == null) {
         break missingId;
       }
 
-      return new ActivityAnimalRegBinding((ConstraintLayout) rootView, TopConst, arrowIcon,
-          progressBar, recyclerView, separatorTop, textTop, textView2);
+      return new ActivityAnimalRegBinding((ConstraintLayout) rootView, TopFont, arrowIcon,
+          lineOwner, progressBar, recyclerView, textTop, textView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

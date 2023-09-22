@@ -263,10 +263,9 @@
         <ImageView
             android:id="@+id/beautiful_r"
             android:layout_width="80dp"
-            android:background="@drawable/background_add_image"
             android:layout_height="80dp"
+            android:background="@drawable/icon_result"
             android:layout_marginTop="12dp"
-            android:src="@drawable/icon_result"
             android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
