@@ -3,7 +3,7 @@
     <style name="Base.Theme.VetQyzmet" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/orange</item>
-<!--        <item name="colorControlNormal">@color/myControlColor</item>-->
+        <!--        <item name="colorControlNormal">@color/myControlColor</item>-->
 
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/black</item>
@@ -22,7 +22,7 @@
     <style name="Base.Theme.Animal" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/orange</item>
-<!--        <item name="colorControlNormal">@color/myControlColor</item>-->
+        <!--        <item name="colorControlNormal">@color/myControlColor</item>-->
 
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/black</item>
@@ -73,7 +73,7 @@
     </style>
 
     <style name="CustomDatePickerDialog" parent="android:Theme.Holo.Light.Dialog.NoActionBar">
-        <item name="android:windowBackground">@drawable/custom_dialog_background</item>
+        <item name="android:windowBackground">@drawable/add_animals_custom_datepicker_dialog_theme</item>
 
     </style>
 </resources>

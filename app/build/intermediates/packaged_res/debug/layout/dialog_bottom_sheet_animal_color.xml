@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bottom_sheet_dialog_background"
+        android:background="@drawable/bottom_sheet_dialog_type_and_color_animals"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -116,7 +116,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/shape_edittext01"
+            android:background="@drawable/login_activity_bckg_and_dialog_ic"
             android:clickable="true"
             android:padding="15dp"
             app:layout_constraintBottom_toBottomOf="parent"

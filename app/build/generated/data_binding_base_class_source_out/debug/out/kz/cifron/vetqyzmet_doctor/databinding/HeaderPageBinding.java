@@ -4,10 +4,12 @@ package kz.cifron.vetqyzmet_doctor.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.LinearLayoutCompat;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -20,15 +22,28 @@ public final class HeaderPageBinding implements ViewBinding {
   private final LinearLayoutCompat rootView;
 
   @NonNull
+  public final ImageView profileIc;
+
+  @NonNull
+  public final ConstraintLayout topCustom;
+
+  @NonNull
   public final TextView userCityText;
+
+  @NonNull
+  public final TextView userId;
 
   @NonNull
   public final TextView userNameText;
 
-  private HeaderPageBinding(@NonNull LinearLayoutCompat rootView, @NonNull TextView userCityText,
+  private HeaderPageBinding(@NonNull LinearLayoutCompat rootView, @NonNull ImageView profileIc,
+      @NonNull ConstraintLayout topCustom, @NonNull TextView userCityText, @NonNull TextView userId,
       @NonNull TextView userNameText) {
     this.rootView = rootView;
+    this.profileIc = profileIc;
+    this.topCustom = topCustom;
     this.userCityText = userCityText;
+    this.userId = userId;
     this.userNameText = userNameText;
   }
 
@@ -59,9 +74,27 @@ public final class HeaderPageBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.profile_ic;
+      ImageView profileIc = ViewBindings.findChildViewById(rootView, id);
+      if (profileIc == null) {
+        break missingId;
+      }
+
+      id = R.id.top_custom;
+      ConstraintLayout topCustom = ViewBindings.findChildViewById(rootView, id);
+      if (topCustom == null) {
+        break missingId;
+      }
+
       id = R.id.user_city_text;
       TextView userCityText = ViewBindings.findChildViewById(rootView, id);
       if (userCityText == null) {
+        break missingId;
+      }
+
+      id = R.id.userId;
+      TextView userId = ViewBindings.findChildViewById(rootView, id);
+      if (userId == null) {
         break missingId;
       }
 
@@ -71,7 +104,8 @@ public final class HeaderPageBinding implements ViewBinding {
         break missingId;
       }
 
-      return new HeaderPageBinding((LinearLayoutCompat) rootView, userCityText, userNameText);
+      return new HeaderPageBinding((LinearLayoutCompat) rootView, profileIc, topCustom,
+          userCityText, userId, userNameText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

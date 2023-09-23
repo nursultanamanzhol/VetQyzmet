@@ -154,7 +154,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\nursu\.gradle\cach
 	tools:targetApi
 		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:22:9-29
 	android:icon
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:17:9-38
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:17:9-48
 	android:allowBackup
 		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:14:9-35
 	android:theme

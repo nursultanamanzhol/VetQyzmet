@@ -9,7 +9,7 @@
         android:id="@+id/iconImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/error_ic"
+        android:src="@drawable/login_activity_error_ic_foruser"
 
         android:layout_gravity="center_vertical"/>
 
