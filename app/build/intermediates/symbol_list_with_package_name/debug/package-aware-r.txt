@@ -3178,6 +3178,8 @@ drawable tooltip_frame_light
 drawable vet_background
 drawable vet_qyzmet_activity_logout_icon
 drawable vet_qyzmet_activity_nav_btn_icon
+drawable vet_qyzmet_drawer_page_controler_id_icon
+drawable vet_qyzmet_drawer_page_location_icon
 drawable vet_qyzmet_drawer_page_profile_icon
 drawable vet_qyzmet_drawer_page_settings_icon
 font font_style
@@ -3192,6 +3194,7 @@ id BOTTOM_START
 id CTRL
 id FUNCTION
 id LogOut
+id LogoutTextView
 id META
 id NO_DEBUG
 id SHIFT
@@ -3295,6 +3298,7 @@ id birthMonth
 id blocking
 id bottom
 id bottomAddAnimals
+id bottom_custom
 id bounce
 id bounceBoth
 id bounceEnd
@@ -3312,6 +3316,7 @@ id carryVelocity
 id center
 id centerCrop
 id centerInside
+id center_custom
 id center_horizontal
 id center_vertical
 id certificates
@@ -3346,6 +3351,7 @@ id content
 id contentPanel
 id contiguous
 id continuousVelocity
+id controler_id
 id coordinator
 id coordinatorLayout
 id cos
@@ -3490,8 +3496,10 @@ id linear1
 id listMode
 id list_item
 id locale
+id locationIcon
 id logOutIcon
 id loginBtn
+id logoutBtnHeader
 id logoutbtn
 id ltr
 id m3_side_sheet
