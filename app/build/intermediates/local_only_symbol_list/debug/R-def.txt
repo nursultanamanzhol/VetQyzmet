@@ -49,6 +49,8 @@ drawable result_activity_icon_result_image
 drawable vet_background
 drawable vet_qyzmet_activity_logout_icon
 drawable vet_qyzmet_activity_nav_btn_icon
+drawable vet_qyzmet_drawer_page_controler_id_icon
+drawable vet_qyzmet_drawer_page_location_icon
 drawable vet_qyzmet_drawer_page_profile_icon
 drawable vet_qyzmet_drawer_page_settings_icon
 font font_style
@@ -58,6 +60,7 @@ font roboto_light_italic
 font roboto_medium
 font roboto_regular
 id LogOut
+id LogoutTextView
 id TopFont
 id action_bar_title
 id addAnimals
@@ -72,11 +75,13 @@ id birthDateLayout
 id birthDateText
 id birthMonth
 id bottomAddAnimals
+id bottom_custom
 id breedConst
 id breedText
 id btnNavView
 id btn_gallery
 id buttomClose
+id center_custom
 id certificates
 id chageText
 id checkoutBack
@@ -87,6 +92,7 @@ id colorConst
 id colorText
 id completeResult
 id confirmButton
+id controler_id
 id coordinatorLayout
 id dataProverka
 id dateFormat
@@ -116,8 +122,10 @@ id imageView4
 id image_capture_button
 id lineOwner
 id linear1
+id locationIcon
 id logOutIcon
 id loginBtn
+id logoutBtnHeader
 id logoutbtn
 id male
 id messageTextView

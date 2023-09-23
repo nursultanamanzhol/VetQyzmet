@@ -3177,6 +3177,8 @@ int drawable tooltip_frame_light 0x7f070109
 int drawable vet_background 0x7f07010a
 int drawable vet_qyzmet_activity_logout_icon 0x7f070118
 int drawable vet_qyzmet_activity_nav_btn_icon 0x7f070119
+int drawable vet_qyzmet_drawer_page_controler_id_icon 0x7f07011d
+int drawable vet_qyzmet_drawer_page_location_icon 0x7f07011c
 int drawable vet_qyzmet_drawer_page_profile_icon 0x7f07011a
 int drawable vet_qyzmet_drawer_page_settings_icon 0x7f07011b
 int font font_style 0x7f080000
@@ -3191,6 +3193,7 @@ int id BOTTOM_START 0x7f090002
 int id CTRL 0x7f090003
 int id FUNCTION 0x7f090004
 int id LogOut 0x7f090005
+int id LogoutTextView 0x7f090286
 int id META 0x7f090006
 int id NO_DEBUG 0x7f090007
 int id SHIFT 0x7f090008
@@ -3294,6 +3297,7 @@ int id birthMonth 0x7f090069
 int id blocking 0x7f09006a
 int id bottom 0x7f09006b
 int id bottomAddAnimals 0x7f09006c
+int id bottom_custom 0x7f090283
 int id bounce 0x7f09006d
 int id bounceBoth 0x7f09006e
 int id bounceEnd 0x7f09006f
@@ -3311,6 +3315,7 @@ int id carryVelocity 0x7f09007a
 int id center 0x7f09007b
 int id centerCrop 0x7f09007c
 int id centerInside 0x7f09007d
+int id center_custom 0x7f090284
 int id center_horizontal 0x7f09007e
 int id center_vertical 0x7f09007f
 int id certificates 0x7f090080
@@ -3345,6 +3350,7 @@ int id content 0x7f09009c
 int id contentPanel 0x7f09009d
 int id contiguous 0x7f09009e
 int id continuousVelocity 0x7f09009f
+int id controler_id 0x7f090282
 int id coordinator 0x7f0900a0
 int id coordinatorLayout 0x7f0900a1
 int id cos 0x7f0900a2
@@ -3489,8 +3495,10 @@ int id linear1 0x7f09012c
 int id listMode 0x7f09012d
 int id list_item 0x7f09012e
 int id locale 0x7f09012f
+int id locationIcon 0x7f090281
 int id logOutIcon 0x7f090130
 int id loginBtn 0x7f090131
+int id logoutBtnHeader 0x7f090285
 int id logoutbtn 0x7f090132
 int id ltr 0x7f090133
 int id m3_side_sheet 0x7f090134

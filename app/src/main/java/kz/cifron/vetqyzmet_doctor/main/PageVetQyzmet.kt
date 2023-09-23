@@ -32,6 +32,11 @@ class PageVetQyzmet : AppCompatActivity() {
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
         }
+        binding.bottomCustom.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+        }
 
 
 
@@ -89,6 +94,7 @@ class PageVetQyzmet : AppCompatActivity() {
 
         binding.userNameText.text = intent.getStringExtra("name")
         binding.userCityText.text = intent.getStringExtra("location")
+        binding.userId.text = intent.getStringExtra("userId")
     }
 
     override fun onPostCreate(savedInstanceState: Bundle?) {

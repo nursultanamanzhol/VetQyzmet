@@ -118,7 +118,6 @@ class AddAnimalsActivity : AppCompatActivity() {
 
 // Установите обработчик нажатия как для birthDateText, так и для chooseDateButton
 
-
         // Продолжите так же для genderAnimal и saveBreed
 
         binding.arrowIcon.setOnClickListener {
@@ -128,91 +127,108 @@ class AddAnimalsActivity : AppCompatActivity() {
         binding.breedConst.setOnClickListener {
             showRadioButtonDialog()
         }
+        binding.colorConst.setOnClickListener {
+            showBottomRadioButtonDialog()
+        }
+        binding.typeconst.setOnClickListener {
+            showBottomTypeRadioButtonDialog()
+        }
 
         binding.emailEt1.doAfterTextChanged { editable ->
             val emailText = editable
             // Вы можете использовать значение emailText по вашему усмотрению
         }
-        // Объявите переменную для хранения индекса выбранного RadioButton
-        var selectedRadioButtonIndex: Int = -1
+    }
 
-        binding.typeconst.setOnClickListener {
-            val bottomSheetBinding = DialogBottomSheetTypeAnimalBinding.inflate(layoutInflater)
-            val bottomSheetDialog = BottomSheetDialog(this)
-            bottomSheetDialog.setContentView(bottomSheetBinding.root)
+    //Масть животного==========================================================================
+    private var selectedBottomTypeRadioButtonIndex = -1 //  хранения RadioButton
+    private fun showBottomTypeRadioButtonDialog() {
+        val dialogBinding = DialogBottomSheetTypeAnimalBinding.inflate(LayoutInflater.from(this))
+        val bottomTypeSheetDialog = BottomSheetDialog(this)
+        bottomTypeSheetDialog.setContentView(dialogBinding.root)
 
-            // Устанавливаем слушатель для RadioGroup
-            bottomSheetBinding.radioGroup.setOnCheckedChangeListener { group, checkedId ->
-                val selectedRadioButton = group.findViewById<RadioButton>(checkedId)
-                val selectedOptionText = selectedRadioButton.text.toString()
-                binding.saveType.text = selectedOptionText
+        // Массив RadioButton
+        val radioButtons = arrayOf(
+            dialogBinding.option1,
+            dialogBinding.option2,
+            dialogBinding.option3,
+            dialogBinding.option4,
+            dialogBinding.option5
+        )
 
-                // Сохраняем индекс выбранного RadioButton
-                selectedRadioButtonIndex = group.indexOfChild(selectedRadioButton)
+        val dialog = bottomTypeSheetDialog.create()
 
-//                Handler().postDelayed({
-                bottomSheetDialog.dismiss()
-//                }, 500)
-            }
+        // Устанавливаем слушатель для RadioButton
+        radioButtons.forEachIndexed { index, radioButton ->
+            radioButton.setOnClickListener {
+                binding.saveType.text = radioButton.text.toString()
 
-            // Закрываем диалог при нажатии на кнопку "Выбрать"
-            bottomSheetBinding.buttomClose.setOnClickListener {
-                Handler().postDelayed({
-                    bottomSheetDialog.dismiss()
-                }, 500)
-            }
-
-            // Восстанавливаем выбранный RadioButton, если есть сохраненный индекс
-            if (selectedRadioButtonIndex != -1) {
-                val selectedRadioButton =
-                    bottomSheetBinding.radioGroup.getChildAt(selectedRadioButtonIndex) as RadioButton
-                selectedRadioButton.isChecked = true
-            }
-
-            bottomSheetDialog.show()
-        }
-        binding.colorConst.setOnClickListener {
-            val bottomSheetBinding = DialogBottomSheetAnimalColorBinding.inflate(layoutInflater)
-            val bottomSheetDialog = BottomSheetDialog(this)
-            bottomSheetDialog.setContentView(bottomSheetBinding.root)
-
-            // Устанавливаем слушатель для RadioGroup
-            bottomSheetBinding.radioGroup.setOnCheckedChangeListener { group, checkedId ->
-                val selectedRadioButton = group.findViewById<RadioButton>(checkedId)
-                val selectedOptionText = selectedRadioButton.text.toString()
-                binding.saveColor.text = selectedOptionText
+                // Устанавливаем выбранный RadioButton активным
+                radioButton.isChecked = true
 
                 // Сохраняем индекс выбранного RadioButton
-                selectedRadioButtonIndex = group.indexOfChild(selectedRadioButton)
+                selectedBottomTypeRadioButtonIndex = index
 
-//                Handler().postDelayed({
-                bottomSheetDialog.dismiss()
-//                }, 500)
-            }
-
-
-            // Закрываем диалог при нажатии на кнопку "Выбрать"
-            bottomSheetBinding.buttomClose.setOnClickListener {
                 Handler().postDelayed({
-                    bottomSheetDialog.dismiss()
+                    bottomTypeSheetDialog.dismiss()
                 }, 500)
             }
-
-            // Восстанавливаем выбранный RadioButton, если есть сохраненный индекс
-            if (selectedRadioButtonIndex != -1) {
-                val selectedRadioButton =
-                    bottomSheetBinding.radioGroup.getChildAt(selectedRadioButtonIndex) as RadioButton
-                selectedRadioButton.isChecked = true
-            }
-
-            bottomSheetDialog.show()
         }
+
+        // При повторном открытии диалога устанавливаем выбранный RadioButton активным
+        if (selectedBottomTypeRadioButtonIndex != -1) {
+            radioButtons[selectedBottomTypeRadioButtonIndex].isChecked = true
+        }
+
+        bottomTypeSheetDialog.show()
     }
 
 
-    private var selectedRadioButtonIndex =
-        -1 // Переменная для хранения индекса выбранного RadioButton
+    //Масть животного==========================================================================
+    private var selectedBottomRadioButtonIndex = -1 //  хранения RadioButton
+    private fun showBottomRadioButtonDialog() {
+        val dialogBinding = DialogBottomSheetAnimalColorBinding.inflate(LayoutInflater.from(this))
+        val bottomSheetDialog = BottomSheetDialog(this)
+        bottomSheetDialog.setContentView(dialogBinding.root)
 
+        // Массив RadioButton
+        val radioButtons = arrayOf(
+            dialogBinding.option1,
+            dialogBinding.option2,
+            dialogBinding.option3,
+            dialogBinding.option4
+        )
+
+        val dialogColor = bottomSheetDialog.create()
+
+        // Устанавливаем слушатель для RadioButton
+        radioButtons.forEachIndexed { index, radioButton ->
+            radioButton.setOnClickListener {
+                binding.saveColor.text = radioButton.text.toString()
+
+                // Устанавливаем выбранный RadioButton активным
+                radioButton.isChecked = true
+
+                // Сохраняем индекс выбранного RadioButton
+                selectedBottomRadioButtonIndex = index
+
+                Handler().postDelayed({
+                    bottomSheetDialog.dismiss()
+                }, 500)
+            }
+        }
+
+        // При повторном открытии диалога устанавливаем выбранный RadioButton активным
+        if (selectedBottomRadioButtonIndex != -1) {
+            radioButtons[selectedBottomRadioButtonIndex].isChecked = true
+        }
+
+        bottomSheetDialog.show()
+    }
+
+
+    //Порода животного==========================================================================
+    private var selectedRadioButtonIndex = -1
     private fun showRadioButtonDialog() {
         val dialogBinding = DialogRadioButtonsBinding.inflate(LayoutInflater.from(this))
         val builder = AlertDialog.Builder(this)
@@ -242,9 +258,9 @@ class AddAnimalsActivity : AppCompatActivity() {
                 // Сохраняем индекс выбранного RadioButton
                 selectedRadioButtonIndex = index
 
-//                Handler().postDelayed({
-                dialog.dismiss()
-//                }, 500)
+                Handler().postDelayed({
+                    dialog.dismiss()
+                }, 500)
             }
         }
 

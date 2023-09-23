@@ -288,41 +288,79 @@
             app:layout_constraintTop_toTopOf="parent">
 
 
+            <ImageView
+                android:id="@+id/profile_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="150dp"
+                android:src="@drawable/vet_qyzmet_drawer_page_profile_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+
+                />
+
             <TextView
                 android:id="@+id/user_name_text"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="150dp"
                 android:text="***"
                 android:textColor="#363636"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/profile_ic"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/locationIcon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/vet_qyzmet_drawer_page_location_icon"
+                app:layout_constraintEnd_toStartOf="@+id/user_city_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_ic"
+
+
+                />
 
             <TextView
                 android:id="@+id/user_city_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
                 android:layout_marginTop="3dp"
                 android:text="Location"
                 android:textColor="#828282"
                 android:textSize="15sp"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/locationIcon"
                 app:layout_constraintTop_toBottomOf="@id/user_name_text" />
+
+            <ImageView
+                android:id="@+id/controler_id"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/vet_qyzmet_drawer_page_controler_id_icon"
+                app:layout_constraintEnd_toStartOf="@+id/userId"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/locationIcon"
+
+                />
 
             <TextView
                 android:id="@+id/userId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
                 android:layout_marginTop="3dp"
-                android:text="Location"
+                android:text="controler_id"
                 android:textColor="#828282"
                 android:textSize="15sp"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/controler_id"
                 app:layout_constraintTop_toBottomOf="@id/user_city_text" />
 
             <View
@@ -330,12 +368,72 @@
                 android:layout_height="2dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
-                android:background="@color/gray01"
+                android:background="@color/orange"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/userId" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/center_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/top_custom">
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="165dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/add_animals_input_background_orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bottom_custom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/LogoutTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/logout"
+                    android:textColor="@color/black"
+                    android:textFontWeight="500"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/logoutBtnHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/vet_qyzmet_activity_logout_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/LogoutTextView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

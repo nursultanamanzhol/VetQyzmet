@@ -88,6 +88,7 @@ class LoginActivity : AppCompatActivity() {
         val intent = Intent(this, PageVetQyzmet::class.java)
         intent.putExtra("name", user.name)
         intent.putExtra("location", user.RAYON_NAME)
+        intent.putExtra("userId", user.controler_id.toString())
         startActivity(intent)
     }
 
