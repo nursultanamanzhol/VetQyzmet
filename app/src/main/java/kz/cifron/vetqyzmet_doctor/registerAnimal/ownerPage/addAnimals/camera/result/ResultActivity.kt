@@ -1,18 +1,19 @@
-package kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.camera
+package kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.camera.result
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
-import kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.AnimalViewModel
+import kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.AddAnimalsAdditional
 import kz.cifron.vetqyzmet_doctor.R
 import kz.cifron.vetqyzmet_doctor.databinding.ActivityResultBinding
+import kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.camera.CameraActivity
 
 class ResultActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityResultBinding
-    private lateinit var viewModel: AnimalViewModel
+    private lateinit var viewModel: AddAnimalsAdditional
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

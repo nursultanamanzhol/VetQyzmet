@@ -17,6 +17,7 @@ import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
 import kz.cifron.vetqyzmet_doctor.registerAnimal.Tasks
 import kz.cifron.vetqyzmet_doctor.databinding.ActivityCameraBinding
+import kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.camera.result.ResultActivity
 import java.text.SimpleDateFormat
 import java.util.Locale
 import java.util.concurrent.Executor

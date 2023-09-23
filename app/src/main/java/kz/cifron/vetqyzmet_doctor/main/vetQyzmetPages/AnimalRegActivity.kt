@@ -21,31 +21,39 @@ class AnimalRegActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAnimalRegBinding
     private lateinit var registerViewModel: RegisterViewModel
     private lateinit var registerAdapter: RegisterAdapter
-
-
     private var originalTaskList: List<Tasks> = emptyList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAnimalRegBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setupUI()
+        setupViewModel()
+        setupRecyclerView()
+        observeTask()
+        registerViewModel.getTasks()
+    }
 
-
-
+    private fun setupUI() {
         binding.arrowIcon.setOnClickListener {
             onBackPressed()
         }
+    }
 
+    private fun setupViewModel() {
         val taskApiService = ServiceBuilder.taskInstanceApi
         val registerRepository = RegisterRepository(taskApiService)
         registerViewModel = ViewModelProvider(
             this, RegisterViewModelFactory(registerRepository)
         )[RegisterViewModel::class.java]
+    }
 
-        setUpRecyclerView()
-        observeTask()
-        registerViewModel.getTasks()
-
+    private fun setupRecyclerView() {
+        registerAdapter = RegisterAdapter()
+        binding.recyclerView.apply {
+            layoutManager = LinearLayoutManager(this@AnimalRegActivity)
+            adapter = registerAdapter
+        }
 
         registerAdapter.setOnItemClickListener { task ->
             val intent = Intent(this, OwnerPageActivity::class.java)
@@ -55,14 +63,6 @@ class AnimalRegActivity : AppCompatActivity() {
             intent.putExtra("proverkaDate", task.POVERKA_DATE)
             startActivity(intent)
         }
-
-    }
-
-    private fun setUpRecyclerView() {
-        registerAdapter = RegisterAdapter()
-        val recyclerView = binding.recyclerView
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = registerAdapter
     }
 
     private fun observeTask() {
@@ -85,6 +85,4 @@ class AnimalRegActivity : AppCompatActivity() {
             }
         }
     }
-
-
 }

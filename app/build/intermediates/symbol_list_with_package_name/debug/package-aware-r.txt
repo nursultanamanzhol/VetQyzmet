@@ -1512,6 +1512,7 @@ color highlighted_text_material_light
 color hour
 color itemIconTint
 color itemTextColor
+color location_and_id
 color loginPage
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color

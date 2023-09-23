@@ -15,8 +15,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gray01">#DCE0E5</color>
     <color name="gray02">#777777</color>
+    <color name="location_and_id">#868686</color>
     <color name="loginPage">#5D6978</color>
     <color name="hour">#5D6978</color>
-    <color name="your_background_color">#FFFFFFFF</color> <!-- Замените #FF0000 на ваш желаемый цвет -->
+    <color name="your_background_color">#FFFFFFFF
+    </color> <!-- Замените #FF0000 на ваш желаемый цвет -->
 
 </resources>

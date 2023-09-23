@@ -6,6 +6,7 @@ color gray02
 color hour
 color itemIconTint
 color itemTextColor
+color location_and_id
 color loginPage
 color myControlColor
 color orange
