@@ -4,31 +4,31 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.AddAnimalsActivity
-import kz.cifron.vetqyzmet_doctor.registerAnimal.Tasks
 import kz.cifron.vetqyzmet_doctor.databinding.ActivityOwnerPageBinding
+import kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.AddAnimalsActivity
 
 class OwnerPageActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOwnerPageBinding
-    private lateinit var task: Tasks
+
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
-
         binding = ActivityOwnerPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        DataFrom()
+        setupUI()
         binding.arrowIcon.setOnClickListener {
             onBackPressed()
         }
         binding.addAnimals.setOnClickListener {
             startActivity(Intent(this, AddAnimalsActivity::class.java))
         }
-
-
+        setDataFromIntent()
     }
 
-    private fun DataFrom() {
+    private fun setupUI() {
+        // Можете добавить другие настройки UI здесь
+    }
+
+    private fun setDataFromIntent() {
         val location = intent.getStringExtra("location")
         val client = intent.getStringExtra("client")
         val cvNumber = intent.getStringExtra("cvNumber")
@@ -43,6 +43,4 @@ class OwnerPageActivity : AppCompatActivity() {
             Log.e("OwnerPageActivity", "One or more extras are missing")
         }
     }
-
-
 }

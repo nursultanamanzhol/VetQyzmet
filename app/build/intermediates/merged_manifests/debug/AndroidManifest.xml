@@ -42,7 +42,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.App.Starting" >
         <activity
-            android:name="kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.camera.ResultActivity"
+            android:name="kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.camera.result.ResultActivity"
             android:exported="false"
             android:theme="@style/Base.Theme.Animal" />
         <activity

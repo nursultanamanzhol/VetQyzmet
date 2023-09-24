@@ -161,14 +161,14 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\nursu\.gradle\cach
 		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:21:9-50
 	android:dataExtractionRules
 		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:15:9-65
-activity#kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.camera.ResultActivity
+activity#kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.camera.result.ResultActivity
 ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:23:9-26:56
 	android:exported
 		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:25:13-37
 	android:theme
 		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:26:13-53
 	android:name
-		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:24:13-86
+		ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:24:13-93
 activity#kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.camera.ImageActivity
 ADDED from C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:27:9-30:56
 	android:exported

@@ -308,7 +308,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="150dp"
                 android:text="***"
-                android:textColor="#363636"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/profile_ic"
@@ -334,7 +334,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:text="Location"
-                android:textColor="#828282"
+                android:textColor="@color/location_and_id"
                 android:textSize="15sp"
                 app:layout_constraintStart_toEndOf="@+id/locationIcon"
                 app:layout_constraintTop_toBottomOf="@id/user_name_text" />
@@ -358,7 +358,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:text="controler_id"
-                android:textColor="#828282"
+                android:textColor="@color/location_and_id"
                 android:textSize="15sp"
                 app:layout_constraintStart_toEndOf="@+id/controler_id"
                 app:layout_constraintTop_toBottomOf="@id/user_city_text" />

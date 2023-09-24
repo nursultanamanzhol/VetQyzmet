@@ -71,8 +71,8 @@
 43-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:21:9-50
 44        <activity
 44-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:23:9-26:56
-45            android:name="kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.camera.ResultActivity"
-45-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:24:13-86
+45            android:name="kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.camera.result.ResultActivity"
+45-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:24:13-93
 46            android:exported="false"
 46-->C:\Users\nursu\AndroidStudioProjects\VetQyzmet\app\src\main\AndroidManifest.xml:25:13-37
 47            android:theme="@style/Base.Theme.Animal" />

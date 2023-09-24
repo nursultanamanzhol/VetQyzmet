@@ -1,315 +1,60 @@
 package kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals
 
-import android.app.DatePickerDialog
-import android.content.Intent
-import android.content.res.Resources
 import android.os.Bundle
-import android.os.Handler
-import android.util.Log
-import android.view.LayoutInflater
 import android.view.View
-import android.widget.RadioButton
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doAfterTextChanged
-import androidx.lifecycle.ViewModelProvider
-import com.google.android.material.bottomsheet.BottomSheetDialog
-import kz.cifron.vetqyzmet_doctor.R
 import kz.cifron.vetqyzmet_doctor.databinding.ActivityAddAnimalsBinding
-import kz.cifron.vetqyzmet_doctor.databinding.DialogBottomSheetAnimalColorBinding
-import kz.cifron.vetqyzmet_doctor.databinding.DialogBottomSheetTypeAnimalBinding
-import kz.cifron.vetqyzmet_doctor.databinding.DialogRadioButtonsBinding
-import kz.cifron.vetqyzmet_doctor.main.PageVetQyzmet
-import kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals.camera.CameraActivity
-import java.text.SimpleDateFormat
-import java.util.Calendar
-import java.util.Locale
 
 class AddAnimalsActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityAddAnimalsBinding
-    private lateinit var viewModel: AnimalViewModel
+    lateinit var binding: ActivityAddAnimalsBinding
+    lateinit var additionalFunctions: AddAnimalsAdditional
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAddAnimalsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        additionalFunctions = AddAnimalsAdditional(this, binding)
 
+        setupClickListeners()
+        setupTextChangeListeners()
+    }
+
+    private fun setupClickListeners() {
         val dateClickListener = View.OnClickListener {
-            showDatePickerDialog()
+            additionalFunctions.showDatePickerDialog()
         }
         binding.birthDateText.setOnClickListener(dateClickListener)
         binding.chooseDateButton.setOnClickListener(dateClickListener)
 
-        // Функция для отображения DatePickerDialog
-
-
         binding.rectangleGray.setOnClickListener {
-            startActivity(Intent(this, PageVetQyzmet::class.java))
-            finish()
-            finish()
-
+            additionalFunctions.navigateToPageVetQyzmet()
         }
-        viewModel = ViewModelProvider(this)[AnimalViewModel::class.java]
 
         binding.rectangleFurther.setOnClickListener {
-            val selectedRadioButtonId = binding.genderAnimal.checkedRadioButtonId
-
-            // Инициализируйте selectedGenderText с пустой строкой
-            var selectedGenderText = ""
-
-            // Проверьте, какая RadioButton была выбрана
-            if (selectedRadioButtonId == R.id.female) {
-                selectedGenderText = "Самка"
-            } else if (selectedRadioButtonId == R.id.male) {
-                selectedGenderText = "Самец"
-            }
-
-            val missingFields = mutableListOf<String>()
-
-            // Проверьте, какие поля остались не заполненными
-            if (binding.saveType.text.isBlank()) {
-                missingFields.add("Выберите тип животного")
-            }
-            if (binding.birthDateText.text.isBlank()) {
-                missingFields.add("Дата рождения")
-            }
-            if (binding.saveBreed.text.isBlank()) {
-                missingFields.add("Порода")
-            }
-            if (binding.emailEt1.text.toString().isBlank()) {
-                missingFields.add("Введите ИНЖ")
-            }
-            if (binding.saveColor.text.toString().isBlank()) {
-                missingFields.add("Введите Масть")
-            }
-            if (selectedGenderText.isBlank()) {
-                missingFields.add("Пол животного")
-            }
-
-            if (missingFields.isEmpty()) {
-                val intent = Intent(this, CameraActivity::class.java)
-                intent.putExtra("saveType", binding.saveType.text.toString())
-                intent.putExtra("birthDateText", binding.birthDateText.text.toString())
-                intent.putExtra("saveBreed", binding.saveBreed.text.toString())
-                intent.putExtra("emailEt1", binding.emailEt1.text.toString())
-                intent.putExtra("saveColor", binding.saveColor.text.toString())
-                intent.putExtra("genderAnimal", selectedGenderText)
-                Log.d("saveType", binding.saveType.text.toString())
-                startActivity(intent)
-            } else {
-                // Сообщение предупреждения с перечислением не заполненных полей
-                val missingFieldsMessage =
-                    "Заполните следующие поля: ${missingFields.joinToString(", ")}"
-                val alertDialog = AlertDialog.Builder(this)
-                    .setTitle("Предупреждение")
-                    .setMessage(missingFieldsMessage)
-                    .setPositiveButton("OK", null) // Можете добавить обработчик, если нужно
-                    .show()
-            }
+            additionalFunctions.navigateToCameraActivity()
         }
-
-
-//фон по умолчанию на устройствах Android 4.4.4
-        // Создайте обработчик нажатия, который будет вызывать функцию отображения DatePickerDialog
-//        val dateClickListener = View.OnClickListener {
-//            showDatePickerDialog()
-//        }
-
-// Установите обработчик нажатия как для birthDateText, так и для chooseDateButton
-
-        // Продолжите так же для genderAnimal и saveBreed
 
         binding.arrowIcon.setOnClickListener {
             onBackPressed()
         }
 
         binding.breedConst.setOnClickListener {
-            showRadioButtonDialog()
+            additionalFunctions.showRadioButtonDialog()
         }
         binding.colorConst.setOnClickListener {
-            showBottomRadioButtonDialog()
+            additionalFunctions.showBottomRadioButtonDialog()
         }
         binding.typeconst.setOnClickListener {
-            showBottomTypeRadioButtonDialog()
+            additionalFunctions.showBottomTypeRadioButtonDialog()
         }
+    }
 
+    private fun setupTextChangeListeners() {
         binding.emailEt1.doAfterTextChanged { editable ->
             val emailText = editable
             // Вы можете использовать значение emailText по вашему усмотрению
         }
     }
-
-    //Масть животного==========================================================================
-    private var selectedBottomTypeRadioButtonIndex = -1 //  хранения RadioButton
-    private fun showBottomTypeRadioButtonDialog() {
-        val dialogBinding = DialogBottomSheetTypeAnimalBinding.inflate(LayoutInflater.from(this))
-        val bottomTypeSheetDialog = BottomSheetDialog(this)
-        bottomTypeSheetDialog.setContentView(dialogBinding.root)
-
-        // Массив RadioButton
-        val radioButtons = arrayOf(
-            dialogBinding.option1,
-            dialogBinding.option2,
-            dialogBinding.option3,
-            dialogBinding.option4,
-            dialogBinding.option5
-        )
-
-        val dialog = bottomTypeSheetDialog.create()
-
-        // Устанавливаем слушатель для RadioButton
-        radioButtons.forEachIndexed { index, radioButton ->
-            radioButton.setOnClickListener {
-                binding.saveType.text = radioButton.text.toString()
-
-                // Устанавливаем выбранный RadioButton активным
-                radioButton.isChecked = true
-
-                // Сохраняем индекс выбранного RadioButton
-                selectedBottomTypeRadioButtonIndex = index
-
-                Handler().postDelayed({
-                    bottomTypeSheetDialog.dismiss()
-                }, 500)
-            }
-        }
-
-        // При повторном открытии диалога устанавливаем выбранный RadioButton активным
-        if (selectedBottomTypeRadioButtonIndex != -1) {
-            radioButtons[selectedBottomTypeRadioButtonIndex].isChecked = true
-        }
-
-        bottomTypeSheetDialog.show()
-    }
-
-
-    //Масть животного==========================================================================
-    private var selectedBottomRadioButtonIndex = -1 //  хранения RadioButton
-    private fun showBottomRadioButtonDialog() {
-        val dialogBinding = DialogBottomSheetAnimalColorBinding.inflate(LayoutInflater.from(this))
-        val bottomSheetDialog = BottomSheetDialog(this)
-        bottomSheetDialog.setContentView(dialogBinding.root)
-
-        // Массив RadioButton
-        val radioButtons = arrayOf(
-            dialogBinding.option1,
-            dialogBinding.option2,
-            dialogBinding.option3,
-            dialogBinding.option4
-        )
-
-        val dialogColor = bottomSheetDialog.create()
-
-        // Устанавливаем слушатель для RadioButton
-        radioButtons.forEachIndexed { index, radioButton ->
-            radioButton.setOnClickListener {
-                binding.saveColor.text = radioButton.text.toString()
-
-                // Устанавливаем выбранный RadioButton активным
-                radioButton.isChecked = true
-
-                // Сохраняем индекс выбранного RadioButton
-                selectedBottomRadioButtonIndex = index
-
-                Handler().postDelayed({
-                    bottomSheetDialog.dismiss()
-                }, 500)
-            }
-        }
-
-        // При повторном открытии диалога устанавливаем выбранный RadioButton активным
-        if (selectedBottomRadioButtonIndex != -1) {
-            radioButtons[selectedBottomRadioButtonIndex].isChecked = true
-        }
-
-        bottomSheetDialog.show()
-    }
-
-
-    //Порода животного==========================================================================
-    private var selectedRadioButtonIndex = -1
-    private fun showRadioButtonDialog() {
-        val dialogBinding = DialogRadioButtonsBinding.inflate(LayoutInflater.from(this))
-        val builder = AlertDialog.Builder(this)
-        builder.setView(dialogBinding.root)
-
-        // Массив RadioButton
-        val radioButtons = arrayOf(
-            dialogBinding.option1,
-            dialogBinding.option2,
-            dialogBinding.option3,
-            dialogBinding.option4,
-            dialogBinding.option5,
-            dialogBinding.option6,
-            dialogBinding.option7
-        )
-
-        val dialog = builder.create()
-
-        // Устанавливаем слушатель для RadioButton
-        radioButtons.forEachIndexed { index, radioButton ->
-            radioButton.setOnClickListener {
-                binding.saveBreed.text = radioButton.text.toString()
-
-                // Устанавливаем выбранный RadioButton активным
-                radioButton.isChecked = true
-
-                // Сохраняем индекс выбранного RadioButton
-                selectedRadioButtonIndex = index
-
-                Handler().postDelayed({
-                    dialog.dismiss()
-                }, 500)
-            }
-        }
-
-        // При повторном открытии диалога устанавливаем выбранный RadioButton активным
-        if (selectedRadioButtonIndex != -1) {
-            radioButtons[selectedRadioButtonIndex].isChecked = true
-        }
-
-        dialog.show()
-    }
-
-
-    fun showDatePickerDialog() {
-        val getDate = Calendar.getInstance()
-        val datepicker = DatePickerDialog(
-            this,
-            R.style.CustomDatePickerDialog, // Используйте ваш пользовательский стиль
-            DatePickerDialog.OnDateSetListener { _, year, month, _ ->
-
-                val selecDate = Calendar.getInstance()
-                selecDate.set(Calendar.YEAR, year)
-                selecDate.set(Calendar.MONTH, month)
-
-                // Форматируйте дату для отображения только месяца и года
-                val dateFormat = SimpleDateFormat("yyyy, MMMM", Locale.getDefault())
-                val formattedDate = dateFormat.format(selecDate.time)
-
-                // Отобразите отформатированную дату
-                binding.birthDateText.text = formattedDate
-            },
-            getDate.get(Calendar.YEAR),
-            getDate.get(Calendar.MONTH),
-            getDate.get(Calendar.DAY_OF_MONTH)
-        )
-
-        // Скройте день, отключив его в DatePicker
-        try {
-            val datePicker = datepicker.datePicker
-            val daySpinnerId = Resources.getSystem().getIdentifier("day", "id", "android")
-            val daySpinner = datePicker.findViewById<View>(daySpinnerId)
-            if (daySpinner != null) {
-                daySpinner.visibility = View.GONE
-            }
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
-
-        datepicker.show()
-    }
-
-
 }
