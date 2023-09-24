@@ -1,1 +1,0 @@
-<span style="font-family: 'Arial'; font-size: 44px; font-weight: bold;">[VetQyzmet Figma link](https://www.figma.com/file/FAOS1gjSDXCgiyVdKZXaQC/FlutterProject-(Copy)?type=design&node-id=0%3A1&mode=dev)</span>
