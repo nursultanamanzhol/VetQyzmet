@@ -1,3 +1,3 @@
 # VetQyzmet
 ...
-<a href="[https://linkedin.com/in/nursultan аmanzhol](https://www.figma.com/file/FAOS1gjSDXCgiyVdKZXaQC/FlutterProject-(Copy)?type=design&node-id=0%3A1&mode=dev)https://www.figma.com/file/FAOS1gjSDXCgiyVdKZXaQC/FlutterProject-(Copy)?type=design&node-id=0%3A1&mode=dev" target="blank">
+#Figma link![image](https://github.com/nursultanamanzhol/VetQyzmet/assets/91078998/45b89a89-f8f3-414d-a0c2-16ea787b4253)
