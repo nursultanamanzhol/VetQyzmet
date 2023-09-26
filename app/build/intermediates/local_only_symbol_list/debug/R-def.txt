@@ -16,6 +16,7 @@ color teal_200
 color teal_700
 color white
 color your_background_color
+dimen date_picker_dialog_padding
 dimen your_dimension_here
 drawable activity_forms_page
 drawable activity_help_page
@@ -61,6 +62,9 @@ font roboto_light
 font roboto_light_italic
 font roboto_medium
 font roboto_regular
+id DialogCancelButton
+id DialogDatePicker
+id DialogOkButton
 id LogOut
 id LogoutTextView
 id TopFont
@@ -201,6 +205,7 @@ layout activity_add_animals
 layout activity_animal_reg
 layout activity_camera
 layout activity_certificates
+layout activity_custom_date_picker_dialog
 layout activity_form
 layout activity_image
 layout activity_login

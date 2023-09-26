@@ -1,12 +1,17 @@
 package kz.cifron.vetqyzmet_doctor.registerAnimal.ownerPage.addAnimals
 
 import android.app.DatePickerDialog
+import android.app.DatePickerDialog.OnDateSetListener
 import android.content.Intent
 import android.content.res.Resources
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
+import android.os.Build
 import android.os.Handler
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import kz.cifron.vetqyzmet_doctor.R
@@ -22,11 +27,13 @@ import java.util.Locale
 
 class AddAnimalsAdditional(
     private val activity: AddAnimalsActivity,
-    private val binding: ActivityAddAnimalsBinding
-) {
+    private val binding: ActivityAddAnimalsBinding,
+
+    ) {
     private var selectedBottomTypeRadioButtonIndex = -1
     private var selectedBottomRadioButtonIndex = -1
     private var selectedRadioButtonIndex = -1
+    private val mDateSetListener: OnDateSetListener? = null
 
     fun navigateToPageVetQyzmet() {
         val intent = Intent(activity, PageVetQyzmet::class.java)
@@ -94,12 +101,13 @@ class AddAnimalsAdditional(
     }
 
     //DatePicker животного==========================================================================
+    @RequiresApi(Build.VERSION_CODES.S)
     fun showDatePickerDialog() {
         val getDate = Calendar.getInstance()
         val datepicker = DatePickerDialog(
             activity,
-            R.style.CustomDatePickerDialog, // Используйте ваш пользовательский стиль
-            DatePickerDialog.OnDateSetListener { _, year, month, _ ->
+            R.style.CustomDatePickerDialog,
+            { _, year, month, _ ->
 
                 val selecDate = Calendar.getInstance()
                 selecDate.set(Calendar.YEAR, year)
@@ -117,6 +125,12 @@ class AddAnimalsAdditional(
             getDate.get(Calendar.DAY_OF_MONTH)
         )
 
+        datepicker.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+
+        // maks date in month
+        datepicker.datePicker.maxDate = getDate.timeInMillis
+
         // Скройте день, отключив его в DatePicker
         try {
             val datePicker = datepicker.datePicker
@@ -131,6 +145,7 @@ class AddAnimalsAdditional(
 
         datepicker.show()
     }
+
 
     //Тип животного==========================================================================
     fun showBottomTypeRadioButtonDialog() {
@@ -171,6 +186,7 @@ class AddAnimalsAdditional(
         if (selectedBottomTypeRadioButtonIndex != -1) {
             radioButtons[selectedBottomTypeRadioButtonIndex].isChecked = true
         }
+        bottomTypeSheetDialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
         bottomTypeSheetDialog.show()
     }
@@ -213,7 +229,7 @@ class AddAnimalsAdditional(
         if (selectedBottomRadioButtonIndex != -1) {
             radioButtons[selectedBottomRadioButtonIndex].isChecked = true
         }
-
+        bottomSheetDialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         bottomSheetDialog.show()
     }
     //Порода животного==========================================================================

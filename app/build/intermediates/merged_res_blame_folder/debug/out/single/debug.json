@@ -64,6 +64,10 @@
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-61:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-59:\\layout_activity_custom_date_picker_dialog.xml.flat",
+        "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-61:\\layout\\activity_custom_date_picker_dialog.xml"
+    },
+    {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-59:\\drawable_camera_activity_gallery_icon.png.flat",
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-61:\\drawable\\camera_activity_gallery_icon.png"
     },
@@ -194,10 +198,6 @@
     {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-59:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-61:\\mipmap-hdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "kz.cifron.vetqyzmet_doctor.app-merged_res-59:/layout_activity_page_vet_qyzmet.xml.flat",
-        "source": "kz.cifron.vetqyzmet_doctor.app-main-61:/layout/activity_page_vet_qyzmet.xml"
     },
     {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-59:\\drawable_add_animals_activity_arrow_down.xml.flat",
@@ -530,5 +530,9 @@
     {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-merged_res-59:\\layout_dialog_bottom_sheet_type_animal.xml.flat",
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-61:\\layout\\dialog_bottom_sheet_type_animal.xml"
+    },
+    {
+        "merged": "kz.cifron.vetqyzmet_doctor.app-merged_res-59:/drawable_add_animals_custom_datepicker_dialog_theme.xml.flat",
+        "source": "kz.cifron.vetqyzmet_doctor.app-main-61:/drawable/add_animals_custom_datepicker_dialog_theme.xml"
     }
 ]

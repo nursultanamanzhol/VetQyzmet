@@ -8,10 +8,6 @@
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-61:\\layout\\activity_add_animals.xml"
     },
     {
-        "merged": "kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-58:/layout/activity_page_vet_qyzmet.xml",
-        "source": "kz.cifron.vetqyzmet_doctor.app-main-61:/layout/activity_page_vet_qyzmet.xml"
-    },
-    {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-58:\\layout\\dialog_bottom_sheet_type_animal.xml",
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-61:\\layout\\dialog_bottom_sheet_type_animal.xml"
     },
@@ -62,6 +58,10 @@
     {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-58:\\layout\\activity_camera.xml",
         "source": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-main-61:\\layout\\activity_camera.xml"
+    },
+    {
+        "merged": "kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-58:/layout/activity_custom_date_picker_dialog.xml",
+        "source": "kz.cifron.vetqyzmet_doctor.app-main-61:/layout/activity_custom_date_picker_dialog.xml"
     },
     {
         "merged": "C:\\Users\\nursu\\.gradle\\daemon\\8.0\\kz.cifron.vetqyzmet_doctor.app-mergeDebugResources-58:\\layout\\activity_login.xml",

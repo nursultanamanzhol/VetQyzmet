@@ -2263,6 +2263,7 @@ dimen compat_button_padding_vertical_material
 dimen compat_control_corner_material
 dimen compat_notification_large_icon_max_height
 dimen compat_notification_large_icon_max_width
+dimen date_picker_dialog_padding
 dimen def_drawer_elevation
 dimen design_appbar_elevation
 dimen design_bottom_navigation_active_item_max_width
@@ -3194,6 +3195,9 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id DialogCancelButton
+id DialogDatePicker
+id DialogOkButton
 id FUNCTION
 id LogOut
 id LogoutTextView
@@ -3962,6 +3966,7 @@ layout activity_add_animals
 layout activity_animal_reg
 layout activity_camera
 layout activity_certificates
+layout activity_custom_date_picker_dialog
 layout activity_form
 layout activity_image
 layout activity_login
