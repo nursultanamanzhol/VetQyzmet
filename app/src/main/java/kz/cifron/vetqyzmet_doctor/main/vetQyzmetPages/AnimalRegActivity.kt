@@ -2,6 +2,7 @@ package kz.cifron.vetqyzmet_doctor.main.vetQyzmetPages
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -57,6 +58,9 @@ class AnimalRegActivity : AppCompatActivity() {
 
         registerAdapter.setOnItemClickListener { task ->
             val intent = Intent(this, OwnerPageActivity::class.java)
+            val lengthMeter:Int = task.RAZ_TIPSCH
+            Log.d("MeterTag", "ownerPage: $lengthMeter")
+            intent.putExtra("length", lengthMeter)
             intent.putExtra("location", task.ADDR)
             intent.putExtra("client", task.NAME_REG5)
             intent.putExtra("cvNumber", task.NAME_SCH)

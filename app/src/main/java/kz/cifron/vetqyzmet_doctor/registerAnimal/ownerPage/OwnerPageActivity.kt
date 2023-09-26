@@ -19,7 +19,13 @@ class OwnerPageActivity : AppCompatActivity() {
             onBackPressed()
         }
         binding.addAnimals.setOnClickListener {
-            startActivity(Intent(this, AddAnimalsActivity::class.java))
+            val ownerIntent = Intent(this, AddAnimalsActivity::class.java)
+            val defaultValue = 0
+            val ownerPage = intent.getIntExtra("length", defaultValue)
+            Log.d("MeterTag", "ownerPage: $ownerPage")// Вывести значение ownerPage в LogCat
+            ownerIntent.putExtra("lengthMeterAddAnimals", ownerPage)
+            startActivity(ownerIntent)
+
         }
         setDataFromIntent()
     }
