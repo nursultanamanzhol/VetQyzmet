@@ -51,6 +51,7 @@ drawable vet_background
 drawable vet_qyzmet_activity_logout_icon
 drawable vet_qyzmet_activity_nav_btn_icon
 drawable vet_qyzmet_drawer_page_controler_id_icon
+drawable vet_qyzmet_drawer_page_finalized_icon
 drawable vet_qyzmet_drawer_page_location_icon
 drawable vet_qyzmet_drawer_page_profile_icon
 drawable vet_qyzmet_drawer_page_settings_icon
@@ -71,6 +72,7 @@ id appName
 id arrow_back_btn
 id arrow_icon
 id backBtn
+id backBtnLogout
 id beautiful_r
 id birthDateLayout
 id birthDateText
@@ -80,6 +82,7 @@ id bottom_custom
 id breedConst
 id breedText
 id btnNavView
+id btn_finalized
 id btn_gallery
 id buttomClose
 id center_custom
@@ -106,6 +109,8 @@ id emailEt
 id emailEt1
 id emailEt1Result
 id female
+id finalizedImg
+id finalizedText
 id form
 id genderAnimal
 id genderAnimalResult
@@ -210,7 +215,6 @@ layout dialog_bottom_sheet_type_animal
 layout dialog_date_picker
 layout dialog_error
 layout dialog_radio_buttons
-layout header_page
 layout owneritem
 menu drw_menu
 menu main_menu
@@ -225,6 +229,7 @@ string checkout
 string checkoutback
 string close
 string complete
+string finalized
 string hello_blank_fragment
 string logout
 string open

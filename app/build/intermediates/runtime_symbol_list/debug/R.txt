@@ -3179,6 +3179,7 @@ int drawable vet_background 0x7f07010a
 int drawable vet_qyzmet_activity_logout_icon 0x7f070118
 int drawable vet_qyzmet_activity_nav_btn_icon 0x7f070119
 int drawable vet_qyzmet_drawer_page_controler_id_icon 0x7f07011d
+int drawable vet_qyzmet_drawer_page_finalized_icon 0x7f07011e
 int drawable vet_qyzmet_drawer_page_location_icon 0x7f07011c
 int drawable vet_qyzmet_drawer_page_profile_icon 0x7f07011a
 int drawable vet_qyzmet_drawer_page_settings_icon 0x7f07011b
@@ -3286,6 +3287,7 @@ int id autoComplete 0x7f09005d
 int id autoCompleteToEnd 0x7f09005e
 int id autoCompleteToStart 0x7f09005f
 int id backBtn 0x7f090060
+int id backBtnLogout 0x7f090287
 int id barrier 0x7f090061
 int id baseline 0x7f090062
 int id beautiful_r 0x7f090063
@@ -3306,6 +3308,7 @@ int id bounceStart 0x7f090070
 int id breedConst 0x7f090071
 int id breedText 0x7f090072
 int id btnNavView 0x7f090073
+int id btn_finalized 0x7f090288
 int id btn_gallery 0x7f090074
 int id buttomClose 0x7f090075
 int id buttonPanel 0x7f090076
@@ -3424,6 +3427,8 @@ int id fillStart 0x7f0900e4
 int id fill_horizontal 0x7f0900e5
 int id fill_vertical 0x7f0900e6
 int id filled 0x7f0900e7
+int id finalizedImg 0x7f090289
+int id finalizedText 0x7f09028a
 int id fitCenter 0x7f0900e8
 int id fitEnd 0x7f0900e9
 int id fitStart 0x7f0900ea
@@ -3987,7 +3992,6 @@ int layout dialog_date_picker 0x7f0c003b
 int layout dialog_error 0x7f0c003c
 int layout dialog_radio_buttons 0x7f0c003d
 int layout expand_button 0x7f0c003e
-int layout header_page 0x7f0c003f
 int layout image_frame 0x7f0c0040
 int layout m3_alert_dialog 0x7f0c0041
 int layout m3_alert_dialog_actions 0x7f0c0042
@@ -4129,6 +4133,7 @@ int string expand_button_title 0x7f120030
 int string exposed_dropdown_menu_content_description 0x7f120031
 int string fab_transformation_scrim_behavior 0x7f120032
 int string fab_transformation_sheet_behavior 0x7f120033
+int string finalized 0x7f1200b3
 int string hello_blank_fragment 0x7f120034
 int string hide_bottom_view_on_scroll_behavior 0x7f120035
 int string icon_content_description 0x7f120036
