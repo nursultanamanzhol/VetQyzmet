@@ -3180,6 +3180,7 @@ drawable vet_background
 drawable vet_qyzmet_activity_logout_icon
 drawable vet_qyzmet_activity_nav_btn_icon
 drawable vet_qyzmet_drawer_page_controler_id_icon
+drawable vet_qyzmet_drawer_page_finalized_icon
 drawable vet_qyzmet_drawer_page_location_icon
 drawable vet_qyzmet_drawer_page_profile_icon
 drawable vet_qyzmet_drawer_page_settings_icon
@@ -3287,6 +3288,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id backBtn
+id backBtnLogout
 id barrier
 id baseline
 id beautiful_r
@@ -3307,6 +3309,7 @@ id bounceStart
 id breedConst
 id breedText
 id btnNavView
+id btn_finalized
 id btn_gallery
 id buttomClose
 id buttonPanel
@@ -3425,6 +3428,8 @@ id fillStart
 id fill_horizontal
 id fill_vertical
 id filled
+id finalizedImg
+id finalizedText
 id fitCenter
 id fitEnd
 id fitStart
@@ -3988,7 +3993,6 @@ layout dialog_date_picker
 layout dialog_error
 layout dialog_radio_buttons
 layout expand_button
-layout header_page
 layout image_frame
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -4130,6 +4134,7 @@ string expand_button_title
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string finalized
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description

@@ -25,7 +25,13 @@ public final class ActivityPageVetQyzmetBinding implements ViewBinding {
   public final TextView LogoutTextView;
 
   @NonNull
+  public final ConstraintLayout backBtnLogout;
+
+  @NonNull
   public final ConstraintLayout bottomCustom;
+
+  @NonNull
+  public final ConstraintLayout btnFinalized;
 
   @NonNull
   public final ImageView btnNavView;
@@ -41,6 +47,12 @@ public final class ActivityPageVetQyzmetBinding implements ViewBinding {
 
   @NonNull
   public final DrawerLayout drawer;
+
+  @NonNull
+  public final ImageView finalizedImg;
+
+  @NonNull
+  public final TextView finalizedText;
 
   @NonNull
   public final ConstraintLayout form;
@@ -106,26 +118,32 @@ public final class ActivityPageVetQyzmetBinding implements ViewBinding {
   public final TextView vetQyzmetTitle;
 
   private ActivityPageVetQyzmetBinding(@NonNull DrawerLayout rootView,
-      @NonNull TextView LogoutTextView, @NonNull ConstraintLayout bottomCustom,
+      @NonNull TextView LogoutTextView, @NonNull ConstraintLayout backBtnLogout,
+      @NonNull ConstraintLayout bottomCustom, @NonNull ConstraintLayout btnFinalized,
       @NonNull ImageView btnNavView, @NonNull ConstraintLayout centerCustom,
       @NonNull ConstraintLayout certificates, @NonNull ImageView controlerId,
-      @NonNull DrawerLayout drawer, @NonNull ConstraintLayout form, @NonNull ImageView imageView1,
-      @NonNull ImageView imageView2, @NonNull ImageView imageView3, @NonNull ImageView imageView4,
-      @NonNull View lineOwner, @NonNull ConstraintLayout linear1, @NonNull ImageView locationIcon,
-      @NonNull ImageView logOutIcon, @NonNull ImageView logoutBtnHeader,
-      @NonNull ConstraintLayout migration, @NonNull ImageView navigate1,
-      @NonNull ImageView profileIc, @NonNull TextView regAnimalPage,
+      @NonNull DrawerLayout drawer, @NonNull ImageView finalizedImg,
+      @NonNull TextView finalizedText, @NonNull ConstraintLayout form,
+      @NonNull ImageView imageView1, @NonNull ImageView imageView2, @NonNull ImageView imageView3,
+      @NonNull ImageView imageView4, @NonNull View lineOwner, @NonNull ConstraintLayout linear1,
+      @NonNull ImageView locationIcon, @NonNull ImageView logOutIcon,
+      @NonNull ImageView logoutBtnHeader, @NonNull ConstraintLayout migration,
+      @NonNull ImageView navigate1, @NonNull ImageView profileIc, @NonNull TextView regAnimalPage,
       @NonNull ConstraintLayout registr, @NonNull ConstraintLayout topCustom,
       @NonNull ConstraintLayout topToolbarCustom, @NonNull TextView userCityText,
       @NonNull TextView userId, @NonNull TextView userNameText, @NonNull TextView vetQyzmetTitle) {
     this.rootView = rootView;
     this.LogoutTextView = LogoutTextView;
+    this.backBtnLogout = backBtnLogout;
     this.bottomCustom = bottomCustom;
+    this.btnFinalized = btnFinalized;
     this.btnNavView = btnNavView;
     this.centerCustom = centerCustom;
     this.certificates = certificates;
     this.controlerId = controlerId;
     this.drawer = drawer;
+    this.finalizedImg = finalizedImg;
+    this.finalizedText = finalizedText;
     this.form = form;
     this.imageView1 = imageView1;
     this.imageView2 = imageView2;
@@ -182,9 +200,21 @@ public final class ActivityPageVetQyzmetBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.backBtnLogout;
+      ConstraintLayout backBtnLogout = ViewBindings.findChildViewById(rootView, id);
+      if (backBtnLogout == null) {
+        break missingId;
+      }
+
       id = R.id.bottom_custom;
       ConstraintLayout bottomCustom = ViewBindings.findChildViewById(rootView, id);
       if (bottomCustom == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_finalized;
+      ConstraintLayout btnFinalized = ViewBindings.findChildViewById(rootView, id);
+      if (btnFinalized == null) {
         break missingId;
       }
 
@@ -213,6 +243,18 @@ public final class ActivityPageVetQyzmetBinding implements ViewBinding {
       }
 
       DrawerLayout drawer = (DrawerLayout) rootView;
+
+      id = R.id.finalizedImg;
+      ImageView finalizedImg = ViewBindings.findChildViewById(rootView, id);
+      if (finalizedImg == null) {
+        break missingId;
+      }
+
+      id = R.id.finalizedText;
+      TextView finalizedText = ViewBindings.findChildViewById(rootView, id);
+      if (finalizedText == null) {
+        break missingId;
+      }
 
       id = R.id.form;
       ConstraintLayout form = ViewBindings.findChildViewById(rootView, id);
@@ -340,8 +382,9 @@ public final class ActivityPageVetQyzmetBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPageVetQyzmetBinding((DrawerLayout) rootView, LogoutTextView, bottomCustom,
-          btnNavView, centerCustom, certificates, controlerId, drawer, form, imageView1, imageView2,
+      return new ActivityPageVetQyzmetBinding((DrawerLayout) rootView, LogoutTextView,
+          backBtnLogout, bottomCustom, btnFinalized, btnNavView, centerCustom, certificates,
+          controlerId, drawer, finalizedImg, finalizedText, form, imageView1, imageView2,
           imageView3, imageView4, lineOwner, linear1, locationIcon, logOutIcon, logoutBtnHeader,
           migration, navigate1, profileIc, regAnimalPage, registr, topCustom, topToolbarCustom,
           userCityText, userId, userNameText, vetQyzmetTitle);
